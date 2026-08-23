@@ -5,6 +5,7 @@ out/
 .review/
 test-results/
 playwright-report/
+*.tsbuildinfo
 *.log
 .env*
 !.env.example
