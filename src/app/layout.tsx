@@ -33,7 +33,6 @@ export const metadata: Metadata = {
     "Primordial Sea hidden disks",
     "Primordial Sea enemy mode",
   ],
-  alternates: { canonical: "/" },
   openGraph: {
     type: "website",
     url: "/",
