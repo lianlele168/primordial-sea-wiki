@@ -10,7 +10,7 @@ interface AuthorCardProps {
 }
 
 export default function AuthorCard({
-  authorName = 'Dr. Lyra "Starlight" Chen',
+  authorName = "Roblox Wiki Hub Research Desk"Starlight" Chen',
   role = 'Lead Celestial Mechanics Analyst & Fusion Theorist',
   experience = '300+ Hours Playtested • 10M+ High Score Record',
   patchVersion = 'Float-U-Space Build v1.12 Verified',
@@ -28,7 +28,7 @@ export default function AuthorCard({
             <div className="flex items-center space-x-2">
               <span className="font-bold text-white text-sm sm:text-base">{authorName}</span>
               <span className="inline-flex items-center px-2 py-0.5 rounded-full text-[11px] font-semibold bg-cyan-500/10 text-cyan-400 border border-cyan-500/20 font-mono">
-                ✓ Expert Verified
+                ✓ Verified by lianlele168
               </span>
             </div>
             <p className="text-xs text-gray-400 mt-0.5">
@@ -50,6 +50,10 @@ export default function AuthorCard({
       <p className="text-xs sm:text-sm text-gray-400 mt-3 leading-relaxed italic">
         "{editorialNote}"
       </p>
+      <div className="mt-3 pt-2 border-t border-slate-800/80 flex flex-wrap items-center justify-between gap-2 text-[11px] text-slate-400">
+        <span>Methodology: <a href="https://robloxwikihub.com/about#methodology" target="_blank" rel="noopener noreferrer" className="underline hover:text-white">Roblox Wiki Hub Standards</a></span>
+        <span>Corrections: <a href="mailto:lianlele168@gmail.com" className="underline hover:text-white">lianlele168@gmail.com</a></span>
+      </div>
     </div>
   );
 }
