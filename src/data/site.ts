@@ -26,23 +26,23 @@ export const evolutionStages = [
 ] as const;
 
 export const navItems = [
-  { href: "/play/", label: "Play" },
-  { href: "/beginner-guide/", label: "Guide" },
-  { href: "/evolution-chain/", label: "Evolution" },
-  { href: "/merge-planner/", label: "Planner" },
-  { href: "/hidden-disks/", label: "Hidden Disks" },
-  { href: "/enemy-mode/", label: "Enemy Mode" },
+  { href: "/play", label: "Play" },
+  { href: "/beginner-guide", label: "Guide" },
+  { href: "/evolution-chain", label: "Evolution" },
+  { href: "/merge-planner", label: "Planner" },
+  { href: "/hidden-disks", label: "Hidden Disks" },
+  { href: "/enemy-mode", label: "Enemy Mode" },
 ] as const;
 
 export const routes = [
   { path: "/", priority: 1, changeFrequency: "daily" },
-  { path: "/play/", priority: 0.95, changeFrequency: "weekly" },
-  { path: "/merge-planner/", priority: 0.95, changeFrequency: "weekly" },
-  { path: "/evolution-chain/", priority: 0.9, changeFrequency: "weekly" },
-  { path: "/beginner-guide/", priority: 0.9, changeFrequency: "weekly" },
-  { path: "/hidden-disks/", priority: 0.85, changeFrequency: "weekly" },
-  { path: "/enemy-mode/", priority: 0.85, changeFrequency: "weekly" },
-  { path: "/items-guide/", priority: 0.8, changeFrequency: "weekly" },
-  { path: "/updates/", priority: 0.7, changeFrequency: "daily" },
-  { path: "/about/", priority: 0.35, changeFrequency: "monthly" },
+  { path: "/play", priority: 0.95, changeFrequency: "weekly" },
+  { path: "/merge-planner", priority: 0.95, changeFrequency: "weekly" },
+  { path: "/evolution-chain", priority: 0.9, changeFrequency: "weekly" },
+  { path: "/beginner-guide", priority: 0.9, changeFrequency: "weekly" },
+  { path: "/hidden-disks", priority: 0.85, changeFrequency: "weekly" },
+  { path: "/enemy-mode", priority: 0.85, changeFrequency: "weekly" },
+  { path: "/items-guide", priority: 0.8, changeFrequency: "weekly" },
+  { path: "/updates", priority: 0.7, changeFrequency: "daily" },
+  { path: "/about", priority: 0.35, changeFrequency: "monthly" },
   ] as const;

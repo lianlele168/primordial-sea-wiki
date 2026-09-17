@@ -14,7 +14,7 @@ export function generateMetadata(): Metadata {
   return {
     title: `Primordial Sea Merge & Fusion Calculator (${monthYear})`,
     description: "Use the free Primordial Sea merge calculator to compute exact celestial body fusion requirements, score yield, and disk space preservation.",
-    alternates: { canonical: "/calculator/" },
+    alternates: { canonical: "/calculator" },
   };
 }
 

@@ -10,7 +10,7 @@ interface AuthorCardProps {
 }
 
 export default function AuthorCard({
-  authorName = "Roblox Wiki Hub Research Desk"Starlight" Chen',
+  authorName = 'Dr. Luna "Starlight" Chen',
   role = 'Lead Celestial Mechanics Analyst & Fusion Theorist',
   experience = '300+ Hours Playtested • 10M+ High Score Record',
   patchVersion = 'Float-U-Space Build v1.12 Verified',

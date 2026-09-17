@@ -13,7 +13,7 @@ export function generateMetadata(): Metadata {
   return {
     title: `Primordial Sea Merge Planner (${monthYear})`,
     description: "Use the free Primordial Sea merge planner to calculate theoretical body requirements between any two stages of the verified evolution chain.",
-    alternates: { canonical: "/merge-planner/" },
+    alternates: { canonical: "/merge-planner" },
     openGraph: { url: "/merge-planner/", images: ["/primordial-sea-cover.png"] },
     twitter: {
       card: "summary_large_image",

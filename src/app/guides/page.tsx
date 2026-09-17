@@ -12,7 +12,7 @@ export function generateMetadata(): Metadata {
   return {
     title: `Primordial Sea Strategy Guide & Merge Walkthrough (${monthYear})`,
     description: "Complete gameplay guide for Primordial Sea: Gravity disk physics, orbit drop trajectories, fuse management, and late-game water planet fusion tactics.",
-    alternates: { canonical: "/guides/" },
+    alternates: { canonical: "/guides" },
   };
 }
 
