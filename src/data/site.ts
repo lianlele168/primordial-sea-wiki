@@ -6,8 +6,8 @@ export const site = {
   officialUrl: "https://float-u-space.itch.io/primordial-sea",
   officialDevlogUrl: "https://float-u-space.itch.io/primordial-sea/devlog",
   directGameUrl: "https://html-classic.itch.zone/html/18918346/index.html?v=1787467980",
-  published: "2026-08-22",
-  lastChecked: "2026-08-23",
+  published: "",
+  lastChecked: "",
   description:
     "An unofficial Primordial Sea game guide with a merge evolution planner, complete 10-stage chain, hidden disk notes, enemy mode tactics, and browser play links.",
 } as const;

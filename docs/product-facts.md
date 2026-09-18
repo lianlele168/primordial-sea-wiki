@@ -1,13 +1,13 @@
 # Primordial Sea - Verified Product Facts
 
-Last verified: 2026-08-23
+Last verified: 
 
 Primary source: https://float-u-space.itch.io/primordial-sea
 
 - Official title: Primordial Sea
 - Developer: float-u-space
-- Published: 2026-08-22 07:46 UTC
-- Updated: 2026-08-23 06:52 UTC when checked
+- Published: 07:46 UTC
+- Updated: 06:52 UTC when checked
 - Status: Released
 - Platform: HTML5; playable in browser on mobile and desktop
 - Genre: Puzzle

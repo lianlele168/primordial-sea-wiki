@@ -21,7 +21,7 @@ const cormorant = Cormorant_Garamond({
 export const metadata: Metadata = {
   metadataBase: new URL(site.baseUrl),
   title: {
-    default: "Primordial Sea Guide (August 2026) - Evolution & Merge Planner",
+    default: "Primordial Sea Guide - Evolution & Merge Planner",
     template: "%s | Primordial Sea Guide",
   },
   description: site.description,

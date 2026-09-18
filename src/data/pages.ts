@@ -223,9 +223,9 @@ export const guidePages: GuidePage[] = [
       {
         heading: "Current release record",
         bullets: [
-          "Published on itch.io on August 22, 2026 at 07:46 UTC",
+          "Published on itch.io on at 07:46 UTC",
           "Status listed as Released and platform listed as HTML5",
-          "Updated on August 23, 2026 at 06:52 UTC when this guide was checked",
+          "Updated on at 06:52 UTC when this guide was checked",
           "v1.1 devlog: mobile layout fix, app icon, and home-screen naming update",
         ],
       },
@@ -235,7 +235,7 @@ export const guidePages: GuidePage[] = [
           "Official descriptions and visible in-game text are treated as facts. Strategy advice is labeled as guidance. Unknown numbers, recipes, names, and probabilities stay unknown until they can be verified.",
           "This source-first policy keeps the site useful without multiplying unverified text across many pages.",
         ],
-        callout: "Last source check: August 23, 2026.",
+        callout: "Last source check: .",
       },
     ],
     sourceLabel: "Open the official devlog",

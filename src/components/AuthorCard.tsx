@@ -14,7 +14,7 @@ export default function AuthorCard({
   role = 'Lead Celestial Mechanics Analyst & Fusion Theorist',
   experience = '300+ Hours Playtested • 10M+ High Score Record',
   patchVersion = 'Float-U-Space Build v1.12 Verified',
-  lastUpdated = 'September 2026',
+  lastUpdated = '',
   editorialNote = 'All gravitational disk merge trajectories, fusion collision timings, and dark star tap mechanics are verified through live frame-by-frame browser simulations.',
 }: AuthorCardProps) {
   return (
@@ -41,9 +41,7 @@ export default function AuthorCard({
           <span className="inline-flex items-center px-2.5 py-1 rounded-lg text-xs font-medium bg-amber-500/10 text-amber-300 border border-amber-500/20">
             ⚡ {patchVersion}
           </span>
-          <span className="text-xs text-gray-400">
-            Updated: <strong className="text-gray-200">{lastUpdated}</strong>
-          </span>
+          
         </div>
       </div>
 

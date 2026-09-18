@@ -39,7 +39,7 @@ export default function GuidesPage() {
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    dateModified: "2026-09-15",
+
     author: {
       "@type": "Person",
       name: 'Dr. Lyra "Starlight" Chen',

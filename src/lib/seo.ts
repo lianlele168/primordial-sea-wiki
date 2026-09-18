@@ -73,8 +73,8 @@ export function articleSchema(title: string, description: string, slug: string) 
     description,
     mainEntityOfPage: absoluteUrl(slug),
     image: absoluteUrl("/primordial-sea-cover.png"),
-    datePublished: "2026-08-23",
-    dateModified: site.lastChecked,
+    datePublished: "",
+
     author: { "@type": "Organization", name: site.name },
     publisher: { "@type": "Organization", name: site.name },
   };
