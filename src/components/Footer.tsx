@@ -54,7 +54,7 @@ export default function Footer() {
       </div>
 
       <div className="page-shell border-t border-white/10 py-6 text-xs text-slate-500">
-        (c) {new Date().getFullYear()} Primordial Sea Guide. Independent fan reference.
+        &copy; {new Date().getFullYear()} Primordial Sea Guide. Independent fan reference. · Content AI-assisted, human-reviewed · Data sources cited on page · Contact: lianlele168@gmail.com
       </div>
     </footer>
   );

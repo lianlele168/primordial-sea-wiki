@@ -10,9 +10,9 @@ interface AuthorCardProps {
 }
 
 export default function AuthorCard({
-  authorName = 'Dr. Luna "Starlight" Chen',
-  role = 'Lead Celestial Mechanics Analyst & Fusion Theorist',
-  experience = '300+ Hours Playtested • 10M+ High Score Record',
+  authorName = 'Hlele',
+  role = 'Editor',
+  experience = 'AI-assisted research, human-reviewed',
   patchVersion = 'Float-U-Space Build v1.12 Verified',
   lastUpdated = '',
   editorialNote = 'All gravitational disk merge trajectories, fusion collision timings, and dark star tap mechanics are verified through live frame-by-frame browser simulations.',
