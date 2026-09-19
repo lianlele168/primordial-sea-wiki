@@ -134,7 +134,7 @@ export default async function GuidePageRoute({ params }: GuideRouteProps) {
           <aside className="article-aside">
             <div>
               <p className="eyebrow">Source status</p>
-              <strong>Checked {site.lastChecked}</strong>
+              <strong>Checked against the playable build</strong>
               <p>Core rules verified against the official itch.io release. Strategy is labeled separately.</p>
             </div>
             <div>

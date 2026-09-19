@@ -6,7 +6,7 @@ export const dynamic = "force-static";
 export default function sitemap(): MetadataRoute.Sitemap {
   return routes.map((route) => ({
     url: `${site.baseUrl}${route.path.endsWith("/") ? route.path : `${route.path}/`}`,
-    lastModified: new Date(site.lastChecked),
+    lastModified: new Date(),
     changeFrequency: route.changeFrequency,
     priority: route.priority,
   }));

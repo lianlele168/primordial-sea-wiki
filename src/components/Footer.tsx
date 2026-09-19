@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="page-shell flex flex-col gap-4 py-5 sm:flex-row sm:items-center sm:justify-between">
           <p className="flex items-center gap-2 text-sm font-semibold text-slate-300">
             <span className="h-2.5 w-2.5 rounded-full bg-tide-400 shadow-tide" />
-            Official source checked {site.lastChecked}
+            Checked against official sources
           </p>
           <a href={site.officialUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-sm font-bold text-solar-400 hover:text-solar-300">
             Play on itch.io
