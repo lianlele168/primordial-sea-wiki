@@ -13,9 +13,9 @@ export default function AuthorCard({
   authorName = 'Hlele',
   role = 'Editor',
   experience = 'AI-assisted research, human-reviewed',
-  patchVersion = 'Float-U-Space Build v1.12 Verified',
+  patchVersion = 'Float-U-Space Build v1.12',
   lastUpdated = '',
-  editorialNote = 'All gravitational disk merge trajectories, fusion collision timings, and dark star tap mechanics are verified through live frame-by-frame browser simulations.',
+  editorialNote = 'All data is compiled from public sources and community wikis. Any figure we could not confirm from a public source is labeled as unverified rather than estimated.',
 }: AuthorCardProps) {
   return (
     <div className="w-full rounded-2xl bg-[#0a1220]/90 border border-cyan-800/40 p-4 sm:p-5 backdrop-blur-md my-6 shadow-xl font-sans">
@@ -28,7 +28,7 @@ export default function AuthorCard({
             <div className="flex items-center space-x-2">
               <span className="font-bold text-white text-sm sm:text-base">{authorName}</span>
               <span className="inline-flex items-center px-2 py-0.5 rounded-full text-[11px] font-semibold bg-cyan-500/10 text-cyan-400 border border-cyan-500/20 font-mono">
-                ✓ Verified by lianlele168
+                Independent editorial
               </span>
             </div>
             <p className="text-xs text-gray-400 mt-0.5">

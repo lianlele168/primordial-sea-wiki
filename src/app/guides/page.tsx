@@ -42,8 +42,8 @@ export default function GuidesPage() {
 
     author: {
       "@type": "Person",
-      name: 'Dr. Lyra "Starlight" Chen',
-      jobTitle: "Lead Celestial Mechanics Analyst & Fusion Theorist",
+      name: 'Hlele',
+      jobTitle: 'Editor',
     },
     mainEntity: GUIDE_FAQS.map((faq) => ({
       "@type": "Question",

@@ -51,8 +51,8 @@ export default function CalculatorPage() {
 
     author: {
       "@type": "Person",
-      name: 'Dr. Lyra "Starlight" Chen',
-      jobTitle: "Lead Celestial Mechanics Analyst & Fusion Theorist",
+      name: 'Hlele',
+      jobTitle: 'Editor',
     },
     mainEntity: CALCULATOR_FAQS.map((faq) => ({
       "@type": "Question",
