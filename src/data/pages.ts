@@ -125,7 +125,7 @@ export const guidePages: GuidePage[] = [
     imageAlt: "Primordial Sea invitation-only hidden disk with a golden world",
     sections: [
       {
-        heading: "Verified unlock loop",
+        heading: "Unlock loop",
         steps: [
           { title: "Clear stages", body: "Stage clears award items according to the official description." },
           { title: "Trade items", body: "Items can be exchanged for invitations; exact costs are not publicly listed on the game page." },

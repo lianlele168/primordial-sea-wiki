@@ -83,7 +83,7 @@ export default async function GuidePageRoute({ params }: GuideRouteProps) {
       {page.slug === "evolution-chain" ? (
         <section className="page-section border-b border-white/10 bg-cosmos-900/70">
           <div className="page-shell">
-            <p className="eyebrow">Verified order</p>
+            <p className="eyebrow">Order</p>
             <h2 className="mt-3 font-display text-4xl font-bold text-white">The complete normal evolution ladder</h2>
             <div className="mt-8"><EvolutionChain /></div>
             <Link href="/merge-planner/" className="btn-primary mt-8">Calculate a target <ArrowRight className="h-4 w-4" /></Link>

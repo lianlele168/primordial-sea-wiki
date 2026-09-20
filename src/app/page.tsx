@@ -109,7 +109,7 @@ export default function HomePage() {
         <div className="page-shell">
           <div className="section-heading">
             <div>
-              <p className="eyebrow">Verified normal disk</p>
+              <p className="eyebrow">Normal disk</p>
               <h2>From dust to a living water planet</h2>
             </div>
             <Link href="/evolution-chain/" className="text-link">Read the chain guide <ArrowRight className="h-4 w-4" /></Link>
