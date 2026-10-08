@@ -1,0 +1,179 @@
+#!/usr/bin/env node
+// Offline gate: evidence completeness, not fact certification or indexing prediction.
+import fs from 'node:fs';
+import path from 'node:path';
+import crypto from 'node:crypto';
+import { pathToFileURL } from 'node:url';
+const hash = value => crypto.createHash('sha256').update(value).digest('hex');
+const text = v => typeof v === 'string' && v.trim().length > 0;
+const list = v => Array.isArray(v) ? v : [];
+const url = v => { try { return /^https?:$/.test(new URL(v).protocol); } catch { return false; } };
+const date = v => text(v) && /^\d{4}-\d{2}-\d{2}(?:T.*)?$/.test(v) && Number.isFinite(Date.parse(v)) && Date.parse(v) <= Date.now() + 86400000;
+const skip = new Set(['.git', '.next', 'node_modules', 'out', 'dist', 'coverage', 'quality', '.vercel', '.wrangler']);
+function walk(root, dir = root) {
+  if (!fs.existsSync(dir)) return [];
+  return fs.readdirSync(dir, { withFileTypes: true }).flatMap(e => {
+    if (e.isSymbolicLink() || skip.has(e.name)) return [];
+    const f = path.join(dir, e.name);
+    return e.isDirectory() ? walk(root, f) : e.isFile() ? [f] : [];
+  }).sort();
+}
+export function fingerprint(project) {
+  const files = walk(project).filter(f => {
+    const rel = path.relative(project, f).replaceAll('\\', '/');
+    return /^(src|app|pages|components|lib|data|public|content|scripts)\//.test(rel) || (!rel.includes('/') && /^(package(?:-lock)?\.json|pnpm-lock.*|yarn\.lock|bun\.lockb?|(?:next|astro|nuxt|vite|tailwind|postcss|tsconfig|vercel|netlify|wrangler|game)[.-].*)$/.test(rel));
+  });
+  // Git may check text out as CRLF on Windows and LF in Linux CI. Normalize only
+  // known text formats; binary assets must retain byte-sensitive fingerprints.
+  const contentHash = f => {
+    const bytes = fs.readFileSync(f);
+    return hash(/\.(?:[cm]?[jt]sx?|json|ya?ml|toml|css|s[ac]ss|html?|mdx?|txt|xml|svg|lock)$/i.test(f)
+      ? bytes.toString('utf8').replaceAll('\r\n', '\n') : bytes);
+  };
+  return { sha256: hash(files.map(f => `${path.relative(project, f).replaceAll('\\', '/')}\0${contentHash(f)}`).join('\n')), files: files.length };
+}
+export function auditProject(project) {
+  project = path.resolve(project);
+  const r = { name: path.basename(project), gateVersion: 2, passed: false, issues: [], warnings: [], checks: {}, limitation: 'Checks evidence completeness and recorded results; cannot certify fact truth, actual execution or Google indexing.' };
+  const check = (ok, label) => { if (!ok) r.issues.push(label); };
+  if (!fs.existsSync(project) || !fs.statSync(project).isDirectory()) { check(false, 'Project directory does not exist'); return r; }
+  const fp = fingerprint(project); r.checks.fingerprint = fp;
+  let m;
+  try { m = JSON.parse(fs.readFileSync(path.join(project, 'quality/review.json'), 'utf8')); }
+  catch (e) { check(false, `Missing or invalid quality/review.json: ${e.message}`); return r; }
+  if (!m || typeof m !== 'object' || Array.isArray(m)) { check(false, 'Review must be an object'); return r; }
+  const artifacts = new Set();
+  function artifact(ref, label) {
+    if (!ref || !text(ref.path) || !/^[a-f0-9]{64}$/.test(ref.sha256 || '')) { check(false, `${label}: artifact path and sha256 required`); return ''; }
+    try {
+      const full = fs.realpathSync(path.resolve(project, ref.path));
+      const rel = path.relative(fs.realpathSync(project), full);
+      if (path.isAbsolute(rel) || rel === '..' || rel.startsWith(`..${path.sep}`)) throw new Error('path escapes project');
+      const bytes = fs.readFileSync(full);
+      if (!bytes.length || hash(bytes) !== ref.sha256) throw new Error('empty or hash mismatch');
+      artifacts.add(ref.path); return bytes.toString('utf8');
+    } catch (e) { check(false, `${label}: invalid artifact (${e.message})`); return ''; }
+  }
+  function supported(review, label) {
+    check(review?.status === 'supported' && text(review?.reviewer) && date(review?.reviewedAt), `${label}: supported review, actual reviewer and date required`);
+    artifact(review?.artifact, `${label} review`);
+  }
+  check(m.schemaVersion === 1, 'schemaVersion must be 1');
+  check(fp.files > 0 && m.codeFingerprint === fp.sha256, 'Code fingerprint missing/stale; rebuild and re-review current code');
+  const site = m.site || {};
+  check(['roblox', 'html5', 'steam', 'other', 'hub'].includes(site.platform), 'Explicit platform required');
+  check(['released', 'unreleased', 'discontinued'].includes(site.releaseStatus), 'Explicit verified releaseStatus required; blank dates cannot infer release state');
+  check(url(site.baseUrl) && url(site.officialUrl), 'Site baseUrl and officialUrl required');
+  if (site.platform === 'roblox') {
+    check(/^\d+$/.test(String(site.placeId || '')), 'Roblox placeId required');
+    try { check(new URL(site.officialUrl).hostname === 'www.roblox.com' && new URL(site.officialUrl).pathname.startsWith(`/games/${site.placeId}/`), 'Official Roblox URL must match placeId'); } catch { /* URL error above */ }
+  }
+  supported(site.identityReview, 'Game identity/release');
+  const sources = new Map();
+  check(list(m.sources).length > 0, 'Identity source required');
+  for (const s of list(m.sources)) {
+    if (!s || !text(s.id) || sources.has(s.id)) { check(false, 'Source id missing/duplicate'); continue; }
+    sources.set(s.id, s);
+    check(url(s.url) && date(s.checkedAt) && ['official', 'observation', 'community'].includes(s.kind), `Source ${s.id}: URL, check date and kind required`);
+    artifact(s.artifact, `Source ${s.id}`);
+  }
+  check(sources.get(site.identitySourceId)?.kind === 'official' && sources.get(site.identitySourceId)?.url === site.officialUrl, 'Identity must reference matching official source');
+  const claims = new Map();
+  check(Array.isArray(m.claims), 'Explicit claim inventory required');
+  for (const c of list(m.claims)) {
+    if (!c || !text(c.id) || claims.has(c.id)) { check(false, 'Claim id missing/duplicate'); continue; }
+    claims.set(c.id, c);
+    check(['fact', 'number', 'formula', 'rating', 'verification', 'date'].includes(c.kind) && text(c.statement) && text(c.support), `Claim ${c.id}: kind, statement and specific support required`);
+    check(list(c.sourceIds).length > 0 && list(c.sourceIds).every(id => sources.has(id)), `Claim ${c.id}: known sources required`);
+    supported(c.review, `Claim ${c.id}`);
+    if (site.releaseStatus === 'unreleased') check(list(c.sourceIds).every(id => sources.get(id)?.kind === 'official') && c.stage === 'announcement' && c.kind !== 'verification', `Claim ${c.id}: unreleased content must be official announcement; no gameplay verification`);
+    if (['formula', 'rating'].includes(c.kind)) check(text(c.method), `Claim ${c.id}: explicit method required`);
+    if (c.kind === 'formula') {
+      check(text(c.units) && text(c.assumptions), `Claim ${c.id}: units and assumptions required`);
+      check(list(c.calibration).length > 0 && c.calibration.every(s => s && s.input && s.expected !== undefined && s.observed !== undefined && text(s.locator)), `Claim ${c.id}: reproducible calibration required`);
+      artifact(c.calibrationArtifact, `Claim ${c.id} calibration`);
+      for (const sample of list(c.calibration)) {
+        if (typeof sample?.expected === 'number' && typeof sample?.observed === 'number') {
+          const tolerance = sample.tolerance ?? 0;
+          check(Number.isFinite(tolerance) && tolerance >= 0 && Math.abs(sample.expected - sample.observed) <= tolerance, `Claim ${c.id}: calibration output mismatch`);
+        }
+      }
+    }
+  }
+  const pages = list(m.pages), seen = new Set(), used = new Set();
+  check(pages.length > 0, 'Complete page inventory required');
+  for (const p of pages) {
+    if (!p || !text(p.path) || !/^\/(?!\/)[^?#\\\s]*$/.test(p.path) || seen.has(p.path)) { check(false, 'Page path missing/duplicate/invalid'); continue; }
+    seen.add(p.path);
+    const expected = url(site.baseUrl) ? new URL(p.path, site.baseUrl).href : '';
+    check(p.status === 'ready' && text(p.intent) && text(p.uniqueValue) && typeof p.indexable === 'boolean', `Page ${p.path}: ready status, intent, unique value and index intent required`);
+    check(Array.isArray(p.claimIds) && p.claimIds.every(id => claims.has(id)), `Page ${p.path}: complete claim registry required`);
+    list(p.claimIds).forEach(id => used.add(id));
+    supported(p.review, `Page ${p.path} content`);
+    check(p.claimCoverage === 'complete' && p.crossPageConsistency === 'passed', `Page ${p.path}: rendered claim coverage and consistency review required`);
+    if (site.releaseStatus === 'unreleased') check(p.disclosure === 'confirmed-and-unknown', `Page ${p.path}: confirmed/unknown disclosure required`);
+    const html = artifact(p.renderedArtifact, `Page ${p.path} rendered HTML`);
+    if (html) {
+      const main = html.match(/<main\b[^>]*>([\s\S]*?)<\/main>/i)?.[1] || '';
+      const visible = main.replace(/<(script|style)\b[^>]*>[\s\S]*?<\/\1>/gi, '').replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
+      check(text(visible), `Page ${p.path}: missing crawlable main content`);
+      check(!/(?:Published on itch\.io on|Last source check:|Updated on)\s*\./i.test(visible), `Page ${p.path}: blank-date fragment`);
+      const tags = html.match(/<(?:link|meta)\b[^>]*>/gi) || [];
+      const attr = (tag, key) => tag.match(new RegExp(`\\b${key}\\s*=\\s*["']([^"']*)["']`, 'i'))?.[1];
+      const cs = tags.filter(t => (attr(t, 'rel') || '').toLowerCase() === 'canonical');
+      check(cs.length === 1 && attr(cs[0], 'href') === expected, `Page ${p.path}: rendered canonical must equal ${expected}`);
+      const noindex = tags.some(t => /^(robots|googlebot)$/i.test(attr(t, 'name') || '') && /\b(noindex|none)\b/i.test(attr(t, 'content') || ''));
+      if (p.indexable) check(!noindex, `Page ${p.path}: rendered noindex conflicts with intent`);
+    }
+    let tech;
+    try { tech = JSON.parse(artifact(p.technicalArtifact, `Page ${p.path} technical report`)); } catch { check(false, `Page ${p.path}: technical report must be JSON`); }
+    check(tech && typeof tech === 'object' && !Array.isArray(tech), `Page ${p.path}: technical report must be an object`);
+    if (tech && typeof tech === 'object' && !Array.isArray(tech)) {
+      check(tech.path === p.path && tech.codeFingerprint === fp.sha256 && date(tech.checkedAt) && text(tech.testedUrl), `Page ${p.path}: report identity/date/fingerprint required`);
+      check(tech.httpStatus === 200 && tech.canonical === expected, `Page ${p.path}: HTTP/canonical failed`);
+      if (p.indexable) check(tech.robotsAllowed === true && tech.indexAllowed === true, `Page ${p.path}: crawl/index blocked`);
+      else check(tech.indexAllowed === false, `Page ${p.path}: nonindexable intent must match actual index directive`);
+      check(tech.consoleErrors === 0 && tech.links === 'passed', `Page ${p.path}: console/link check missing/failed`);
+      check([390, 768, 1024, 1440].every(width => list(tech.viewports).some(v => v?.width === width && v.overflow === false && v.readable === true)), `Page ${p.path}: viewport checks missing/failed`);
+      check(tech.interaction === 'passed' || (tech.interaction === 'not-applicable' && text(tech.interactionReason)), `Page ${p.path}: interaction test/reason required`);
+    }
+    if (p.tool) {
+      check(['game-model', 'user-estimator'].includes(p.tool.type) && claims.get(p.tool.formulaClaimId)?.kind === 'formula' && list(p.claimIds).includes(p.tool.formulaClaimId), `Page ${p.path}: tool needs registered supported formula`);
+      check(text(p.tool.limitations) && text(p.tool.validation), `Page ${p.path}: tool limitations and validation required`);
+      check(tech?.interaction === 'passed', `Page ${p.path}: tool interaction must be tested`);
+    }
+  }
+  for (const id of claims.keys()) check(used.has(id), `Claim ${id}: not assigned to rendered page`);
+  let routes;
+  try { routes = JSON.parse(artifact(m.routeInventoryArtifact, 'Build route inventory')); } catch { check(false, 'Build route inventory must be JSON array'); }
+  check(Array.isArray(routes) && routes.length === seen.size && new Set(routes).size === routes.length && routes.every(route => seen.has(route)), 'Built route inventory must match reviewed pages; omit framework assets and record public content routes');
+  check(Array.isArray(m.sitemapPaths), 'Explicit sitemap inventory required');
+  for (const route of list(m.sitemapPaths)) check(pages.some(p => p?.path === route && p.indexable === true), `Sitemap ${route}: unknown/nonindexable page`);
+  check(new Set(list(m.sitemapPaths)).size === list(m.sitemapPaths).length, 'Duplicate sitemap route');
+  const xml = artifact(m.sitemapArtifact, 'Sitemap XML');
+  if (xml && url(site.baseUrl)) {
+    const locs = [...xml.matchAll(/<loc>\s*([^<]+)\s*<\/loc>/g)].map(x => x[1].trim().replaceAll('&amp;', '&'));
+    const expected = list(m.sitemapPaths).map(route => new URL(route, site.baseUrl).href);
+    check(/<urlset\b/.test(xml) && locs.length === expected.length && locs.every(u => expected.includes(u)) && new Set(locs).size === locs.length, 'Sitemap XML must match reviewed inventory exactly');
+  }
+  artifact(m.skillRunArtifact, 'Skill execution log');
+  artifact(m.buildArtifact, 'Build log');
+  check(m.buildStatus === 'passed' && Array.isArray(m.unresolved) && m.unresolved.length === 0, 'Build must pass and unresolved list must be explicitly empty');
+  r.checks = { ...r.checks, pages: seen.size, claims: claims.size, sources: sources.size, artifacts: artifacts.size };
+  r.warnings.push('Review source authenticity, claim support, calibration correctness and inventory completeness manually. Self-authored records are not independent proof.');
+  r.passed = r.issues.length === 0;
+  return r;
+}
+if (process.argv[1] && import.meta.url === pathToFileURL(path.resolve(process.argv[1])).href) {
+  const args = process.argv.slice(2);
+  if (args[0] === '--hash' && args[1]) console.log(JSON.stringify({ sha256: hash(fs.readFileSync(path.resolve(args[1]))) }, null, 2));
+  else if (args[0] === '--fingerprint' && args[1]) console.log(JSON.stringify(fingerprint(path.resolve(args[1])), null, 2));
+  else if (args[0] === '--all') {
+    const base = path.resolve(args[1] || process.cwd());
+    const projects = fs.readdirSync(base).filter(n => (n.endsWith('-wiki') || n === 'roblox-wiki-hub') && fs.existsSync(path.join(base, n, 'package.json')));
+    const reports = projects.map(n => auditProject(path.join(base, n)));
+    console.log(JSON.stringify(reports, null, 2));
+    process.exitCode = reports.length > 0 && reports.every(r => r.passed) ? 0 : 1;
+  } else if (args[0]) { const r = auditProject(args[0]); console.log(JSON.stringify(r, null, 2)); process.exitCode = r.passed ? 0 : 1; }
+  else { console.error('Usage: node quality-gate.mjs <project> | --fingerprint <project> | --hash <artifact> | --all [workspace]'); process.exitCode = 2; }
+}

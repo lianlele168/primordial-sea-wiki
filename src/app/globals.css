@@ -68,7 +68,7 @@ summary {
 
 .eyebrow {
   color: var(--tide-soft);
-  font-size: 0.73rem;
+  font-size: 0.75rem;
   font-weight: 800;
   line-height: 1.2;
   text-transform: uppercase;
@@ -183,7 +183,7 @@ summary {
 
 .fact-cell span {
   color: #94a3b8;
-  font-size: 0.72rem;
+  font-size: 0.75rem;
   font-weight: 700;
   line-height: 1.4;
 }
@@ -250,7 +250,7 @@ summary {
 .guide-card small {
   margin-top: 5px;
   color: #94a3b8;
-  font-size: 0.72rem;
+  font-size: 0.75rem;
   line-height: 1.45;
 }
 
@@ -292,7 +292,7 @@ summary {
 .evolution-node small {
   margin-top: 4px;
   color: #64748b;
-  font-size: 0.67rem;
+  font-size: 0.75rem;
   line-height: 1.3;
 }
 
@@ -307,7 +307,7 @@ summary {
   background: radial-gradient(circle at 34% 30%, color-mix(in srgb, var(--planet-color) 45%, white), var(--planet-color) 68%, color-mix(in srgb, var(--planet-color) 75%, black));
   box-shadow: 0 0 18px color-mix(in srgb, var(--planet-color) 26%, transparent);
   color: #050713;
-  font-size: 0.7rem;
+  font-size: 0.75rem;
   font-weight: 900;
 }
 
@@ -405,7 +405,7 @@ summary {
 .metric-cell span {
   margin-top: 8px;
   color: #94a3b8;
-  font-size: 0.7rem;
+  font-size: 0.75rem;
   font-weight: 700;
 }
 

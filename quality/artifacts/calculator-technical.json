@@ -1,0 +1,77 @@
+{
+  "path": "/calculator/",
+  "codeFingerprint": "9512edab1efbf1b2e09ff5553c3113f1f4eb418a179a8814a50f8a56f5f00188",
+  "checkedAt": "2026-10-08T16:05:47.271Z",
+  "testedUrl": "http://127.0.0.1:61071/calculator/",
+  "httpStatus": 200,
+  "canonical": "https://primordialsea.robloxwikihub.com/calculator/",
+  "robotsAllowed": true,
+  "indexAllowed": false,
+  "consoleErrors": 0,
+  "errors": [],
+  "links": "passed",
+  "linkScope": "internal only",
+  "brokenLinks": [],
+  "externalLinksNotChecked": [
+    "https://float-u-space.itch.io/primordial-sea"
+  ],
+  "blockedExternalRequests": [],
+  "viewports": [
+    {
+      "width": 390,
+      "overflow": false,
+      "readable": true,
+      "sizes": {
+        "scroll": 390,
+        "client": 390
+      },
+      "screenshot": {
+        "path": "quality/artifacts/calculator-390.png",
+        "sha256": "ad450e988a4b401eb7c9ba61633a341c0efc8cab41e3f71ab3eb63d97972bff2"
+      }
+    },
+    {
+      "width": 768,
+      "overflow": false,
+      "readable": true,
+      "sizes": {
+        "scroll": 768,
+        "client": 768
+      },
+      "screenshot": {
+        "path": "quality/artifacts/calculator-768.png",
+        "sha256": "2ebdda89469df49f80778eac3968dfb4f1dc66494737462487a60087de497b33"
+      }
+    },
+    {
+      "width": 1024,
+      "overflow": false,
+      "readable": true,
+      "sizes": {
+        "scroll": 1024,
+        "client": 1024
+      },
+      "screenshot": {
+        "path": "quality/artifacts/calculator-1024.png",
+        "sha256": "4a9f994dd7aefe54acd7f6baa7c02437a79c74429431d2c6c6546a902105e7f2"
+      }
+    },
+    {
+      "width": 1440,
+      "overflow": false,
+      "readable": true,
+      "sizes": {
+        "scroll": 1440,
+        "client": 1440
+      },
+      "screenshot": {
+        "path": "quality/artifacts/calculator-1440.png",
+        "sha256": "07d04a112637453a2e6da7e238dc7a9f222510bcdcd186f8f8aec79ca5596f18"
+      }
+    }
+  ],
+  "interaction": "passed",
+  "contentReview": "supported",
+  "note": "Actual local preview. Four-width metrics plus visual review of home/planner/common article design; external gameplay not claimed.",
+  "interactionEvidence": "quality/artifacts/interaction-results.json: shared search/menu; planner outputs, invalid-input, reset and copy checks for home/planner. Static content needs no artificial loading state."
+}

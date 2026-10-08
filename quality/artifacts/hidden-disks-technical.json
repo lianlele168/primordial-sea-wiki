@@ -1,0 +1,77 @@
+{
+  "path": "/hidden-disks/",
+  "codeFingerprint": "9512edab1efbf1b2e09ff5553c3113f1f4eb418a179a8814a50f8a56f5f00188",
+  "checkedAt": "2026-10-08T16:05:52.542Z",
+  "testedUrl": "http://127.0.0.1:61071/hidden-disks/",
+  "httpStatus": 200,
+  "canonical": "https://primordialsea.robloxwikihub.com/hidden-disks/",
+  "robotsAllowed": true,
+  "indexAllowed": true,
+  "consoleErrors": 0,
+  "errors": [],
+  "links": "passed",
+  "linkScope": "internal only",
+  "brokenLinks": [],
+  "externalLinksNotChecked": [
+    "https://float-u-space.itch.io/primordial-sea"
+  ],
+  "blockedExternalRequests": [],
+  "viewports": [
+    {
+      "width": 390,
+      "overflow": false,
+      "readable": true,
+      "sizes": {
+        "scroll": 390,
+        "client": 390
+      },
+      "screenshot": {
+        "path": "quality/artifacts/hidden-disks-390.png",
+        "sha256": "df3653f0792e07fbd15a779c24e26e3aee2cec8777ecd1a488b76ffe7980a5da"
+      }
+    },
+    {
+      "width": 768,
+      "overflow": false,
+      "readable": true,
+      "sizes": {
+        "scroll": 768,
+        "client": 768
+      },
+      "screenshot": {
+        "path": "quality/artifacts/hidden-disks-768.png",
+        "sha256": "9fabad8c2a4e60b64bf1ec52fcb77b172b46fdd5bf4e7d0cd672574615482d50"
+      }
+    },
+    {
+      "width": 1024,
+      "overflow": false,
+      "readable": true,
+      "sizes": {
+        "scroll": 1024,
+        "client": 1024
+      },
+      "screenshot": {
+        "path": "quality/artifacts/hidden-disks-1024.png",
+        "sha256": "41febe652c9c4d8913dd22810d1adfc045f9fbc91fa0906499065a2b9a3daa20"
+      }
+    },
+    {
+      "width": 1440,
+      "overflow": false,
+      "readable": true,
+      "sizes": {
+        "scroll": 1440,
+        "client": 1440
+      },
+      "screenshot": {
+        "path": "quality/artifacts/hidden-disks-1440.png",
+        "sha256": "c6f6d77b4c6bbca37da8f5917125cbb75f27e6ab36c0bf547d6e01b5b65cf2e3"
+      }
+    }
+  ],
+  "interaction": "passed",
+  "contentReview": "supported",
+  "note": "Actual local preview. Four-width metrics plus visual review of home/planner/common article design; external gameplay not claimed.",
+  "interactionEvidence": "quality/artifacts/interaction-results.json: shared search/menu; planner outputs, invalid-input, reset and copy checks for home/planner. Static content needs no artificial loading state."
+}

@@ -4,11 +4,13 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "node scripts/build-reviewed.mjs",
     "start": "next start",
     "lint": "eslint .",
     "check": "tsc --noEmit",
-    "test:e2e": "playwright test"
+    "test:e2e": "playwright test",
+    "build:site": "next build",
+    "quality:gate": "node scripts/quality-gate.mjs ."
   },
   "dependencies": {
     "lucide-react": "^1.33.0",

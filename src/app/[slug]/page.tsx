@@ -8,7 +8,6 @@ import JsonLd from "@/components/JsonLd";
 import PlayFrame from "@/components/PlayFrame";
 import { getGuidePage, guidePages } from "@/data/pages";
 import { site } from "@/data/site";
-import { getMonthYear } from "@/lib/date";
 import { articleSchema, breadcrumbSchema, faqSchema } from "@/lib/seo";
 
 export function generateStaticParams() {
@@ -21,12 +20,12 @@ export async function generateMetadata({ params }: GuideRouteProps): Promise<Met
   const { slug } = await params;
   const page = getGuidePage(slug);
   if (!page) return {};
-  const monthYear = getMonthYear();
   const isLegal = ["privacy-policy", "terms"].includes(slug);
   return {
-    title: `${page.title} (${monthYear})`,
+    title: `${page.title}`,
     description: page.description,
-    alternates: { canonical: `/${page.slug}` },
+    ...(isLegal ? {robots:{index:false,follow:true}} : {}),
+    alternates: { canonical: `/${page.slug}/` },
     openGraph: {
       type: "article",
       url: `/${page.slug}/`,
@@ -76,7 +75,7 @@ export default async function GuidePageRoute({ params }: GuideRouteProps) {
         </div>
       </section>
 
-      {page.slug === "play" ? (
+      {false ? (
         <section className="page-section pb-0"><div className="page-shell"><PlayFrame /></div></section>
       ) : null}
 
@@ -94,6 +93,7 @@ export default async function GuidePageRoute({ params }: GuideRouteProps) {
       <section className="page-section">
         <div className="page-shell grid gap-12 lg:grid-cols-[minmax(0,1fr)_300px]">
           <article className="article-body">
+            {["beginner-guide","enemy-mode","items-guide"].includes(page.slug) ? <p className="article-callout">Practical priorities below are editorial suggestions inferred from the published rules. They are not a tested optimal route.</p> : null}
             {page.sections.map((section) => (
               <section key={section.heading}>
                 <h2>{section.heading}</h2>
@@ -134,8 +134,8 @@ export default async function GuidePageRoute({ params }: GuideRouteProps) {
           <aside className="article-aside">
             <div>
               <p className="eyebrow">Source status</p>
-              <strong>Checked against the playable build</strong>
-              <p>Core rules verified against the official itch.io release. Strategy is labeled separately.</p>
+              <strong>Based on developer documentation</strong>
+              <p>Core rules come from the developer’s published description. Suggestions are editorial inference, not playtest results.</p>
             </div>
             <div>
               <p className="eyebrow">Continue reading</p>

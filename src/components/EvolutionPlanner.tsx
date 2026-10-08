@@ -18,6 +18,9 @@ export default function EvolutionPlanner() {
   const [owned, setOwned] = useState(0);
   const [pressure, setPressure] = useState<Pressure>("busy");
   const [copied, setCopied] = useState(false);
+  const [copyError, setCopyError] = useState("");
+  const [ownedText, setOwnedText] = useState("0");
+  const inputValid = /^\d+$/.test(ownedText) && Number(ownedText) <= 999;
 
   const calculation = useMemo(() => {
     const distance = Math.max(0, target - current);
@@ -34,15 +37,24 @@ export default function EvolutionPlanner() {
   const summary = `Primordial Sea merge plan: ${evolutionStages[current].name} -> ${evolutionStages[target].name}. Theoretical minimum: ${calculation.required} ${evolutionStages[current].name} bodies (${calculation.additional} more after the ${owned} already available), with ${calculation.merges} pair merges. Board advice: ${pressureAdvice[pressure]}`;
 
   async function copySummary() {
-    await navigator.clipboard.writeText(summary);
-    setCopied(true);
-    window.setTimeout(() => setCopied(false), 1800);
+    setCopyError("");
+    try {
+      await navigator.clipboard.writeText(summary);
+      setCopied(true);
+      window.setTimeout(() => setCopied(false), 1800);
+    } catch {
+      setCopied(false);
+      setCopyError("Clipboard unavailable. Select and copy the plan text below.");
+    }
   }
 
   function resetPlanner() {
     setCurrent(0);
     setTarget(9);
     setOwned(0);
+    setOwnedText("0");
+    setCopyError("");
+    setCopied(false);
     setPressure("busy");
   }
 
@@ -58,7 +70,7 @@ export default function EvolutionPlanner() {
           <div>
             <p className="eyebrow">Interactive utility</p>
             <h2 className="mt-2 font-display text-3xl font-bold text-white">Merge Evolution Planner</h2>
-            <p className="mt-2 max-w-xl text-sm leading-6 text-slate-400">Calculate the theoretical minimum for any verified segment of the normal chain.</p>
+            <p className="mt-2 max-w-xl text-sm leading-6 text-slate-400">Calculate the theoretical minimum for any documented segment of the normal chain.</p>
           </div>
           <button type="button" onClick={resetPlanner} className="icon-button" title="Reset planner" aria-label="Reset planner">
             <RotateCcw className="h-4 w-4" />
@@ -80,7 +92,8 @@ export default function EvolutionPlanner() {
           </label>
           <label className="field-label sm:col-span-2">
             Current bodies at the starting tier
-            <input type="number" min={0} max={999} value={owned} onChange={(event) => setOwned(Math.max(0, Number(event.target.value) || 0))} className="field-control" />
+            <input type="text" inputMode="numeric" value={ownedText} aria-invalid={!inputValid} aria-describedby="owned-help" onChange={(event) => { const value=event.target.value; setOwnedText(value); if (/^\d+$/.test(value) && Number(value)<=999) setOwned(Number(value)); }} className="field-control" />
+            <span id="owned-help">Enter a whole number of bodies from 0 to 999.</span>
           </label>
         </div>
 
@@ -96,7 +109,8 @@ export default function EvolutionPlanner() {
         </fieldset>
       </div>
 
-      <div className="planner-output">
+      <div className="planner-output" aria-live="polite">
+        {!inputValid ? <p role="alert" className="rounded-md border border-amber-400 p-4 text-amber-200">Enter a whole number from 0 to 999. Results are hidden until the input is valid.</p> : <>
         <div className="flex items-center gap-2 text-tide-300">
           <Sigma className="h-5 w-5" />
           <span className="text-xs font-black uppercase tracking-[0.14em]">Theoretical minimum</span>
@@ -132,14 +146,16 @@ export default function EvolutionPlanner() {
           </ol>
         </div>
 
-        <p className="mt-5 rounded-md border border-tide-400/20 bg-tide-500/[0.06] p-4 text-sm leading-6 text-slate-300">{pressureAdvice[pressure]}</p>
+        <p className="mt-5 rounded-md border border-tide-400/20 bg-tide-500/[0.06] p-4 text-sm leading-6 text-slate-300"><strong>Suggested priority (not a game-tested rule): </strong>{pressureAdvice[pressure]}</p>
 
         <button type="button" onClick={copySummary} className="btn-primary mt-5 w-full justify-center">
           {copied ? <Check className="h-4 w-4" /> : <Clipboard className="h-4 w-4" />}
           {copied ? "Plan copied" : "Copy merge plan"}
         </button>
         <p className="mt-3 text-xs leading-5 text-slate-500">Math assumes perfect pair merges with no losses. It is not a score, drop, or time prediction.</p>
+        {copyError ? <><p role="alert" className="mt-3 text-amber-200">{copyError}</p><textarea aria-label="Copyable merge plan" readOnly value={summary} className="field-control mt-3 min-h-40 w-full"/></> : null}
         <span className="sr-only" aria-live="polite">{copied ? "Merge plan copied to clipboard" : ""}</span>
+        </>}
       </div>
     </div>
   );

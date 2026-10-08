@@ -5,20 +5,18 @@ import EvolutionChain from "@/components/EvolutionChain";
 import JsonLd from "@/components/JsonLd";
 import PlannerLoader from "@/components/PlannerLoader";
 import { evolutionStages } from "@/data/site";
-import { getMonthYear } from "@/lib/date";
 import { absoluteUrl, breadcrumbSchema } from "@/lib/seo";
 
 export function generateMetadata(): Metadata {
-  const monthYear = getMonthYear();
   return {
-    title: `Primordial Sea Merge Planner (${monthYear})`,
-    description: "Use the free Primordial Sea merge planner to calculate theoretical body requirements between any two stages of the verified evolution chain.",
-    alternates: { canonical: "/merge-planner" },
+    title: `Primordial Sea Merge Planner`,
+    description: "Use the free Primordial Sea merge planner to calculate theoretical body requirements between any two stages of the documented evolution chain.",
+    alternates: { canonical: "/merge-planner/" },
     openGraph: { url: "/merge-planner/", images: ["/primordial-sea-cover.png"] },
     twitter: {
       card: "summary_large_image",
-      title: `Primordial Sea Merge Planner (${monthYear})`,
-      description: "Calculate theoretical body requirements for any verified segment of the Primordial Sea evolution chain.",
+      title: `Primordial Sea Merge Planner`,
+      description: "Calculate theoretical body requirements for any documented segment of the Primordial Sea evolution chain.",
       images: ["/primordial-sea-cover.png"],
     },
   };
@@ -56,7 +54,7 @@ export default function MergePlannerPage() {
           <div className="section-heading">
             <div>
               <p className="eyebrow">The input ladder</p>
-              <h2>All verified normal stages</h2>
+              <h2>All documented normal stages</h2>
             </div>
             <Link href="/evolution-chain/" className="text-link">Read the full chain <ArrowRight className="h-4 w-4" /></Link>
           </div>

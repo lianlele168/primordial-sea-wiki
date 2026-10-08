@@ -24,8 +24,8 @@ export const guidePages: GuidePage[] = [
     slug: "play",
     title: "Play Primordial Sea Online",
     eyebrow: "Official browser game",
-    description: "Play Primordial Sea in your browser and learn the verified drag, drop, merge, and fuse rules before your first run.",
-    summary: "Primordial Sea is free to play in a browser on mobile and desktop. The embedded game below is served by the developer's official itch.io upload.",
+    description: "Play Primordial Sea in your browser and learn the documented drag, drop, merge, and fuse rules before your first run.",
+    summary: "Primordial Sea is free to play in a browser on mobile and desktop. Use the Official game button to open the developer’s release page.",
     image: "/gameplay-board.png",
     imageAlt: "Primordial Sea gravity disk with planet bodies during Stage 1",
     sections: [
@@ -39,9 +39,9 @@ export const guidePages: GuidePage[] = [
         ],
       },
       {
-        heading: "If the embed does not load",
+        heading: "If browser play does not load",
         paragraphs: [
-          "Browser privacy settings, content blockers, or third-party cookie rules can stop an itch.io game frame from loading. Use the official-game button to open the developer's page directly.",
+          "Open the developer’s itch.io page directly for its current browser build. This guide does not pin a potentially outdated upload or embed a third-party game.",
           "Progress and availability are controlled by the official game, not this guide. This site does not mirror or redistribute the game files.",
         ],
       },
@@ -74,9 +74,9 @@ export const guidePages: GuidePage[] = [
         heading: "What changes as score rises",
         paragraphs: [
           "The official description says the fuse gets shorter as your score climbs. That turns late runs into a recognition test: know where each tier belongs before the body appears.",
-          "The exact fuse times and score thresholds are not published. Any precise timer table would be guesswork, so this guide does not present one.",
+          "The official description does not list exact fuse times or score thresholds. Any precise timer table would be guesswork, so this guide does not present one.",
         ],
-        callout: "Strategy on this page is practical guidance inferred from the verified merge and fuse rules, not a developer-authored solution.",
+        callout: "Strategy on this page is practical guidance inferred from the documented merge and fuse rules, not a developer-authored solution.",
       },
     ],
     faqs: [
@@ -89,7 +89,7 @@ export const guidePages: GuidePage[] = [
     slug: "evolution-chain",
     title: "Primordial Sea Evolution Chain",
     eyebrow: "All 10 normal stages",
-    description: "See the complete verified Primordial Sea evolution chain from Cosmic Dust to Water Planet, with merge math and planning notes.",
+    description: "See the complete documented Primordial Sea evolution chain from Cosmic Dust to Water Planet, with merge math and planning notes.",
     summary: "The normal disk has ten named stages. Every step requires two matching bodies, so a Water Planet represents 512 Cosmic Dust bodies in the theoretical no-loss case.",
     image: "/primordial-sea-cover.png",
     imageAlt: "Primordial Sea cover showing the body evolution sequence and Water Planet",
@@ -104,15 +104,15 @@ export const guidePages: GuidePage[] = [
       {
         heading: "What comes after Water Planet",
         paragraphs: [
-          "The official page confirms that hidden disks can evolve worlds beyond the Water Planet, including golden and rainbow bodies. It does not publish the full post-Water-Planet names or recipes.",
+          "The official page confirms that hidden disks can evolve worlds beyond the Water Planet, including golden and rainbow bodies. The description does not list post-Water-Planet names or recipes.",
         ],
-        callout: "Use the Merge Planner to calculate any verified section of the normal ten-stage chain.",
+        callout: "Use the Merge Planner to calculate any documented section of the normal ten-stage chain.",
       },
     ],
     faqs: [
       { question: "How many stages are in the normal Primordial Sea chain?", answer: "There are ten named stages from Cosmic Dust through Water Planet." },
       { question: "What comes after Ocean World?", answer: "Two Ocean Worlds merge into a Water Planet in the normal chain." },
-      { question: "Can worlds evolve beyond Water Planet?", answer: "Yes, but only the existence of further hidden-disk evolution is officially described; the full chain is not published." },
+      { question: "Can worlds evolve beyond Water Planet?", answer: "Yes, but the release description only establishes further hidden-disk evolution; it does not list that chain." },
     ],
   },
   {
@@ -164,14 +164,14 @@ export const guidePages: GuidePage[] = [
         steps: [
           { title: "Know your largest body", body: "Dark stars target the largest planet, so keep track of its position before pressure begins." },
           { title: "Scan between drops", body: "Use the moment after a stable merge to check the board edge for a threat." },
-          { title: "Tap before detonation", body: "The verified counter is direct tapping. Delaying risks losing the body that holds the most merge value." },
+          { title: "Tap before detonation", body: "The documented counter is direct tapping. Delaying risks losing the body that holds the most merge value." },
           { title: "Lower the strength to learn", body: "Use the three enemy strength settings as a progression ladder rather than adding maximum pressure immediately." },
         ],
       },
       {
         heading: "What enemy mode does not change",
         paragraphs: [
-          "The core match-two evolution chain remains the foundation. Enemy mode adds attention pressure; it does not replace planning, fuse management, or board-space control.",
+          "The developer describes both match-two merges and dark-star attacks. Our suggestion is to watch for threats between placements, without treating a particular sequence as guaranteed to work.",
           "The official page does not publish enemy health, spawn intervals, or strength multipliers. Those values are intentionally absent here.",
         ],
       },
@@ -186,7 +186,7 @@ export const guidePages: GuidePage[] = [
     slug: "items-guide",
     title: "Primordial Sea Items Guide",
     eyebrow: "Three rescue effects",
-    description: "A source-safe Primordial Sea items guide covering the three verified board-rescue effects without inventing names or drop rates.",
+    description: "A source-safe Primordial Sea items guide covering the three documented board-rescue effects without inventing names or drop rates.",
     summary: "The official page describes three rescue effects: still the fuse, purify small bodies, or reset the field. It does not provide official English item names or numerical drop rates.",
     image: "/gameplay-board.png",
     imageAlt: "Primordial Sea item controls above a crowded gravity disk",
@@ -202,7 +202,7 @@ export const guidePages: GuidePage[] = [
       {
         heading: "Items and invitation progression",
         paragraphs: [
-          "The official description connects stage clears, earned items, and invitation trading. Because the exact economy is not published, this guide separates verified effects from unknown costs.",
+          "The official description connects stage clears, earned items, and invitation trading. Because the release description does not list exact costs, this guide separates documented effects from unknown costs.",
         ],
         callout: "No made-up item rarity, cooldown, price, or drop chance is shown on this site.",
       },
@@ -217,25 +217,25 @@ export const guidePages: GuidePage[] = [
     slug: "updates",
     title: "Primordial Sea Updates and Sources",
     eyebrow: "Verification log",
-    description: "Track Primordial Sea release facts, official devlogs, source links, and which guide details were verified or remain unknown.",
+    description: "Track Primordial Sea release facts, official devlogs, source links, and which guide details were documented or remain unknown.",
     summary: "This page is the audit trail for the guide. Player-facing claims are traced to the official itch.io page, its screenshots, or its devlog.",
     sections: [
       {
         heading: "Current release record",
         bullets: [
-          "Published on itch.io on at 07:46 UTC",
+          "See the official itch.io page for publication history.",
           "Status listed as Released and platform listed as HTML5",
-          "Updated on at 06:52 UTC when this guide was checked",
+          "Official description reviewed by a Codex agent on 8 October 2026; no full playthrough is claimed",
           "v1.1 devlog: mobile layout fix, app icon, and home-screen naming update",
         ],
       },
       {
         heading: "Source policy",
         paragraphs: [
-          "Official descriptions and visible in-game text are treated as facts. Strategy advice is labeled as guidance. Unknown numbers, recipes, names, and probabilities stay unknown until they can be verified.",
-          "This source-first policy keeps the site useful without multiplying unverified text across many pages.",
+          "Official descriptions and visible in-game text are treated as facts. Strategy advice is labeled as guidance. Unknown numbers, recipes, names, and probabilities stay unknown until they can be documented.",
+          "This source-first policy keeps the site useful without multiplying undocumented text across many pages.",
         ],
-        callout: "Last source check: .",
+        callout: "The source check above is a documentation review, not the game’s publication date.",
       },
     ],
     sourceLabel: "Open the official devlog",
@@ -245,7 +245,7 @@ export const guidePages: GuidePage[] = [
     title: "About Primordial Sea Guide",
     eyebrow: "Independent companion",
     description: "About this unofficial Primordial Sea browser game guide, its source policy, interactive planner, and relationship to the developer.",
-    summary: "Primordial Sea Guide is an independent player companion built around verified rules, transparent merge math, and direct links to the official game.",
+    summary: "Primordial Sea Guide is an independent player companion built around documented rules, transparent merge math, and direct links to the official game.",
     sections: [
       {
         heading: "What this site adds",
@@ -259,7 +259,7 @@ export const guidePages: GuidePage[] = [
       {
         heading: "Independence and attribution",
         paragraphs: [
-          "This site is not affiliated with itch.io or float-u-space. Primordial Sea, its artwork, and its screenshots belong to the developer. The game is loaded from or linked to the official itch.io release.",
+          "Editorial identity: Hlele. Source review: Codex agent. No personal gameplay experience or human playtest is claimed. This site is not affiliated with itch.io or float-u-space. Primordial Sea, its artwork, and its screenshots belong to the developer. The game is loaded from or linked to the official itch.io release.",
         ],
       },
     ],
@@ -275,13 +275,13 @@ export const guidePages: GuidePage[] = [
         heading: "Information and storage",
         paragraphs: [
           "The merge planner runs in your browser. Its inputs are not sent to this site. Standard hosting logs may record technical information such as IP address, browser type, requested page, and time of access for security and reliability.",
-          "Third-party embeds and outbound links, including itch.io, operate under their own privacy policies. Opening or playing embedded content may allow those services to set cookies or collect usage data.",
+          "Outbound links, including itch.io, operate under their own privacy policies. This revision does not embed the game.",
         ],
       },
       {
         heading: "Advertising and analytics",
         paragraphs: [
-          "If analytics or advertising is added later, this policy and any required consent controls will be updated before those services are enabled. Contact details will also be published before accepting privacy requests through the site.",
+          "If analytics or advertising is added later, this policy and any required consent controls will be updated before those services are enabled. Contact for privacy questions: lianlele168@gmail.com.",
         ],
       },
     ],
@@ -296,7 +296,7 @@ export const guidePages: GuidePage[] = [
       {
         heading: "Guide disclaimer",
         paragraphs: [
-          "Information is provided in good faith from publicly available official material and practical interpretation. No guarantee is made that every strategy will work for every version, difficulty, or board state.",
+          "Information is provided in good faith from publicly available developer material and labeled editorial interpretation. No guarantee is made that every strategy will work for every version, difficulty, or board state.",
           "Primordial Sea, associated artwork, and trademarks belong to their respective owner. This guide does not claim ownership and does not sell access to the game.",
         ],
       },
@@ -313,7 +313,7 @@ export const guidePages: GuidePage[] = [
 export const homeFaqs = [
   { question: "What is Primordial Sea?", answer: "Primordial Sea is a free HTML5 cosmic merge puzzle by float-u-space. Players drop matching planetesimals into a gravity disk and evolve them from Cosmic Dust to a Water Planet." },
   { question: "Can I play Primordial Sea in a browser?", answer: "Yes. The official itch.io release supports browser play on mobile and desktop with no installation." },
-  { question: "What is the full Primordial Sea evolution chain?", answer: "The verified normal chain is Cosmic Dust, Pebble, Rock, Planetesimal, Molten Core, Magma Sphere, Cooled World, Rain World, Ocean World, and Water Planet." },
+  { question: "What is the full Primordial Sea evolution chain?", answer: "The documented normal chain is Cosmic Dust, Pebble, Rock, Planetesimal, Molten Core, Magma Sphere, Cooled World, Rain World, Ocean World, and Water Planet." },
   { question: "How do hidden disks work?", answer: "Stage clears earn items that can be traded for invitations. Invitations open special disks with distinct rules, golden and rainbow bodies, and evolution beyond the Water Planet." },
   { question: "What happens when the fuse expires?", answer: "The held body explodes and the blast can scatter the bodies already stacked on the disk. The fuse becomes shorter as score rises." },
   { question: "Does Primordial Sea have enemy mode?", answer: "Yes. Optional enemy mode has three strengths. Dark stars target the largest planet and must be tapped before they detonate it." },

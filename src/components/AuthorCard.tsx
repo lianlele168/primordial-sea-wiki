@@ -12,10 +12,10 @@ interface AuthorCardProps {
 export default function AuthorCard({
   authorName = 'Hlele',
   role = 'Editor',
-  experience = 'AI-assisted research, human-reviewed',
-  patchVersion = 'Float-U-Space Build v1.12',
+  experience = 'AI-assisted research',
+  patchVersion = 'Version not documented',
   lastUpdated = '',
-  editorialNote = 'All data is compiled from public sources and community wikis. Any figure we could not confirm from a public source is labeled as unverified rather than estimated.',
+  editorialNote = 'AI-assisted material under review. No in-game playtest or human review is claimed.',
 }: AuthorCardProps) {
   return (
     <div className="w-full rounded-2xl bg-[#0a1220]/90 border border-cyan-800/40 p-4 sm:p-5 backdrop-blur-md my-6 shadow-xl font-sans">

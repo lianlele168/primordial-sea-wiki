@@ -9,3 +9,7 @@ playwright-report/
 *.log
 .env*
 !.env.example
+
+# Local review preparations; retain evidence build logs when reviewed
+.drafts/
+!quality/artifacts/*.log

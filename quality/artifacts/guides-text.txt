@@ -1,0 +1,9 @@
+Guide corrections
+
+The earlier guides page included precise countdown timings, undocumented hazard behavior and guaranteed optimal trajectories. We could not support those claims with the evidence available in this review, so that material has been withdrawn.
+
+Current status
+
+This page does not claim a complete walkthrough or calculate documented game rewards. This URL records the correction for returning readers. The supported binary-merge tool is available at /merge-planner/.
+
+Use the official developer page for the current game and published instructions.

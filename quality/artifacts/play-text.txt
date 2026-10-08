@@ -1,0 +1,55 @@
+Home
+/
+Play Primordial Sea Online
+
+OFFICIAL BROWSER GAME
+
+Play Primordial Sea Online
+
+Primordial Sea is free to play in a browser on mobile and desktop. Use the Official game button to open the developer’s release page.
+
+Official game
+How the controls work
+1
+Aim around the disk
+
+Drag to choose a release point anywhere around the gravity disk.
+
+2
+Release the body
+
+Let go to drop the current body into the field before its fuse burns out.
+
+3
+Match identical bodies
+
+When two bodies of the same stage meet, they merge into the next stage.
+
+4
+Respond to pressure
+
+Higher scores shorten the fuse. Enemy mode also adds dark stars that must be tapped down.
+
+If browser play does not load
+
+Open the developer’s itch.io page directly for its current browser build. This guide does not pin a potentially outdated upload or embed a third-party game.
+
+Progress and availability are controlled by the official game, not this guide. This site does not mirror or redistribute the game files.
+
+Frequently asked questions
+Is Primordial Sea free?
+Does Primordial Sea work on mobile?
+Who made Primordial Sea?
+
+SOURCE STATUS
+
+Based on developer documentation
+
+Core rules come from the developer’s published description. Suggestions are editorial inference, not playtest results.
+
+CONTINUE READING
+
+Primordial Sea Beginner Guide
+Primordial Sea Evolution Chain
+Primordial Sea Hidden Disks Guide
+Primordial Sea Enemy Mode Guide

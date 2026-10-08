@@ -1,0 +1,77 @@
+{
+  "path": "/about/",
+  "codeFingerprint": "9512edab1efbf1b2e09ff5553c3113f1f4eb418a179a8814a50f8a56f5f00188",
+  "checkedAt": "2026-10-08T16:05:44.812Z",
+  "testedUrl": "http://127.0.0.1:61071/about/",
+  "httpStatus": 200,
+  "canonical": "https://primordialsea.robloxwikihub.com/about/",
+  "robotsAllowed": true,
+  "indexAllowed": true,
+  "consoleErrors": 0,
+  "errors": [],
+  "links": "passed",
+  "linkScope": "internal only",
+  "brokenLinks": [],
+  "externalLinksNotChecked": [
+    "https://float-u-space.itch.io/primordial-sea"
+  ],
+  "blockedExternalRequests": [],
+  "viewports": [
+    {
+      "width": 390,
+      "overflow": false,
+      "readable": true,
+      "sizes": {
+        "scroll": 390,
+        "client": 390
+      },
+      "screenshot": {
+        "path": "quality/artifacts/about-390.png",
+        "sha256": "74ffd56d4db2e64381e9610bce062fb17c258f5e6ebf54e88ca583856800b0dc"
+      }
+    },
+    {
+      "width": 768,
+      "overflow": false,
+      "readable": true,
+      "sizes": {
+        "scroll": 768,
+        "client": 768
+      },
+      "screenshot": {
+        "path": "quality/artifacts/about-768.png",
+        "sha256": "35da5a74cdbdc4877b12898015babc8c1ac3aeb49a28ba0a15698d7e464ed73c"
+      }
+    },
+    {
+      "width": 1024,
+      "overflow": false,
+      "readable": true,
+      "sizes": {
+        "scroll": 1024,
+        "client": 1024
+      },
+      "screenshot": {
+        "path": "quality/artifacts/about-1024.png",
+        "sha256": "e8408243e8b063620c6747ba33840ddde2bc05e518356a3f5219e5155857c1b5"
+      }
+    },
+    {
+      "width": 1440,
+      "overflow": false,
+      "readable": true,
+      "sizes": {
+        "scroll": 1440,
+        "client": 1440
+      },
+      "screenshot": {
+        "path": "quality/artifacts/about-1440.png",
+        "sha256": "4f232c30803b55645480630d84b8e259e4380145d0b91cecd9fe9d4a3276dfd5"
+      }
+    }
+  ],
+  "interaction": "passed",
+  "contentReview": "supported",
+  "note": "Actual local preview. Four-width metrics plus visual review of home/planner/common article design; external gameplay not claimed.",
+  "interactionEvidence": "quality/artifacts/interaction-results.json: shared search/menu; planner outputs, invalid-input, reset and copy checks for home/planner. Static content needs no artificial loading state."
+}

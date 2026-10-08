@@ -1,0 +1,54 @@
+Home
+/
+Primordial Sea Items Guide
+
+THREE RESCUE EFFECTS
+
+Primordial Sea Items Guide
+
+The official page describes three rescue effects: still the fuse, purify small bodies, or reset the field. It does not provide official English item names or numerical drop rates.
+
+Official game
+Play guide
+
+Practical priorities below are editorial suggestions inferred from the published rules. They are not a tested optimal route.
+
+When each effect matters
+1
+Fuse control
+
+Use it when the board is readable but the shorter late-run fuse is preventing a careful placement.
+
+2
+Small-body purification
+
+Use it when low-tier clutter blocks the movement or pairing of larger worlds.
+
+3
+Field reset
+
+Treat the reset as the broadest recovery option for a board whose structure is no longer salvageable.
+
+Items and invitation progression
+
+The official description connects stage clears, earned items, and invitation trading. Because the release description does not list exact costs, this guide separates documented effects from unknown costs.
+
+No made-up item rarity, cooldown, price, or drop chance is shown on this site.
+
+Frequently asked questions
+How many rescue item effects are confirmed?
+How do you earn items?
+Can items unlock hidden disks?
+
+SOURCE STATUS
+
+Based on developer documentation
+
+Core rules come from the developer’s published description. Suggestions are editorial inference, not playtest results.
+
+CONTINUE READING
+
+Play Primordial Sea Online
+Primordial Sea Beginner Guide
+Primordial Sea Evolution Chain
+Primordial Sea Hidden Disks Guide

@@ -1,0 +1,3 @@
+
+# Preserve evidence bytes for the release gate
+quality/** -text

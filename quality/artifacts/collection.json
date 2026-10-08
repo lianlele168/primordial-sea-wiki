@@ -1,0 +1,253 @@
+{
+  "codeFingerprint": "9512edab1efbf1b2e09ff5553c3113f1f4eb418a179a8814a50f8a56f5f00188",
+  "checkedAt": "2026-10-08T16:06:00.371Z",
+  "routeInventoryArtifact": {
+    "path": "quality/artifacts/routes.json",
+    "sha256": "8f0142a11174691ff47636edfbf6ee28cb8c1ba99b1f70fd57a43a9aa48e5db3"
+  },
+  "sitemapArtifact": {
+    "path": "quality/artifacts/sitemap.xml",
+    "sha256": "0dab2ebc897947ada38825298629429dc8f433a5b8d9b76fafa1d0ddabc72d78"
+  },
+  "pages": [
+    {
+      "path": "/",
+      "title": "Primordial Sea Guide - Evolution & Merge Planner",
+      "renderedArtifact": {
+        "path": "quality/artifacts/home.html",
+        "sha256": "b1b6f3e4b00d3dd13bea752e7f0ca25e551e9d33b3b49620fdf88e817d19b40a"
+      },
+      "technicalArtifact": {
+        "path": "quality/artifacts/home-technical.json",
+        "sha256": "256f44caca35066a46427a2ea3dc56be0b223f29a8cce9117de31a6b82f6669f"
+      },
+      "issues": {
+        "brokenLinks": [],
+        "consoleErrors": 0,
+        "overflow": []
+      }
+    },
+    {
+      "path": "/about/",
+      "title": "About Primordial Sea Guide | Primordial Sea Guide",
+      "renderedArtifact": {
+        "path": "quality/artifacts/about.html",
+        "sha256": "7e33e401347e5a59672be6ab3b3b05badad38b372b2d00aa656e4372aee3f714"
+      },
+      "technicalArtifact": {
+        "path": "quality/artifacts/about-technical.json",
+        "sha256": "81906f80854f7b6dfdf424f63b284a81d33b44d25eea02cb2bb72ead7f734558"
+      },
+      "issues": {
+        "brokenLinks": [],
+        "consoleErrors": 0,
+        "overflow": []
+      }
+    },
+    {
+      "path": "/beginner-guide/",
+      "title": "Primordial Sea Beginner Guide | Primordial Sea Guide",
+      "renderedArtifact": {
+        "path": "quality/artifacts/beginner-guide.html",
+        "sha256": "88965b5c1ca92ad476b6d25e96a9bb6abb27c68383e0c60c27e1896266222931"
+      },
+      "technicalArtifact": {
+        "path": "quality/artifacts/beginner-guide-technical.json",
+        "sha256": "b61e6e67d872b31207e09ad02e96c8d778f2688f58c795582c63b5898fa7b4a8"
+      },
+      "issues": {
+        "brokenLinks": [],
+        "consoleErrors": 0,
+        "overflow": []
+      }
+    },
+    {
+      "path": "/calculator/",
+      "title": "Calculator review — Primordial Sea | Primordial Sea Guide",
+      "renderedArtifact": {
+        "path": "quality/artifacts/calculator.html",
+        "sha256": "0003e995a088de64c861646a424b5495a4257b239d8f33a670e13938f8b49911"
+      },
+      "technicalArtifact": {
+        "path": "quality/artifacts/calculator-technical.json",
+        "sha256": "45772f2f77b7521e22054b07f720a6f9c37a8f4ff076d45eae5953d47b9bbc7e"
+      },
+      "issues": {
+        "brokenLinks": [],
+        "consoleErrors": 0,
+        "overflow": []
+      }
+    },
+    {
+      "path": "/enemy-mode/",
+      "title": "Primordial Sea Enemy Mode Guide | Primordial Sea Guide",
+      "renderedArtifact": {
+        "path": "quality/artifacts/enemy-mode.html",
+        "sha256": "686c19d843db16aac9f4cde6e46b07ae57e61d18598cdb50293abb86638c9238"
+      },
+      "technicalArtifact": {
+        "path": "quality/artifacts/enemy-mode-technical.json",
+        "sha256": "3c592c16a24d75d98cb36e774ae5cafedee6c0534fd7d2c1162b704b43e4a6ea"
+      },
+      "issues": {
+        "brokenLinks": [],
+        "consoleErrors": 0,
+        "overflow": []
+      }
+    },
+    {
+      "path": "/evolution-chain/",
+      "title": "Primordial Sea Evolution Chain | Primordial Sea Guide",
+      "renderedArtifact": {
+        "path": "quality/artifacts/evolution-chain.html",
+        "sha256": "acba2e5bfd51c6405f8ef2716f9ed805932393d0a39f81b2ea193449f88affaa"
+      },
+      "technicalArtifact": {
+        "path": "quality/artifacts/evolution-chain-technical.json",
+        "sha256": "4d0c4d70d42e56d97e5c912d809df4f4f0881173a1524c5620cde8f4dc2d6c1f"
+      },
+      "issues": {
+        "brokenLinks": [],
+        "consoleErrors": 0,
+        "overflow": []
+      }
+    },
+    {
+      "path": "/guides/",
+      "title": "Guide corrections — Primordial Sea | Primordial Sea Guide",
+      "renderedArtifact": {
+        "path": "quality/artifacts/guides.html",
+        "sha256": "b44a3ff3032b179bbcbb38eb36055fd4ebb3be2f3372a9e319bde3054824be18"
+      },
+      "technicalArtifact": {
+        "path": "quality/artifacts/guides-technical.json",
+        "sha256": "028b7a241181a04522541669ae038e0d8eb737374cd93dcb2ec4f37c5ace1281"
+      },
+      "issues": {
+        "brokenLinks": [],
+        "consoleErrors": 0,
+        "overflow": []
+      }
+    },
+    {
+      "path": "/hidden-disks/",
+      "title": "Primordial Sea Hidden Disks Guide | Primordial Sea Guide",
+      "renderedArtifact": {
+        "path": "quality/artifacts/hidden-disks.html",
+        "sha256": "5364d05ee8102ec1831660c1a7c97e4558fdb4285a9ade581eb27b6243160ea5"
+      },
+      "technicalArtifact": {
+        "path": "quality/artifacts/hidden-disks-technical.json",
+        "sha256": "d810ea922df952244f94dbddafaceaa133516cd5a0ba58e987673051a0b9f932"
+      },
+      "issues": {
+        "brokenLinks": [],
+        "consoleErrors": 0,
+        "overflow": []
+      }
+    },
+    {
+      "path": "/items-guide/",
+      "title": "Primordial Sea Items Guide | Primordial Sea Guide",
+      "renderedArtifact": {
+        "path": "quality/artifacts/items-guide.html",
+        "sha256": "4401ff59546b86bb8069fc1a37dc7bc0f9147be226c25eafe82016d888a23eb9"
+      },
+      "technicalArtifact": {
+        "path": "quality/artifacts/items-guide-technical.json",
+        "sha256": "e22b5cfa8e366c2b73ebf7b9327a6dd60535ffc8d3e04864f0681324f6852ab5"
+      },
+      "issues": {
+        "brokenLinks": [],
+        "consoleErrors": 0,
+        "overflow": []
+      }
+    },
+    {
+      "path": "/merge-planner/",
+      "title": "Primordial Sea Merge Planner | Primordial Sea Guide",
+      "renderedArtifact": {
+        "path": "quality/artifacts/merge-planner.html",
+        "sha256": "747d3011b95dd1bba2b1c7dd797f43e925c4e1e6e92eedc8db5a912f65c2d1b3"
+      },
+      "technicalArtifact": {
+        "path": "quality/artifacts/merge-planner-technical.json",
+        "sha256": "403a134bd2efe7d2b2c02c831f8ccd7a396814964f8b3a7c206a9b14fdd38fd9"
+      },
+      "issues": {
+        "brokenLinks": [],
+        "consoleErrors": 0,
+        "overflow": []
+      }
+    },
+    {
+      "path": "/play/",
+      "title": "Play Primordial Sea Online | Primordial Sea Guide",
+      "renderedArtifact": {
+        "path": "quality/artifacts/play.html",
+        "sha256": "f9df4c5f8e34e1e813ffd921745a7aeaf408d90ab276feed54b0f751e65011f5"
+      },
+      "technicalArtifact": {
+        "path": "quality/artifacts/play-technical.json",
+        "sha256": "3dd6a57967f050f0ae9455fdf3a9d4cec6f00307536e15720fc0fe38cce04205"
+      },
+      "issues": {
+        "brokenLinks": [],
+        "consoleErrors": 0,
+        "overflow": []
+      }
+    },
+    {
+      "path": "/privacy-policy/",
+      "title": "Privacy Policy | Primordial Sea Guide",
+      "renderedArtifact": {
+        "path": "quality/artifacts/privacy-policy.html",
+        "sha256": "abbfe8470eb51cb15e2b22d0dbcc75395b843f1e5da345fe0f90f1e325883a29"
+      },
+      "technicalArtifact": {
+        "path": "quality/artifacts/privacy-policy-technical.json",
+        "sha256": "db64b022c48b1f208a626f5082d008f4f1aa931edefbced6f23dd0a49b46f9ee"
+      },
+      "issues": {
+        "brokenLinks": [],
+        "consoleErrors": 0,
+        "overflow": []
+      }
+    },
+    {
+      "path": "/terms/",
+      "title": "Terms of Use | Primordial Sea Guide",
+      "renderedArtifact": {
+        "path": "quality/artifacts/terms.html",
+        "sha256": "9b6105f54e14b82f246ac7dea04a4a8308c8323437a2fc35ecee76e2b805e69c"
+      },
+      "technicalArtifact": {
+        "path": "quality/artifacts/terms-technical.json",
+        "sha256": "20ef2d75b616b62538cbd48b8e36c589541d56825467202c1a4ea643dc1c2cef"
+      },
+      "issues": {
+        "brokenLinks": [],
+        "consoleErrors": 0,
+        "overflow": []
+      }
+    },
+    {
+      "path": "/updates/",
+      "title": "Primordial Sea Updates and Sources | Primordial Sea Guide",
+      "renderedArtifact": {
+        "path": "quality/artifacts/updates.html",
+        "sha256": "cb3198a9b15434dc71fc47c5e615df1357f23e73f7198eab9e3a9c4f5162ad9c"
+      },
+      "technicalArtifact": {
+        "path": "quality/artifacts/updates-technical.json",
+        "sha256": "55b27ec9769f08904adf4cbaf86a6af8b2176d31ccd07b800ee9ecb0e9f136c3"
+      },
+      "issues": {
+        "brokenLinks": [],
+        "consoleErrors": 0,
+        "overflow": []
+      }
+    }
+  ],
+  "status": "pending-content-and-visual-review"
+}

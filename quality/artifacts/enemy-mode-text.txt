@@ -1,0 +1,59 @@
+Home
+/
+Primordial Sea Enemy Mode Guide
+
+DARK-STAR PRESSURE
+
+Primordial Sea Enemy Mode Guide
+
+Enemy mode is optional and has three strength settings. Dark stars hunt your largest planet; tap them down before they detonate it.
+
+Official game
+Play guide
+
+Practical priorities below are editorial suggestions inferred from the published rules. They are not a tested optimal route.
+
+Defense priorities
+1
+Know your largest body
+
+Dark stars target the largest planet, so keep track of its position before pressure begins.
+
+2
+Scan between drops
+
+Use the moment after a stable merge to check the board edge for a threat.
+
+3
+Tap before detonation
+
+The documented counter is direct tapping. Delaying risks losing the body that holds the most merge value.
+
+4
+Lower the strength to learn
+
+Use the three enemy strength settings as a progression ladder rather than adding maximum pressure immediately.
+
+What enemy mode does not change
+
+The developer describes both match-two merges and dark-star attacks. Our suggestion is to watch for threats between placements, without treating a particular sequence as guaranteed to work.
+
+The official page does not publish enemy health, spawn intervals, or strength multipliers. Those values are intentionally absent here.
+
+Frequently asked questions
+Is enemy mode required?
+How many enemy strengths are there?
+What do dark stars attack?
+
+SOURCE STATUS
+
+Based on developer documentation
+
+Core rules come from the developer’s published description. Suggestions are editorial inference, not playtest results.
+
+CONTINUE READING
+
+Play Primordial Sea Online
+Primordial Sea Beginner Guide
+Primordial Sea Evolution Chain
+Primordial Sea Hidden Disks Guide

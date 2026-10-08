@@ -30,7 +30,6 @@ export function videoGameSchema() {
     gamePlatform: "HTML5 browser",
     genre: ["Puzzle", "Casual", "Physics", "Merge"],
     author: { "@type": "Person", name: site.developer },
-    datePublished: site.published,
     offers: {
       "@type": "Offer",
       price: "0",
@@ -73,9 +72,8 @@ export function articleSchema(title: string, description: string, slug: string) 
     description,
     mainEntityOfPage: absoluteUrl(slug),
     image: absoluteUrl("/primordial-sea-cover.png"),
-    datePublished: "",
 
-    author: { "@type": "Organization", name: site.name },
+    author: { "@type": "Person", name: "Hlele" },
     publisher: { "@type": "Organization", name: site.name },
   };
 }

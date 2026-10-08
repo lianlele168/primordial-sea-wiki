@@ -1,0 +1,33 @@
+Home
+/
+About Primordial Sea Guide
+
+INDEPENDENT COMPANION
+
+About Primordial Sea Guide
+
+Primordial Sea Guide is an independent player companion built around documented rules, transparent merge math, and direct links to the official game.
+
+Official game
+Play guide
+What this site adds
+A searchable explanation of the normal ten-stage evolution chain
+An original merge planner that calculates theoretical body requirements
+Focused guides for hidden disks, enemy mode, and rescue items
+A public source log that separates confirmed facts from open questions
+Independence and attribution
+
+Editorial identity: Hlele. Source review: Codex agent. No personal gameplay experience or human playtest is claimed. This site is not affiliated with itch.io or float-u-space. Primordial Sea, its artwork, and its screenshots belong to the developer. The game is loaded from or linked to the official itch.io release.
+
+SOURCE STATUS
+
+Based on developer documentation
+
+Core rules come from the developer’s published description. Suggestions are editorial inference, not playtest results.
+
+CONTINUE READING
+
+Play Primordial Sea Online
+Primordial Sea Beginner Guide
+Primordial Sea Evolution Chain
+Primordial Sea Hidden Disks Guide

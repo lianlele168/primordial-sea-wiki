@@ -1,0 +1,565 @@
+{
+  "checkedAt": "2026-10-08T16:08:51.426Z",
+  "reviewer": "Codex agent / HTML5 repairs",
+  "tests": [
+    {
+      "name": "all-route readability metrics",
+      "status": "passed",
+      "evidence": "14 routes at 390/768/1024/1440px; no horizontal overflow, offscreen body text or body font below 12px. Screenshot review is separately recorded."
+    },
+    {
+      "name": "mobile menu",
+      "status": "passed",
+      "evidence": "Navigation opens at 390px"
+    },
+    {
+      "name": "search empty/results/escape",
+      "status": "passed",
+      "evidence": "No-result feedback, actual matching page, closes by Escape"
+    },
+    {
+      "name": "unknown URL 404",
+      "status": "passed",
+      "evidence": "HTTP 404 instead of home 200"
+    },
+    {
+      "name": "invalid input",
+      "status": "passed",
+      "evidence": "Blank, negative, fractional, >999 and nonnumeric values show errors and hide results"
+    },
+    {
+      "name": "reset",
+      "status": "passed",
+      "evidence": "Inputs and outputs reset to the stated defaults"
+    },
+    {
+      "name": "clipboard failure",
+      "status": "passed",
+      "evidence": "Visible failure and selectable fallback plan, no unhandled rejection"
+    },
+    {
+      "name": "clipboard success",
+      "status": "passed",
+      "evidence": "Copied plan equals displayed model"
+    },
+    {
+      "name": "home planner loads",
+      "status": "passed",
+      "evidence": "Shared client calculator actually loads on home"
+    }
+  ],
+  "readability": [
+    {
+      "route": "/",
+      "width": 390,
+      "overflow": false,
+      "smallText": [],
+      "outside": [],
+      "textNodes": 56
+    },
+    {
+      "route": "/",
+      "width": 768,
+      "overflow": false,
+      "smallText": [],
+      "outside": [],
+      "textNodes": 56
+    },
+    {
+      "route": "/",
+      "width": 1024,
+      "overflow": false,
+      "smallText": [],
+      "outside": [],
+      "textNodes": 56
+    },
+    {
+      "route": "/",
+      "width": 1440,
+      "overflow": false,
+      "smallText": [],
+      "outside": [],
+      "textNodes": 56
+    },
+    {
+      "route": "/about/",
+      "width": 390,
+      "overflow": false,
+      "smallText": [],
+      "outside": [],
+      "textNodes": 13
+    },
+    {
+      "route": "/about/",
+      "width": 768,
+      "overflow": false,
+      "smallText": [],
+      "outside": [],
+      "textNodes": 13
+    },
+    {
+      "route": "/about/",
+      "width": 1024,
+      "overflow": false,
+      "smallText": [],
+      "outside": [],
+      "textNodes": 13
+    },
+    {
+      "route": "/about/",
+      "width": 1440,
+      "overflow": false,
+      "smallText": [],
+      "outside": [],
+      "textNodes": 13
+    },
+    {
+      "route": "/beginner-guide/",
+      "width": 390,
+      "overflow": false,
+      "smallText": [],
+      "outside": [],
+      "textNodes": 28
+    },
+    {
+      "route": "/beginner-guide/",
+      "width": 768,
+      "overflow": false,
+      "smallText": [],
+      "outside": [],
+      "textNodes": 28
+    },
+    {
+      "route": "/beginner-guide/",
+      "width": 1024,
+      "overflow": false,
+      "smallText": [],
+      "outside": [],
+      "textNodes": 28
+    },
+    {
+      "route": "/beginner-guide/",
+      "width": 1440,
+      "overflow": false,
+      "smallText": [],
+      "outside": [],
+      "textNodes": 28
+    },
+    {
+      "route": "/calculator/",
+      "width": 390,
+      "overflow": false,
+      "smallText": [],
+      "outside": [],
+      "textNodes": 5
+    },
+    {
+      "route": "/calculator/",
+      "width": 768,
+      "overflow": false,
+      "smallText": [],
+      "outside": [],
+      "textNodes": 5
+    },
+    {
+      "route": "/calculator/",
+      "width": 1024,
+      "overflow": false,
+      "smallText": [],
+      "outside": [],
+      "textNodes": 5
+    },
+    {
+      "route": "/calculator/",
+      "width": 1440,
+      "overflow": false,
+      "smallText": [],
+      "outside": [],
+      "textNodes": 5
+    },
+    {
+      "route": "/enemy-mode/",
+      "width": 390,
+      "overflow": false,
+      "smallText": [],
+      "outside": [],
+      "textNodes": 27
+    },
+    {
+      "route": "/enemy-mode/",
+      "width": 768,
+      "overflow": false,
+      "smallText": [],
+      "outside": [],
+      "textNodes": 27
+    },
+    {
+      "route": "/enemy-mode/",
+      "width": 1024,
+      "overflow": false,
+      "smallText": [],
+      "outside": [],
+      "textNodes": 27
+    },
+    {
+      "route": "/enemy-mode/",
+      "width": 1440,
+      "overflow": false,
+      "smallText": [],
+      "outside": [],
+      "textNodes": 27
+    },
+    {
+      "route": "/evolution-chain/",
+      "width": 390,
+      "overflow": false,
+      "smallText": [],
+      "outside": [],
+      "textNodes": 28
+    },
+    {
+      "route": "/evolution-chain/",
+      "width": 768,
+      "overflow": false,
+      "smallText": [],
+      "outside": [],
+      "textNodes": 28
+    },
+    {
+      "route": "/evolution-chain/",
+      "width": 1024,
+      "overflow": false,
+      "smallText": [],
+      "outside": [],
+      "textNodes": 28
+    },
+    {
+      "route": "/evolution-chain/",
+      "width": 1440,
+      "overflow": false,
+      "smallText": [],
+      "outside": [],
+      "textNodes": 28
+    },
+    {
+      "route": "/guides/",
+      "width": 390,
+      "overflow": false,
+      "smallText": [],
+      "outside": [],
+      "textNodes": 5
+    },
+    {
+      "route": "/guides/",
+      "width": 768,
+      "overflow": false,
+      "smallText": [],
+      "outside": [],
+      "textNodes": 5
+    },
+    {
+      "route": "/guides/",
+      "width": 1024,
+      "overflow": false,
+      "smallText": [],
+      "outside": [],
+      "textNodes": 5
+    },
+    {
+      "route": "/guides/",
+      "width": 1440,
+      "overflow": false,
+      "smallText": [],
+      "outside": [],
+      "textNodes": 5
+    },
+    {
+      "route": "/hidden-disks/",
+      "width": 390,
+      "overflow": false,
+      "smallText": [],
+      "outside": [],
+      "textNodes": 29
+    },
+    {
+      "route": "/hidden-disks/",
+      "width": 768,
+      "overflow": false,
+      "smallText": [],
+      "outside": [],
+      "textNodes": 29
+    },
+    {
+      "route": "/hidden-disks/",
+      "width": 1024,
+      "overflow": false,
+      "smallText": [],
+      "outside": [],
+      "textNodes": 29
+    },
+    {
+      "route": "/hidden-disks/",
+      "width": 1440,
+      "overflow": false,
+      "smallText": [],
+      "outside": [],
+      "textNodes": 29
+    },
+    {
+      "route": "/items-guide/",
+      "width": 390,
+      "overflow": false,
+      "smallText": [],
+      "outside": [],
+      "textNodes": 24
+    },
+    {
+      "route": "/items-guide/",
+      "width": 768,
+      "overflow": false,
+      "smallText": [],
+      "outside": [],
+      "textNodes": 24
+    },
+    {
+      "route": "/items-guide/",
+      "width": 1024,
+      "overflow": false,
+      "smallText": [],
+      "outside": [],
+      "textNodes": 24
+    },
+    {
+      "route": "/items-guide/",
+      "width": 1440,
+      "overflow": false,
+      "smallText": [],
+      "outside": [],
+      "textNodes": 24
+    },
+    {
+      "route": "/merge-planner/",
+      "width": 390,
+      "overflow": false,
+      "smallText": [],
+      "outside": [],
+      "textNodes": 42
+    },
+    {
+      "route": "/merge-planner/",
+      "width": 768,
+      "overflow": false,
+      "smallText": [],
+      "outside": [],
+      "textNodes": 42
+    },
+    {
+      "route": "/merge-planner/",
+      "width": 1024,
+      "overflow": false,
+      "smallText": [],
+      "outside": [],
+      "textNodes": 42
+    },
+    {
+      "route": "/merge-planner/",
+      "width": 1440,
+      "overflow": false,
+      "smallText": [],
+      "outside": [],
+      "textNodes": 42
+    },
+    {
+      "route": "/play/",
+      "width": 390,
+      "overflow": false,
+      "smallText": [],
+      "outside": [],
+      "textNodes": 26
+    },
+    {
+      "route": "/play/",
+      "width": 768,
+      "overflow": false,
+      "smallText": [],
+      "outside": [],
+      "textNodes": 26
+    },
+    {
+      "route": "/play/",
+      "width": 1024,
+      "overflow": false,
+      "smallText": [],
+      "outside": [],
+      "textNodes": 26
+    },
+    {
+      "route": "/play/",
+      "width": 1440,
+      "overflow": false,
+      "smallText": [],
+      "outside": [],
+      "textNodes": 26
+    },
+    {
+      "route": "/privacy-policy/",
+      "width": 390,
+      "overflow": false,
+      "smallText": [],
+      "outside": [],
+      "textNodes": 11
+    },
+    {
+      "route": "/privacy-policy/",
+      "width": 768,
+      "overflow": false,
+      "smallText": [],
+      "outside": [],
+      "textNodes": 11
+    },
+    {
+      "route": "/privacy-policy/",
+      "width": 1024,
+      "overflow": false,
+      "smallText": [],
+      "outside": [],
+      "textNodes": 11
+    },
+    {
+      "route": "/privacy-policy/",
+      "width": 1440,
+      "overflow": false,
+      "smallText": [],
+      "outside": [],
+      "textNodes": 11
+    },
+    {
+      "route": "/terms/",
+      "width": 390,
+      "overflow": false,
+      "smallText": [],
+      "outside": [],
+      "textNodes": 11
+    },
+    {
+      "route": "/terms/",
+      "width": 768,
+      "overflow": false,
+      "smallText": [],
+      "outside": [],
+      "textNodes": 11
+    },
+    {
+      "route": "/terms/",
+      "width": 1024,
+      "overflow": false,
+      "smallText": [],
+      "outside": [],
+      "textNodes": 11
+    },
+    {
+      "route": "/terms/",
+      "width": 1440,
+      "overflow": false,
+      "smallText": [],
+      "outside": [],
+      "textNodes": 11
+    },
+    {
+      "route": "/updates/",
+      "width": 390,
+      "overflow": false,
+      "smallText": [],
+      "outside": [],
+      "textNodes": 15
+    },
+    {
+      "route": "/updates/",
+      "width": 768,
+      "overflow": false,
+      "smallText": [],
+      "outside": [],
+      "textNodes": 15
+    },
+    {
+      "route": "/updates/",
+      "width": 1024,
+      "overflow": false,
+      "smallText": [],
+      "outside": [],
+      "textNodes": 15
+    },
+    {
+      "route": "/updates/",
+      "width": 1440,
+      "overflow": false,
+      "smallText": [],
+      "outside": [],
+      "textNodes": 15
+    }
+  ],
+  "calibration": [
+    {
+      "input": {
+        "current": 0,
+        "target": 9,
+        "owned": 0
+      },
+      "expected": [
+        512,
+        512,
+        511,
+        9
+      ],
+      "observed": [
+        512,
+        512,
+        511,
+        9
+      ],
+      "locator": ".metric-cell strong (required, remaining, merges, distance)"
+    },
+    {
+      "input": {
+        "current": 4,
+        "target": 7,
+        "owned": 3
+      },
+      "expected": [
+        8,
+        5,
+        7,
+        3
+      ],
+      "observed": [
+        8,
+        5,
+        7,
+        3
+      ],
+      "locator": ".metric-cell strong (required, remaining, merges, distance)"
+    },
+    {
+      "input": {
+        "current": 8,
+        "target": 9,
+        "owned": 999
+      },
+      "expected": [
+        2,
+        0,
+        1,
+        1
+      ],
+      "observed": [
+        2,
+        0,
+        1,
+        1
+      ],
+      "locator": ".metric-cell strong (required, remaining, merges, distance)"
+    }
+  ],
+  "errors": [],
+  "status": "passed"
+}

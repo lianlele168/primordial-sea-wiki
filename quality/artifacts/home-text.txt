@@ -1,0 +1,173 @@
+UNOFFICIAL BROWSER GAME COMPANION
+
+Primordial
+Sea
+
+Build a world from Cosmic Dust. Plan the ten-stage merge chain, protect your largest planet, and enter the hidden disks without guessing at unpublished data.
+
+Open Merge Planner
+Play in browser
+10
+normal evolution stages
+3 + endless
+difficulty stages and free play
+3 strengths
+optional enemy pressure
+HTML5
+mobile and desktop browser play
+
+CHOOSE YOUR NEXT MOVE
+
+Choose what this run needs
+Start with the beginner route
+Evolution Chain
+All 10 documented normal bodies
+Merge Planner
+Calculate theoretical body needs
+Hidden Disks
+Invitations, special rules, next worlds
+Enemy Mode
+Defend your largest planet
+
+NORMAL DISK
+
+From dust to a living water planet
+Read the chain guide
+1
+Cosmic Dust
+Start
+2
+Pebble
+2 x Dust
+3
+Rock
+2 x Pebble
+4
+Planetesimal
+2 x Rock
+5
+Molten Core
+2 x Planetesimal
+6
+Magma Sphere
+2 x Molten Core
+7
+Cooled World
+2 x Magma Sphere
+8
+Rain World
+2 x Cooled World
+9
+Ocean World
+2 x Rain World
+10
+Water Planet
+2 x Ocean World
+
+INTERACTIVE UTILITY
+
+Merge Evolution Planner
+
+Calculate the theoretical minimum for any documented segment of the normal chain.
+
+Current body
+Cosmic Dust
+Pebble
+Rock
+Planetesimal
+Molten Core
+Magma Sphere
+Cooled World
+Rain World
+Ocean World
+Target body
+Cosmic Dust
+Pebble
+Rock
+Planetesimal
+Molten Core
+Magma Sphere
+Cooled World
+Rain World
+Ocean World
+Water Planet
+Current bodies at the starting tierEnter a whole number of bodies from 0 to 999.
+Board pressure
+Open
+Busy
+Critical
+THEORETICAL MINIMUM
+512
+Dust bodies
+512
+still needed
+511
+pair merges
+9
+stages climbed
+Milestones
+Pebble
+2x source
+Rock
+4x source
+Planetesimal
+8x source
+Molten Core
+16x source
+Magma Sphere
+32x source
+Cooled World
+64x source
+Rain World
+128x source
+Ocean World
+256x source
+Water Planet
+512x source
+
+Suggested priority (not a game-tested rule): Prioritize merges that remove two bodies now; avoid adding a new isolated tier to the disk.
+
+Copy merge plan
+
+Math assumes perfect pair merges with no losses. It is not a score, drop, or time prediction.
+
+ACTUAL GAME STATE
+
+See the gravity disk before you play
+Official itch.io page
+Stage 1: normal gravity disk and the visible ten-body chain.
+Hidden disk: special rules, rewards, and golden-world progression.
+
+QUICK ORIENTATION
+
+The rules that shape every run
+
+These points come from the official release page. Strategy pages build on them, and clearly label any practical inference.
+
+Match two
+Identical bodies merge into the next stage.
+Beat the fuse
+Your held piece can explode, and the timer tightens as score rises.
+Preserve the disk
+The blast can scatter a carefully built board.
+Clear for items
+Items lead to invitations and the hidden-disk route.
+
+QUESTIONS PLAYERS ASK
+
+Primordial Sea FAQ
+Check the source log
+What is Primordial Sea?
+Can I play Primordial Sea in a browser?
+What is the full Primordial Sea evolution chain?
+How do hidden disks work?
+What happens when the fuse expires?
+Does Primordial Sea have enemy mode?
+
+SOURCE-FIRST GUIDE
+
+No invented drop rates. No fake recipes.
+
+Facts are checked against the official itch.io release and devlog. Unknown details stay visibly unknown until they can be documented.
+
+View verification log

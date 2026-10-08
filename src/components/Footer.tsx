@@ -25,7 +25,7 @@ export default function Footer() {
             <span className="font-display text-2xl font-bold text-white">Primordial Sea Guide</span>
           </div>
           <p className="max-w-md text-sm leading-7 text-slate-400">
-            An unofficial companion for the HTML5 cosmic merge puzzle by {site.developer}. Built around verified rules, transparent merge math, and an original planning tool.
+            An unofficial companion for the HTML5 cosmic merge puzzle by {site.developer}. Built around documented rules, transparent merge math, and an original planning tool.
           </p>
         </div>
 
@@ -54,7 +54,7 @@ export default function Footer() {
       </div>
 
       <div className="page-shell border-t border-white/10 py-6 text-xs text-slate-500">
-        &copy; {new Date().getFullYear()} Primordial Sea Guide. Independent fan reference. · Content AI-assisted, human-reviewed · Data sources cited on page · Contact: lianlele168@gmail.com
+        &copy; {new Date().getFullYear()} Primordial Sea Guide. Independent fan reference. · AI-assisted content · Data sources cited on page · Contact: lianlele168@gmail.com
       </div>
     </footer>
   );

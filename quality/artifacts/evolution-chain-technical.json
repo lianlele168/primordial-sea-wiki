@@ -1,0 +1,77 @@
+{
+  "path": "/evolution-chain/",
+  "codeFingerprint": "9512edab1efbf1b2e09ff5553c3113f1f4eb418a179a8814a50f8a56f5f00188",
+  "checkedAt": "2026-10-08T16:05:50.074Z",
+  "testedUrl": "http://127.0.0.1:61071/evolution-chain/",
+  "httpStatus": 200,
+  "canonical": "https://primordialsea.robloxwikihub.com/evolution-chain/",
+  "robotsAllowed": true,
+  "indexAllowed": true,
+  "consoleErrors": 0,
+  "errors": [],
+  "links": "passed",
+  "linkScope": "internal only",
+  "brokenLinks": [],
+  "externalLinksNotChecked": [
+    "https://float-u-space.itch.io/primordial-sea"
+  ],
+  "blockedExternalRequests": [],
+  "viewports": [
+    {
+      "width": 390,
+      "overflow": false,
+      "readable": true,
+      "sizes": {
+        "scroll": 390,
+        "client": 390
+      },
+      "screenshot": {
+        "path": "quality/artifacts/evolution-chain-390.png",
+        "sha256": "e9fc5a929d96b1b9f0d66ab907a1d9dd3a7cad705e47df049cdffd9ff220f4bd"
+      }
+    },
+    {
+      "width": 768,
+      "overflow": false,
+      "readable": true,
+      "sizes": {
+        "scroll": 768,
+        "client": 768
+      },
+      "screenshot": {
+        "path": "quality/artifacts/evolution-chain-768.png",
+        "sha256": "2d79b63722f77277a6f8fccfad1e589d5da625893ada1fe1c7e8885909cfcebf"
+      }
+    },
+    {
+      "width": 1024,
+      "overflow": false,
+      "readable": true,
+      "sizes": {
+        "scroll": 1024,
+        "client": 1024
+      },
+      "screenshot": {
+        "path": "quality/artifacts/evolution-chain-1024.png",
+        "sha256": "73d50e80a37263d0f55815acd4738280a16512ef94d7edefbcb7aab73e8baa66"
+      }
+    },
+    {
+      "width": 1440,
+      "overflow": false,
+      "readable": true,
+      "sizes": {
+        "scroll": 1440,
+        "client": 1440
+      },
+      "screenshot": {
+        "path": "quality/artifacts/evolution-chain-1440.png",
+        "sha256": "f98e6fe5283bd19b59431832d2d19836a4a3d6d13e29804e4806edb2dff948b5"
+      }
+    }
+  ],
+  "interaction": "passed",
+  "contentReview": "supported",
+  "note": "Actual local preview. Four-width metrics plus visual review of home/planner/common article design; external gameplay not claimed.",
+  "interactionEvidence": "quality/artifacts/interaction-results.json: shared search/menu; planner outputs, invalid-input, reset and copy checks for home/planner. Static content needs no artificial loading state."
+}

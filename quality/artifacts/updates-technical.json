@@ -1,0 +1,78 @@
+{
+  "path": "/updates/",
+  "codeFingerprint": "9512edab1efbf1b2e09ff5553c3113f1f4eb418a179a8814a50f8a56f5f00188",
+  "checkedAt": "2026-10-08T16:06:00.359Z",
+  "testedUrl": "http://127.0.0.1:61071/updates/",
+  "httpStatus": 200,
+  "canonical": "https://primordialsea.robloxwikihub.com/updates/",
+  "robotsAllowed": true,
+  "indexAllowed": true,
+  "consoleErrors": 0,
+  "errors": [],
+  "links": "passed",
+  "linkScope": "internal only",
+  "brokenLinks": [],
+  "externalLinksNotChecked": [
+    "https://float-u-space.itch.io/primordial-sea",
+    "https://float-u-space.itch.io/primordial-sea/devlog"
+  ],
+  "blockedExternalRequests": [],
+  "viewports": [
+    {
+      "width": 390,
+      "overflow": false,
+      "readable": true,
+      "sizes": {
+        "scroll": 390,
+        "client": 390
+      },
+      "screenshot": {
+        "path": "quality/artifacts/updates-390.png",
+        "sha256": "b7b6f27bdcdb7f0a7756d5f20dbaf6d11983e13dd0307d1a096230cbda595ff9"
+      }
+    },
+    {
+      "width": 768,
+      "overflow": false,
+      "readable": true,
+      "sizes": {
+        "scroll": 768,
+        "client": 768
+      },
+      "screenshot": {
+        "path": "quality/artifacts/updates-768.png",
+        "sha256": "0e5a4470b0adc960d8d09aafd92e28e76ae8f17808cbe54d001356c44a8173d9"
+      }
+    },
+    {
+      "width": 1024,
+      "overflow": false,
+      "readable": true,
+      "sizes": {
+        "scroll": 1024,
+        "client": 1024
+      },
+      "screenshot": {
+        "path": "quality/artifacts/updates-1024.png",
+        "sha256": "fdeda04b42c76aa16cf6a55e4b4885a508e49a546685ff7dedda0092aa3bc10d"
+      }
+    },
+    {
+      "width": 1440,
+      "overflow": false,
+      "readable": true,
+      "sizes": {
+        "scroll": 1440,
+        "client": 1440
+      },
+      "screenshot": {
+        "path": "quality/artifacts/updates-1440.png",
+        "sha256": "3c3e78b8864b0ddb6a43a1c33741b1263cd5b62bf34e05f7ec5bf4fa4889b681"
+      }
+    }
+  ],
+  "interaction": "passed",
+  "contentReview": "supported",
+  "note": "Actual local preview. Four-width metrics plus visual review of home/planner/common article design; external gameplay not claimed.",
+  "interactionEvidence": "quality/artifacts/interaction-results.json: shared search/menu; planner outputs, invalid-input, reset and copy checks for home/planner. Static content needs no artificial loading state."
+}

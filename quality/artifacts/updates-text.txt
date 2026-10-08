@@ -1,0 +1,40 @@
+Home
+/
+Primordial Sea Updates and Sources
+
+VERIFICATION LOG
+
+Primordial Sea Updates and Sources
+
+This page is the audit trail for the guide. Player-facing claims are traced to the official itch.io page, its screenshots, or its devlog.
+
+Official game
+Play guide
+Current release record
+See the official itch.io page for publication history.
+Status listed as Released and platform listed as HTML5
+Official description reviewed by a Codex agent on 8 October 2026; no full playthrough is claimed
+v1.1 devlog: mobile layout fix, app icon, and home-screen naming update
+Source policy
+
+Official descriptions and visible in-game text are treated as facts. Strategy advice is labeled as guidance. Unknown numbers, recipes, names, and probabilities stay unknown until they can be documented.
+
+This source-first policy keeps the site useful without multiplying undocumented text across many pages.
+
+The source check above is a documentation review, not the game’s publication date.
+
+Official itch.io release
+Open the official devlog
+
+SOURCE STATUS
+
+Based on developer documentation
+
+Core rules come from the developer’s published description. Suggestions are editorial inference, not playtest results.
+
+CONTINUE READING
+
+Play Primordial Sea Online
+Primordial Sea Beginner Guide
+Primordial Sea Evolution Chain
+Primordial Sea Hidden Disks Guide

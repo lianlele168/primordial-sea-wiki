@@ -1,0 +1,76 @@
+Home
+/
+Primordial Sea Evolution Chain
+
+ALL 10 NORMAL STAGES
+
+Primordial Sea Evolution Chain
+
+The normal disk has ten named stages. Every step requires two matching bodies, so a Water Planet represents 512 Cosmic Dust bodies in the theoretical no-loss case.
+
+Official game
+Play guide
+
+ORDER
+
+The complete normal evolution ladder
+1
+Cosmic Dust
+Start
+2
+Pebble
+2 x Dust
+3
+Rock
+2 x Pebble
+4
+Planetesimal
+2 x Rock
+5
+Molten Core
+2 x Planetesimal
+6
+Magma Sphere
+2 x Molten Core
+7
+Cooled World
+2 x Magma Sphere
+8
+Rain World
+2 x Cooled World
+9
+Ocean World
+2 x Rain World
+10
+Water Planet
+2 x Ocean World
+Calculate a target
+How the merge math works
+
+Two identical bodies create one body at the next stage. Moving up n stages therefore requires 2 to the power of n source bodies. For example, one Rain World theoretically requires eight Molten Cores.
+
+This is a planning minimum, not a score forecast. Physics, fuse explosions, enemy attacks, and imperfect drops can increase what a real run needs.
+
+What comes after Water Planet
+
+The official page confirms that hidden disks can evolve worlds beyond the Water Planet, including golden and rainbow bodies. The description does not list post-Water-Planet names or recipes.
+
+Use the Merge Planner to calculate any documented section of the normal ten-stage chain.
+
+Frequently asked questions
+How many stages are in the normal Primordial Sea chain?
+What comes after Ocean World?
+Can worlds evolve beyond Water Planet?
+
+SOURCE STATUS
+
+Based on developer documentation
+
+Core rules come from the developer’s published description. Suggestions are editorial inference, not playtest results.
+
+CONTINUE READING
+
+Play Primordial Sea Online
+Primordial Sea Beginner Guide
+Primordial Sea Hidden Disks Guide
+Primordial Sea Enemy Mode Guide

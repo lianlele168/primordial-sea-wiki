@@ -1,0 +1,84 @@
+from pathlib import Path
+from datetime import datetime,timezone
+import json,hashlib,subprocess
+p=Path(__file__).resolve().parents[1];now=datetime.now(timezone.utc).isoformat()
+def read(f):return json.loads((p/f).read_text(encoding='utf8'))
+def ref(f):return {'path':f,'sha256':hashlib.sha256((p/f).read_bytes()).hexdigest()}
+def write(f,t):(p/f).write_text(t,encoding='utf8',newline='\n')
+collection=read('quality/artifacts/collection.json');checks=read('quality/artifacts/interaction-results.json');assert checks['status']=='passed'
+fp=json.loads(subprocess.check_output(['node','scripts/quality-gate.mjs','--fingerprint','.'],cwd=p,text=True))['sha256'];assert collection['codeFingerprint']==fp
+official='https://float-u-space.itch.io/primordial-sea';capture=read('quality/artifacts/sources/capture.json')
+write('quality/artifacts/implementation-notes.md','''# Local implementation observations
+- Current src/data/pages.ts, src/app/[slug]/page.tsx and actual built HTML were reviewed, including FAQ answer text and JSON-LD. No gameplay playthrough or human verification is claimed.
+- EvolutionPlanner is a local binary-merge estimator. Inputs are normal-chain tier indices and an owned-body integer between 0 and 999 (UI limit, not a game limit). The displayed formula excludes losses, score, time, random spawns, higher-tier inventory and hidden disks. Board-pressure advice is explicitly editorial inference.
+- Blank dates and false playable-build verification were removed. Hlele is the user-specified editorial identity; Codex agent is the actual source reviewer. The official page was checked on 8 October 2026 UTC.
+- The current /play route links to the official release without rendering an iframe. No account or personal data form exists. The planner computes in-browser; clipboard requires a click and has a tested failure fallback.
+- /calculator and /guides preserve notices correcting unsupported older content, noindex and outside sitemap. privacy-policy and terms are also noindex. Ten current public guide/tool URLs are in sitemap.
+- Vercel buildCommand is npm run build. No push or live deployment has been performed by this reviewer.
+''')
+write('quality/skill-run.md','''# Skill run — Primordial Sea evidence repair
+Actual reviewer: Codex agent / HTML5 repairs. No human playtest asserted.
+
+| Stage | Skill/resource | Result |
+|---|---|---|
+| Evidence/plan | D:/AI建站/.agents/skills/roblox-site-architect/SKILL.md and research-and-evidence/implementation-and-review references | Read HTML5 branch; verified official released identity; quality/repair-plan.md and claim scope |
+| Intent/content | D:/AI建站/.agents/skills/seo-page-audit/SKILL.md and references/local-integration.md | Read audit method; checked actual rendered page purposes, formulas and unsupported claims; no automated quality score |
+| Implementation | Installed Next generate-static-params.md/generate-metadata.md (same installed version as Little Troubles), workspace design-system/theme-tokens.ts | Preserved design and valid route metadata; noindex policy fixed; small labels increased to >=12px |
+| Model/preview | collect-review-artifacts.mjs; quality/interaction-check.mjs | Actual built HTML, four widths for 14 routes, three output calibrations, input boundaries, copy success/failure and shared navigation |
+
+Skipped Roblox scraper, RPG library, code-page generation and keyword expansion: wrong platform or no need. No external skill script was treated as fact proof. No credentials, cron or outreach changed. This reviewer did not commit or publish.
+''')
+spec={
+'/':('Choose a rule guide or estimate merge requirements','Normal-chain overview with a working local planner and actual developer screenshots.',['identity','merge','chain','fuse','modes','enemy','hidden','items','formula','advice','art','site-scope']),
+'/about/':('Understand site responsibility and scope','Independent Hlele editorial identity, agent-review boundary, source policy and tool limits.',['identity','chain','formula','site-scope','art']),
+'/beginner-guide/':('Understand first-run controls and priorities','Published fuse/merge mechanics separated from explicitly suggested board priorities.',['merge','chain','fuse','modes','items','advice','unknown','art']),
+'/calculator/':('Understand why the old calculator was withdrawn','Correction notice directing returning users toward supported binary-merge planning.',['site-scope']),
+'/enemy-mode/':('Understand optional dark-star pressure','Official targeting, tap response and three strengths, without invented enemy timers or health.',['enemy','merge','advice','unknown','art']),
+'/evolution-chain/':('Look up stage order and ideal body equivalence','Full ten-stage sequence with worked 512-dust and 8-core examples and chain boundary.',['chain','merge','formula','hidden','unknown','art']),
+'/guides/':('Understand corrections to older route advice','Non-indexed correction notice for unsupported precise timings/trajectories.',['site-scope']),
+'/hidden-disks/':('Understand invitation progression','Stage-clear→item→invitation loop with specific missing costs/names clearly identified.',['hidden','items','unknown','art']),
+'/items-guide/':('Choose a rescue effect for the current problem','Three documented effects with labeled editorial use cases, no fabricated names or prices.',['items','fuse','hidden','advice','unknown','art']),
+'/merge-planner/':('Calculate an ideal binary-merge target','Actual interactive calculation, three reproducible cases, valid integer boundary and copy fallback.',['chain','merge','formula','advice','site-scope','art']),
+'/play/':('Reach the official current browser release','Official developer destination plus published drag/release and fuse controls.',['identity','merge','fuse','enemy','site-scope','art']),
+'/privacy-policy/':('Understand local tool and outbound-link behavior','Actual no-account, local-computation and no-current-game-embed behavior.',['site-scope']),
+'/terms/':('Understand reference limits','Independent status and explicit no guarantee across board states/versions.',['identity','site-scope','art']),
+'/updates/':('Inspect source/date and remaining unknowns','True documentation check date, current official identity and devlog title.',['identity','source-review','devlog','unknown','site-scope'])}
+claim_specs=[
+('identity','fact','Primordial Sea is a released, free HTML5 cosmic merge puzzle by float-u-space, playable in mobile/desktop browsers.',['itch'],'Official title, More information Released/HTML5/Author, browser-mobile-desktop feature bullet, Free breadcrumb; no app-store release inferred.'),
+('merge','fact','Drag to aim around the gravity disk; release to drop; two identical bodies merge to the next tier.',['itch'],'Official Drop & merge paragraph contains all three rules.'),
+('chain','number','The ten normal stages are Cosmic Dust, Pebble, Rock, Planetesimal, Molten Core, Magma Sphere, Cooled World, Rain World, Ocean World, Water Planet.',['itch'],'Official ten-stage evolution sequence; Cosmic Dust is named in preceding description and Japanese sequence. Names/case normalized, not new mechanics.'),
+('fuse','fact','The held piece has a fuse; expiry explodes it and scatters the board. Fuse shortens as score increases.',['itch'],'Official The fuse is burning paragraph. No exact duration or threshold asserted.'),
+('modes','number','There are three difficulty stages and endless free play.',['itch'],'Official first feature bullet.'),
+('enemy','number','Optional enemy mode has three strengths; dark stars target the largest planet and tapping them down prevents their detonation attack.',['itch'],'Official Enemy mode feature bullet. Defense priorities are separately labeled editorial advice.'),
+('hidden','fact','Stage clears yield items, items trade for invitations, hidden disks have distinct rules/rewards, golden/rainbow bodies and evolution beyond Water Planet toward a grand finale.',['itch'],'Official Beyond the water planet paragraph plus hidden-disks feature bullet; exact recipes/tiers not inferred.'),
+('items','number','Three described rescue effects still the fuse, purify small bodies or reset the field.',['itch'],'Official Items feature bullet. These are effect descriptions, not asserted official English item names.'),
+('unknown','fact','The cited release description does not provide exact fuse thresholds, invitation costs, complete hidden-tier names, enemy health/intervals or drop probabilities.',['itch'],'Read full current English/Japanese description and features. This is a bounded absence in that source, not a claim that nobody has discovered the values.'),
+('advice','fact','Board pressure and guide priorities are editorial suggestions, not optimal/playtested gameplay instructions.',['implementation','itch'],'Visible labels in planner and beginner/enemy/items pages distinguish suggested tactics from the documented merge/fuse/attack/item rules.'),
+('devlog','fact','Official page links a v1.1 devlog titled around a mobile-layout fix, app icon and home-screen name.',['itch'],'Development log title visible on current official release page. No additional changelog claims made.'),
+('source-review','date','Documentation was reviewed by a Codex agent on 8 October 2026 UTC; that date is not game publication or human playtest.',['capture','implementation'],'Saved capture.json checkedAt and source review performed during this task.'),
+('art','fact','Displayed cover and screenshots are developer gallery images; stage-one, stage-two/enemy and EX1 golden disk views are authentic screenshots, not model-generated game images.',['images'],'All four public PNG files matched exact bytes from current official gallery URLs in image-provenance.json. Visually inspected labels STAGE 1, STAGE 2, STAGE EX1. Copyright remains with developer; no open license asserted.'),
+('site-scope','fact','Independent site under Hlele editorial identity; actual review by Codex agent; calculator is local, no account/current iframe; older calculator and guides are corrections only.',['implementation','interactions'],'Actual source, rendered pages, previous source archive and interaction results. No human gameplay experience, production deployment or indexing claim.'),
+]
+lines=['# Content review — Primordial Sea','Reviewer: Codex agent / HTML5 repairs. Documentation and local-preview review; no full gameplay run or human review asserted.','', '## Evidence and model','Official release supports identity, named chain, pair merge, fuse, optional enemies, rescue effects and invitation progression. Three actual browser calibrations independently compute expected pairs from repeated doubling: 0→9 requires 512 bodies/511 merges; 4→7 needs 8/7 (3 owned leaves 5); 8→9 needs 2/1 (999 owned leaves zero). This is ideal binary merge arithmetic, not a calibrated physics/score/drop/timing simulator.','', '## Visual and functional review','Viewed home at 390 and 1440; loaded planner body at 390/768/1024/1440. Inputs/results wrap and remain readable in both stacked and split layout. Every route was measured at all four widths; no body clipping, horizontal overflow or body font below 12px. Actual tests cover invalid values, reset, clipboard failure/success, search/menu and 404. Official image bytes match developer gallery and screenshots were visually checked.','', '## Per-page review']
+for route,(intent,value,ids) in spec.items():
+ slug='home' if route=='/' else route.strip('/');assert (p/f'quality/artifacts/{slug}-text.txt').read_text(encoding='utf8').strip();lines+=['',f'### {route}',f'Intent: {intent}',f'Value: {value}',f'Claims checked against actual rendered main content/FAQ answers/JSON-LD: {", ".join(ids)}.','Canonical/noindex policy, title promise and shared related-page links reviewed. Repeated navigation does not assert new facts. Game rules match the cited official sections; inferred tactics are labeled and exact unknown figures are absent.']
+lines+=['','## Limitations','No complete game playthrough, current game availability inside an embed, GSC index result, traffic or ranking test was performed. No production verification is claimed. The gate records completeness; independent root review still decides publication.']
+write('quality/content-review.md','\n'.join(lines)+'\n')
+review={'status':'supported','reviewer':'Codex agent / HTML5 repairs','reviewedAt':now,'artifact':ref('quality/content-review.md')}
+def source(id,kind,file,url=official,date=None):return {'id':id,'kind':kind,'url':url,'checkedAt':date or now,'artifact':ref(file)}
+local=read('quality/artifacts/home-technical.json')['testedUrl']
+sources=[source('itch','official','quality/artifacts/sources/itch-current.html',date=capture['checkedAt']),source('capture','observation','quality/artifacts/sources/capture.json'),source('implementation','observation','quality/artifacts/implementation-notes.md',local),source('interactions','observation','quality/artifacts/interaction-results.json',local),source('images','observation','quality/artifacts/sources/image-provenance.json')]
+claims=[dict(id=id,kind=kind,statement=statement,sourceIds=ids,support=support,review=review) for id,kind,statement,ids,support in claim_specs]
+formula=dict(id='formula',kind='formula',statement='For normal-chain tier distance n, required=2^n, pair merges=2^n-1, additional=max(0,2^n-owned).',sourceIds=['itch','interactions'],support='Derived by applying the documented two-identical-bodies rule once per tier; actual browser calibration outputs recorded for three cases, not claimed game-physics validation.',review=review,method='Repeated binary doubling over targetIndex-currentIndex. The single-tier example is two source bodies making one target in one merge; induction doubles the required source bodies for each further tier. Every binary merge lowers body count by one, giving required-1 merges.',units='Whole source-tier bodies and pair-merge operations; tier distance is dimensionless. Owned UI limit 0..999 is a tool input limit, not a game limit.',assumptions='Ideal normal-chain pair merges with no losses; no direct spawning of higher tiers, mixed higher-tier inventory, fuse destruction, enemy losses, score/time/drop forecast or hidden-disk recipes. Board-pressure choice changes advice only.',calibration=[dict(input=c['input'],expected=c['expected'][0],observed=c['observed'][0],locator=c['locator']+'; full four-output arrays in artifact') for c in checks['calibration']],calibrationArtifact=ref('quality/artifacts/interaction-results.json'))
+assert len(formula['calibration'])==3;claims.append(formula)
+pages=[]
+for row in collection['pages']:
+ route=row['path'];intent,value,ids=spec[route];tech=read(row['technicalArtifact']['path']);assert not row['issues']['brokenLinks'] and row['issues']['consoleErrors']==0 and not row['issues']['overflow']
+ for v in tech['viewports']:
+  match=[x for x in checks['readability'] if x['route']==route and x['width']==v['width']];assert len(match)==1 and not match[0]['outside'] and not match[0]['smallText'];v['readable']=True
+ tech['interaction']='passed';tech['interactionEvidence']='quality/artifacts/interaction-results.json: shared search/menu; planner outputs, invalid-input, reset and copy checks for home/planner. Static content needs no artificial loading state.';tech['contentReview']='supported';tech['note']='Actual local preview. Four-width metrics plus visual review of home/planner/common article design; external gameplay not claimed.';write(row['technicalArtifact']['path'],json.dumps(tech,indent=2))
+ page=dict(path=route,status='ready',intent=intent,uniqueValue=value,indexable=route not in ['/privacy-policy/','/terms/','/calculator/','/guides/'],claimIds=ids,claimCoverage='complete',crossPageConsistency='passed',review=review,renderedArtifact=ref(row['renderedArtifact']['path']),technicalArtifact=ref(row['technicalArtifact']['path']))
+ if route in ['/','/merge-planner/']:page['tool']=dict(type='user-estimator',formulaClaimId='formula',limitations=formula['assumptions'],validation='Three actual browser cases compare all four metric outputs; five invalid inputs, reset and clipboard success/failure tested. Model arithmetic only, not physics performance.')
+ pages.append(page)
+m=dict(schemaVersion=1,codeFingerprint=fp,site=dict(baseUrl='https://primordialsea.robloxwikihub.com',officialUrl=official,platform='html5',releaseStatus='released',identitySourceId='itch',identityReview=review),sources=sources,claims=claims,pages=pages,routeInventoryArtifact=ref('quality/artifacts/routes.json'),sitemapPaths=[x['path'] for x in pages if x['indexable']],sitemapArtifact=ref('quality/artifacts/sitemap.xml'),buildStatus='passed',buildArtifact=ref('quality/artifacts/build.log'),skillRunArtifact=ref('quality/skill-run.md'),unresolved=[])
+write('quality/review.json',json.dumps(m,ensure_ascii=False,indent=2)+'\n');print('review saved',len(pages),'pages',len(claims),'claims')

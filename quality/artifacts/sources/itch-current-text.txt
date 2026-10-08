@@ -1,0 +1,94 @@
+Primordial Sea by float-u-space
+Follow float-u-space
+Follow
+Following float-u-space
+Following
+Add To Collection
+Collection
+Comments
+Devlog
+Related games
+Related
+Primordial Sea
+Restore game
+Run game
+Dust becomes pebbles. Pebbles become rock. Rock becomes a world.
+Primordial Sea is a cosmic merge puzzle. Drop planetesimals into a gravity disk, merge matching bodies, and climb the chain of creation — from cosmic dust all the way to a living water planet.
+☄ Drop & merge
+Drag to aim anywhere around the disk, release to drop. Two identical bodies merge into the next one up. Ten stages of evolution await: dust → pebble → rock → planetesimal → molten core → magma sphere → cooled world → rain world → ocean world → water planet.
+⏱ The fuse is burning
+Hesitate and your piece explodes — and the blast scatters everything you have stacked. The fuse gets shorter as your score climbs. Think fast, aim well.
+✦ Beyond the water planet
+Clear stages to earn items. Trade items for invitations. Unlock hidden disks where golden and rainbow bodies fall, and where worlds evolve past the water planet into something no ordinary disk can create.
+• 3 difficulty stages + endless free play
+• Enemy mode (optional, 3 strengths): dark stars hunt your largest planet — tap them down before they detonate it
+• Hidden invitation-only disks with their own rules and rewards, ending in a grand finale
+• Items to rescue a doomed board: still the fuse, purify small bodies, or reset the field
+• Daily rewards, continues, and a score that carries between runs
+• Plays in your browser. Mobile and desktop. No install.
+――――――――――
+日本語 / Japanese
+ちりが小石になり、小石が岩になり、岩が世界になる。
+「原始の海」は、宇宙をテーマにした合体パズルです。重力の円盤に微惑星を落とし、おなじ星どうしを合体させて、宇宙塵から「水の惑星」までの進化をたどります。
+☄ ねらって、落として、合体させる
+円盤のまわりの好きな位置から落とせます。おなじ星がぶつかると、ひとつ上の星に。
+宇宙塵 → 小石 → 岩 → 微惑星 → 原始核 → マグマ球 → 冷えた星 → 雨の星 → 海の星 → 水の惑星
+⏱ 導火線が燃えている
+まよっていると手持ちの星が爆発し、積み上げた星々を吹き飛ばします。スコアが伸びるほど導火線は短くなる。速く、正確に。
+✦ 水の惑星の、その先へ
+ステージをクリアするとアイテムが手に入り、アイテムを捧げると招待状に変わります。招待状がひらく「かくされた円盤」では、きんいろの星とにじの星が舞い、通常の円盤では決して生まれない星が待っています。
+• 難易度3ステージ＋エンドレスのフリープレイ
+• 敵モード（任意・強さ3段階）：わざわいの星が いちばん大きな惑星をねらう。爆発するまえに たたき落とせ
+• 招待制のかくされた円盤（独自ルールと豪華な報酬）、最果てには グランドフィナーレ
+• 詰んだ盤面を救うアイテム3種（導火線を止める／小さな星を消す／盤面をリセット）
+• デイリーボーナス・コンティニュー・記録は自動セーブ
+• ブラウザですぐ遊べる。スマホ・PC対応。インストール不要
+More information
+Status
+Released
+Platforms
+HTML5
+Author
+float-u-space
+Genre
+Puzzle
+Tags
+Arcade
+,
+Casual
+,
+html5
+,
+japanese
+,
+merge
+,
+mobile-friendly
+,
+Physics
+,
+Singleplayer
+,
+Space
+AI Disclosure
+AI Assisted
+,
+Code
+Development log
+v1.1 — mobile layout fix, app icon, and a name for the home screen
+47 days ago
+Leave a comment
+Log in with itch.io
+to leave a comment.
+itch.io
+·
+View all by float-u-space
+·
+Report
+·
+Embed
+Games
+›
+Puzzle
+›
+Free

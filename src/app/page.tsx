@@ -27,7 +27,7 @@ export const metadata: Metadata = {
 };
 
 const intentCards = [
-  { href: "/evolution-chain/", title: "Evolution Chain", detail: "All 10 verified normal bodies", icon: Layers3, tone: "tide" },
+  { href: "/evolution-chain/", title: "Evolution Chain", detail: "All 10 documented normal bodies", icon: Layers3, tone: "tide" },
   { href: "/merge-planner/", title: "Merge Planner", detail: "Calculate theoretical body needs", icon: Target, tone: "solar" },
   { href: "/hidden-disks/", title: "Hidden Disks", detail: "Invitations, special rules, next worlds", icon: Sparkles, tone: "flare" },
   { href: "/enemy-mode/", title: "Enemy Mode", detail: "Defend your largest planet", icon: Bomb, tone: "tide" },
@@ -186,7 +186,7 @@ export default function HomePage() {
             <div>
               <p className="eyebrow">Source-first guide</p>
               <h2 className="mt-2 font-display text-3xl font-bold text-white">No invented drop rates. No fake recipes.</h2>
-              <p className="mt-3 max-w-2xl text-sm leading-6 text-slate-400">Facts are checked against the official itch.io release and devlog. Unknown details stay visibly unknown until they can be verified.</p>
+              <p className="mt-3 max-w-2xl text-sm leading-6 text-slate-400">Facts are checked against the official itch.io release and devlog. Unknown details stay visibly unknown until they can be documented.</p>
             </div>
             <Link href="/updates/" className="btn-secondary">View verification log <ArrowRight className="h-4 w-4" /></Link>
           </div>

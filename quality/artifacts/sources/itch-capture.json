@@ -1,0 +1,14 @@
+{
+  "project": "primordial-sea-wiki",
+  "id": "itch",
+  "url": "https://float-u-space.itch.io/primordial-sea",
+  "checkedAt": "2026-10-08T15:23:20.636Z",
+  "review": "pending",
+  "status": 200,
+  "finalUrl": "https://float-u-space.itch.io/primordial-sea",
+  "contentType": "text/html",
+  "artifact": {
+    "path": "quality/artifacts/sources/itch.html",
+    "sha256": "034607572ef8aa41ed81b73f97fad134200c2bd83a9c3e221b7401036d19ba8c"
+  }
+}

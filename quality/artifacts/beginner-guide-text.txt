@@ -1,0 +1,61 @@
+Home
+/
+Primordial Sea Beginner Guide
+
+FIRST-RUN ROUTE
+
+Primordial Sea Beginner Guide
+
+Your first objective is not to rush the Water Planet. Learn to make predictable pairs while preserving enough room for the larger worlds near the end of the chain.
+
+Official game
+Play guide
+
+Practical priorities below are editorial suggestions inferred from the published rules. They are not a tested optimal route.
+
+A clean first-run loop
+1
+Read the next body first
+
+Identify the incoming body before you drag. The fuse punishes deciding after you have already started aiming.
+
+2
+Build nearby pairs
+
+Try to place matching small bodies within reach of each other instead of scattering every tier across the disk.
+
+3
+Protect open lanes
+
+Larger worlds need room to settle. Avoid sealing every edge with unrelated small bodies.
+
+4
+Use rescue items for recovery
+
+Save fuse control, small-body cleanup, and field reset effects for boards that are genuinely failing.
+
+What changes as score rises
+
+The official description says the fuse gets shorter as your score climbs. That turns late runs into a recognition test: know where each tier belongs before the body appears.
+
+The official description does not list exact fuse times or score thresholds. Any precise timer table would be guesswork, so this guide does not present one.
+
+Strategy on this page is practical guidance inferred from the documented merge and fuse rules, not a developer-authored solution.
+
+Frequently asked questions
+What is the goal in Primordial Sea?
+Why did my held piece explode?
+Is there an endless mode?
+
+SOURCE STATUS
+
+Based on developer documentation
+
+Core rules come from the developer’s published description. Suggestions are editorial inference, not playtest results.
+
+CONTINUE READING
+
+Play Primordial Sea Online
+Primordial Sea Evolution Chain
+Primordial Sea Hidden Disks Guide
+Primordial Sea Enemy Mode Guide

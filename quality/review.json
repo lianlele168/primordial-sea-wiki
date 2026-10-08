@@ -1,0 +1,892 @@
+{
+  "schemaVersion": 1,
+  "codeFingerprint": "9512edab1efbf1b2e09ff5553c3113f1f4eb418a179a8814a50f8a56f5f00188",
+  "site": {
+    "baseUrl": "https://primordialsea.robloxwikihub.com",
+    "officialUrl": "https://float-u-space.itch.io/primordial-sea",
+    "platform": "html5",
+    "releaseStatus": "released",
+    "identitySourceId": "itch",
+    "identityReview": {
+      "status": "supported",
+      "reviewer": "Codex agent / HTML5 repairs",
+      "reviewedAt": "2026-10-08T16:11:24.458777+00:00",
+      "artifact": {
+        "path": "quality/content-review.md",
+        "sha256": "63f7f970fcfe64e9bd366799a3baf8eca717e716f18cc747bc49043ab5b69e28"
+      }
+    }
+  },
+  "sources": [
+    {
+      "id": "itch",
+      "kind": "official",
+      "url": "https://float-u-space.itch.io/primordial-sea",
+      "checkedAt": "2026-10-08T15:57:17.792412+00:00",
+      "artifact": {
+        "path": "quality/artifacts/sources/itch-current.html",
+        "sha256": "75ca34fb91855bf7556a60358e323be2ca06749fbf363efeebd02bc5ca97407a"
+      }
+    },
+    {
+      "id": "capture",
+      "kind": "observation",
+      "url": "https://float-u-space.itch.io/primordial-sea",
+      "checkedAt": "2026-10-08T16:11:24.458777+00:00",
+      "artifact": {
+        "path": "quality/artifacts/sources/capture.json",
+        "sha256": "ac0c1c40b2ced7671bf94e52082465db6fc4c20d9f162b440748ba6047065043"
+      }
+    },
+    {
+      "id": "implementation",
+      "kind": "observation",
+      "url": "http://127.0.0.1:61071/",
+      "checkedAt": "2026-10-08T16:11:24.458777+00:00",
+      "artifact": {
+        "path": "quality/artifacts/implementation-notes.md",
+        "sha256": "f19ea0a6ee85f00b9f46134da37d32a6a4da5ca496271947dfa0b9d9edeeed4d"
+      }
+    },
+    {
+      "id": "interactions",
+      "kind": "observation",
+      "url": "http://127.0.0.1:61071/",
+      "checkedAt": "2026-10-08T16:11:24.458777+00:00",
+      "artifact": {
+        "path": "quality/artifacts/interaction-results.json",
+        "sha256": "a1d234554138db24e96340a868982e584b3c231981fbb53db6d6c8b4915c828a"
+      }
+    },
+    {
+      "id": "images",
+      "kind": "observation",
+      "url": "https://float-u-space.itch.io/primordial-sea",
+      "checkedAt": "2026-10-08T16:11:24.458777+00:00",
+      "artifact": {
+        "path": "quality/artifacts/sources/image-provenance.json",
+        "sha256": "3917765b6c31cb9a2e4baf514f180c24857b922dd77f32d93221fd13c600ab32"
+      }
+    }
+  ],
+  "claims": [
+    {
+      "id": "identity",
+      "kind": "fact",
+      "statement": "Primordial Sea is a released, free HTML5 cosmic merge puzzle by float-u-space, playable in mobile/desktop browsers.",
+      "sourceIds": [
+        "itch"
+      ],
+      "support": "Official title, More information Released/HTML5/Author, browser-mobile-desktop feature bullet, Free breadcrumb; no app-store release inferred.",
+      "review": {
+        "status": "supported",
+        "reviewer": "Codex agent / HTML5 repairs",
+        "reviewedAt": "2026-10-08T16:11:24.458777+00:00",
+        "artifact": {
+          "path": "quality/content-review.md",
+          "sha256": "63f7f970fcfe64e9bd366799a3baf8eca717e716f18cc747bc49043ab5b69e28"
+        }
+      }
+    },
+    {
+      "id": "merge",
+      "kind": "fact",
+      "statement": "Drag to aim around the gravity disk; release to drop; two identical bodies merge to the next tier.",
+      "sourceIds": [
+        "itch"
+      ],
+      "support": "Official Drop & merge paragraph contains all three rules.",
+      "review": {
+        "status": "supported",
+        "reviewer": "Codex agent / HTML5 repairs",
+        "reviewedAt": "2026-10-08T16:11:24.458777+00:00",
+        "artifact": {
+          "path": "quality/content-review.md",
+          "sha256": "63f7f970fcfe64e9bd366799a3baf8eca717e716f18cc747bc49043ab5b69e28"
+        }
+      }
+    },
+    {
+      "id": "chain",
+      "kind": "number",
+      "statement": "The ten normal stages are Cosmic Dust, Pebble, Rock, Planetesimal, Molten Core, Magma Sphere, Cooled World, Rain World, Ocean World, Water Planet.",
+      "sourceIds": [
+        "itch"
+      ],
+      "support": "Official ten-stage evolution sequence; Cosmic Dust is named in preceding description and Japanese sequence. Names/case normalized, not new mechanics.",
+      "review": {
+        "status": "supported",
+        "reviewer": "Codex agent / HTML5 repairs",
+        "reviewedAt": "2026-10-08T16:11:24.458777+00:00",
+        "artifact": {
+          "path": "quality/content-review.md",
+          "sha256": "63f7f970fcfe64e9bd366799a3baf8eca717e716f18cc747bc49043ab5b69e28"
+        }
+      }
+    },
+    {
+      "id": "fuse",
+      "kind": "fact",
+      "statement": "The held piece has a fuse; expiry explodes it and scatters the board. Fuse shortens as score increases.",
+      "sourceIds": [
+        "itch"
+      ],
+      "support": "Official The fuse is burning paragraph. No exact duration or threshold asserted.",
+      "review": {
+        "status": "supported",
+        "reviewer": "Codex agent / HTML5 repairs",
+        "reviewedAt": "2026-10-08T16:11:24.458777+00:00",
+        "artifact": {
+          "path": "quality/content-review.md",
+          "sha256": "63f7f970fcfe64e9bd366799a3baf8eca717e716f18cc747bc49043ab5b69e28"
+        }
+      }
+    },
+    {
+      "id": "modes",
+      "kind": "number",
+      "statement": "There are three difficulty stages and endless free play.",
+      "sourceIds": [
+        "itch"
+      ],
+      "support": "Official first feature bullet.",
+      "review": {
+        "status": "supported",
+        "reviewer": "Codex agent / HTML5 repairs",
+        "reviewedAt": "2026-10-08T16:11:24.458777+00:00",
+        "artifact": {
+          "path": "quality/content-review.md",
+          "sha256": "63f7f970fcfe64e9bd366799a3baf8eca717e716f18cc747bc49043ab5b69e28"
+        }
+      }
+    },
+    {
+      "id": "enemy",
+      "kind": "number",
+      "statement": "Optional enemy mode has three strengths; dark stars target the largest planet and tapping them down prevents their detonation attack.",
+      "sourceIds": [
+        "itch"
+      ],
+      "support": "Official Enemy mode feature bullet. Defense priorities are separately labeled editorial advice.",
+      "review": {
+        "status": "supported",
+        "reviewer": "Codex agent / HTML5 repairs",
+        "reviewedAt": "2026-10-08T16:11:24.458777+00:00",
+        "artifact": {
+          "path": "quality/content-review.md",
+          "sha256": "63f7f970fcfe64e9bd366799a3baf8eca717e716f18cc747bc49043ab5b69e28"
+        }
+      }
+    },
+    {
+      "id": "hidden",
+      "kind": "fact",
+      "statement": "Stage clears yield items, items trade for invitations, hidden disks have distinct rules/rewards, golden/rainbow bodies and evolution beyond Water Planet toward a grand finale.",
+      "sourceIds": [
+        "itch"
+      ],
+      "support": "Official Beyond the water planet paragraph plus hidden-disks feature bullet; exact recipes/tiers not inferred.",
+      "review": {
+        "status": "supported",
+        "reviewer": "Codex agent / HTML5 repairs",
+        "reviewedAt": "2026-10-08T16:11:24.458777+00:00",
+        "artifact": {
+          "path": "quality/content-review.md",
+          "sha256": "63f7f970fcfe64e9bd366799a3baf8eca717e716f18cc747bc49043ab5b69e28"
+        }
+      }
+    },
+    {
+      "id": "items",
+      "kind": "number",
+      "statement": "Three described rescue effects still the fuse, purify small bodies or reset the field.",
+      "sourceIds": [
+        "itch"
+      ],
+      "support": "Official Items feature bullet. These are effect descriptions, not asserted official English item names.",
+      "review": {
+        "status": "supported",
+        "reviewer": "Codex agent / HTML5 repairs",
+        "reviewedAt": "2026-10-08T16:11:24.458777+00:00",
+        "artifact": {
+          "path": "quality/content-review.md",
+          "sha256": "63f7f970fcfe64e9bd366799a3baf8eca717e716f18cc747bc49043ab5b69e28"
+        }
+      }
+    },
+    {
+      "id": "unknown",
+      "kind": "fact",
+      "statement": "The cited release description does not provide exact fuse thresholds, invitation costs, complete hidden-tier names, enemy health/intervals or drop probabilities.",
+      "sourceIds": [
+        "itch"
+      ],
+      "support": "Read full current English/Japanese description and features. This is a bounded absence in that source, not a claim that nobody has discovered the values.",
+      "review": {
+        "status": "supported",
+        "reviewer": "Codex agent / HTML5 repairs",
+        "reviewedAt": "2026-10-08T16:11:24.458777+00:00",
+        "artifact": {
+          "path": "quality/content-review.md",
+          "sha256": "63f7f970fcfe64e9bd366799a3baf8eca717e716f18cc747bc49043ab5b69e28"
+        }
+      }
+    },
+    {
+      "id": "advice",
+      "kind": "fact",
+      "statement": "Board pressure and guide priorities are editorial suggestions, not optimal/playtested gameplay instructions.",
+      "sourceIds": [
+        "implementation",
+        "itch"
+      ],
+      "support": "Visible labels in planner and beginner/enemy/items pages distinguish suggested tactics from the documented merge/fuse/attack/item rules.",
+      "review": {
+        "status": "supported",
+        "reviewer": "Codex agent / HTML5 repairs",
+        "reviewedAt": "2026-10-08T16:11:24.458777+00:00",
+        "artifact": {
+          "path": "quality/content-review.md",
+          "sha256": "63f7f970fcfe64e9bd366799a3baf8eca717e716f18cc747bc49043ab5b69e28"
+        }
+      }
+    },
+    {
+      "id": "devlog",
+      "kind": "fact",
+      "statement": "Official page links a v1.1 devlog titled around a mobile-layout fix, app icon and home-screen name.",
+      "sourceIds": [
+        "itch"
+      ],
+      "support": "Development log title visible on current official release page. No additional changelog claims made.",
+      "review": {
+        "status": "supported",
+        "reviewer": "Codex agent / HTML5 repairs",
+        "reviewedAt": "2026-10-08T16:11:24.458777+00:00",
+        "artifact": {
+          "path": "quality/content-review.md",
+          "sha256": "63f7f970fcfe64e9bd366799a3baf8eca717e716f18cc747bc49043ab5b69e28"
+        }
+      }
+    },
+    {
+      "id": "source-review",
+      "kind": "date",
+      "statement": "Documentation was reviewed by a Codex agent on 8 October 2026 UTC; that date is not game publication or human playtest.",
+      "sourceIds": [
+        "capture",
+        "implementation"
+      ],
+      "support": "Saved capture.json checkedAt and source review performed during this task.",
+      "review": {
+        "status": "supported",
+        "reviewer": "Codex agent / HTML5 repairs",
+        "reviewedAt": "2026-10-08T16:11:24.458777+00:00",
+        "artifact": {
+          "path": "quality/content-review.md",
+          "sha256": "63f7f970fcfe64e9bd366799a3baf8eca717e716f18cc747bc49043ab5b69e28"
+        }
+      }
+    },
+    {
+      "id": "art",
+      "kind": "fact",
+      "statement": "Displayed cover and screenshots are developer gallery images; stage-one, stage-two/enemy and EX1 golden disk views are authentic screenshots, not model-generated game images.",
+      "sourceIds": [
+        "images"
+      ],
+      "support": "All four public PNG files matched exact bytes from current official gallery URLs in image-provenance.json. Visually inspected labels STAGE 1, STAGE 2, STAGE EX1. Copyright remains with developer; no open license asserted.",
+      "review": {
+        "status": "supported",
+        "reviewer": "Codex agent / HTML5 repairs",
+        "reviewedAt": "2026-10-08T16:11:24.458777+00:00",
+        "artifact": {
+          "path": "quality/content-review.md",
+          "sha256": "63f7f970fcfe64e9bd366799a3baf8eca717e716f18cc747bc49043ab5b69e28"
+        }
+      }
+    },
+    {
+      "id": "site-scope",
+      "kind": "fact",
+      "statement": "Independent site under Hlele editorial identity; actual review by Codex agent; calculator is local, no account/current iframe; older calculator and guides are corrections only.",
+      "sourceIds": [
+        "implementation",
+        "interactions"
+      ],
+      "support": "Actual source, rendered pages, previous source archive and interaction results. No human gameplay experience, production deployment or indexing claim.",
+      "review": {
+        "status": "supported",
+        "reviewer": "Codex agent / HTML5 repairs",
+        "reviewedAt": "2026-10-08T16:11:24.458777+00:00",
+        "artifact": {
+          "path": "quality/content-review.md",
+          "sha256": "63f7f970fcfe64e9bd366799a3baf8eca717e716f18cc747bc49043ab5b69e28"
+        }
+      }
+    },
+    {
+      "id": "formula",
+      "kind": "formula",
+      "statement": "For normal-chain tier distance n, required=2^n, pair merges=2^n-1, additional=max(0,2^n-owned).",
+      "sourceIds": [
+        "itch",
+        "interactions"
+      ],
+      "support": "Derived by applying the documented two-identical-bodies rule once per tier; actual browser calibration outputs recorded for three cases, not claimed game-physics validation.",
+      "review": {
+        "status": "supported",
+        "reviewer": "Codex agent / HTML5 repairs",
+        "reviewedAt": "2026-10-08T16:11:24.458777+00:00",
+        "artifact": {
+          "path": "quality/content-review.md",
+          "sha256": "63f7f970fcfe64e9bd366799a3baf8eca717e716f18cc747bc49043ab5b69e28"
+        }
+      },
+      "method": "Repeated binary doubling over targetIndex-currentIndex. The single-tier example is two source bodies making one target in one merge; induction doubles the required source bodies for each further tier. Every binary merge lowers body count by one, giving required-1 merges.",
+      "units": "Whole source-tier bodies and pair-merge operations; tier distance is dimensionless. Owned UI limit 0..999 is a tool input limit, not a game limit.",
+      "assumptions": "Ideal normal-chain pair merges with no losses; no direct spawning of higher tiers, mixed higher-tier inventory, fuse destruction, enemy losses, score/time/drop forecast or hidden-disk recipes. Board-pressure choice changes advice only.",
+      "calibration": [
+        {
+          "input": {
+            "current": 0,
+            "target": 9,
+            "owned": 0
+          },
+          "expected": 512,
+          "observed": 512,
+          "locator": ".metric-cell strong (required, remaining, merges, distance); full four-output arrays in artifact"
+        },
+        {
+          "input": {
+            "current": 4,
+            "target": 7,
+            "owned": 3
+          },
+          "expected": 8,
+          "observed": 8,
+          "locator": ".metric-cell strong (required, remaining, merges, distance); full four-output arrays in artifact"
+        },
+        {
+          "input": {
+            "current": 8,
+            "target": 9,
+            "owned": 999
+          },
+          "expected": 2,
+          "observed": 2,
+          "locator": ".metric-cell strong (required, remaining, merges, distance); full four-output arrays in artifact"
+        }
+      ],
+      "calibrationArtifact": {
+        "path": "quality/artifacts/interaction-results.json",
+        "sha256": "a1d234554138db24e96340a868982e584b3c231981fbb53db6d6c8b4915c828a"
+      }
+    }
+  ],
+  "pages": [
+    {
+      "path": "/",
+      "status": "ready",
+      "intent": "Choose a rule guide or estimate merge requirements",
+      "uniqueValue": "Normal-chain overview with a working local planner and actual developer screenshots.",
+      "indexable": true,
+      "claimIds": [
+        "identity",
+        "merge",
+        "chain",
+        "fuse",
+        "modes",
+        "enemy",
+        "hidden",
+        "items",
+        "formula",
+        "advice",
+        "art",
+        "site-scope"
+      ],
+      "claimCoverage": "complete",
+      "crossPageConsistency": "passed",
+      "review": {
+        "status": "supported",
+        "reviewer": "Codex agent / HTML5 repairs",
+        "reviewedAt": "2026-10-08T16:11:24.458777+00:00",
+        "artifact": {
+          "path": "quality/content-review.md",
+          "sha256": "63f7f970fcfe64e9bd366799a3baf8eca717e716f18cc747bc49043ab5b69e28"
+        }
+      },
+      "renderedArtifact": {
+        "path": "quality/artifacts/home.html",
+        "sha256": "b1b6f3e4b00d3dd13bea752e7f0ca25e551e9d33b3b49620fdf88e817d19b40a"
+      },
+      "technicalArtifact": {
+        "path": "quality/artifacts/home-technical.json",
+        "sha256": "44f2d271ce2d2c56ed3b7b688a66352ba7838a71adcbe2a0a13a7fc71528432a"
+      },
+      "tool": {
+        "type": "user-estimator",
+        "formulaClaimId": "formula",
+        "limitations": "Ideal normal-chain pair merges with no losses; no direct spawning of higher tiers, mixed higher-tier inventory, fuse destruction, enemy losses, score/time/drop forecast or hidden-disk recipes. Board-pressure choice changes advice only.",
+        "validation": "Three actual browser cases compare all four metric outputs; five invalid inputs, reset and clipboard success/failure tested. Model arithmetic only, not physics performance."
+      }
+    },
+    {
+      "path": "/about/",
+      "status": "ready",
+      "intent": "Understand site responsibility and scope",
+      "uniqueValue": "Independent Hlele editorial identity, agent-review boundary, source policy and tool limits.",
+      "indexable": true,
+      "claimIds": [
+        "identity",
+        "chain",
+        "formula",
+        "site-scope",
+        "art"
+      ],
+      "claimCoverage": "complete",
+      "crossPageConsistency": "passed",
+      "review": {
+        "status": "supported",
+        "reviewer": "Codex agent / HTML5 repairs",
+        "reviewedAt": "2026-10-08T16:11:24.458777+00:00",
+        "artifact": {
+          "path": "quality/content-review.md",
+          "sha256": "63f7f970fcfe64e9bd366799a3baf8eca717e716f18cc747bc49043ab5b69e28"
+        }
+      },
+      "renderedArtifact": {
+        "path": "quality/artifacts/about.html",
+        "sha256": "7e33e401347e5a59672be6ab3b3b05badad38b372b2d00aa656e4372aee3f714"
+      },
+      "technicalArtifact": {
+        "path": "quality/artifacts/about-technical.json",
+        "sha256": "c17abff0abb237d40a22bfd904cbc90b80f008670451d06ec1badefe6293e972"
+      }
+    },
+    {
+      "path": "/beginner-guide/",
+      "status": "ready",
+      "intent": "Understand first-run controls and priorities",
+      "uniqueValue": "Published fuse/merge mechanics separated from explicitly suggested board priorities.",
+      "indexable": true,
+      "claimIds": [
+        "merge",
+        "chain",
+        "fuse",
+        "modes",
+        "items",
+        "advice",
+        "unknown",
+        "art"
+      ],
+      "claimCoverage": "complete",
+      "crossPageConsistency": "passed",
+      "review": {
+        "status": "supported",
+        "reviewer": "Codex agent / HTML5 repairs",
+        "reviewedAt": "2026-10-08T16:11:24.458777+00:00",
+        "artifact": {
+          "path": "quality/content-review.md",
+          "sha256": "63f7f970fcfe64e9bd366799a3baf8eca717e716f18cc747bc49043ab5b69e28"
+        }
+      },
+      "renderedArtifact": {
+        "path": "quality/artifacts/beginner-guide.html",
+        "sha256": "88965b5c1ca92ad476b6d25e96a9bb6abb27c68383e0c60c27e1896266222931"
+      },
+      "technicalArtifact": {
+        "path": "quality/artifacts/beginner-guide-technical.json",
+        "sha256": "2603f9cc2dcdbb8609ac70a2bc994b629295430037f12801895fddcd171606ab"
+      }
+    },
+    {
+      "path": "/calculator/",
+      "status": "ready",
+      "intent": "Understand why the old calculator was withdrawn",
+      "uniqueValue": "Correction notice directing returning users toward supported binary-merge planning.",
+      "indexable": false,
+      "claimIds": [
+        "site-scope"
+      ],
+      "claimCoverage": "complete",
+      "crossPageConsistency": "passed",
+      "review": {
+        "status": "supported",
+        "reviewer": "Codex agent / HTML5 repairs",
+        "reviewedAt": "2026-10-08T16:11:24.458777+00:00",
+        "artifact": {
+          "path": "quality/content-review.md",
+          "sha256": "63f7f970fcfe64e9bd366799a3baf8eca717e716f18cc747bc49043ab5b69e28"
+        }
+      },
+      "renderedArtifact": {
+        "path": "quality/artifacts/calculator.html",
+        "sha256": "0003e995a088de64c861646a424b5495a4257b239d8f33a670e13938f8b49911"
+      },
+      "technicalArtifact": {
+        "path": "quality/artifacts/calculator-technical.json",
+        "sha256": "adb9dbbb1c86bb97a5d61dadb4f90d561dcace21e790c6d5dd85b749ed6c8634"
+      }
+    },
+    {
+      "path": "/enemy-mode/",
+      "status": "ready",
+      "intent": "Understand optional dark-star pressure",
+      "uniqueValue": "Official targeting, tap response and three strengths, without invented enemy timers or health.",
+      "indexable": true,
+      "claimIds": [
+        "enemy",
+        "merge",
+        "advice",
+        "unknown",
+        "art"
+      ],
+      "claimCoverage": "complete",
+      "crossPageConsistency": "passed",
+      "review": {
+        "status": "supported",
+        "reviewer": "Codex agent / HTML5 repairs",
+        "reviewedAt": "2026-10-08T16:11:24.458777+00:00",
+        "artifact": {
+          "path": "quality/content-review.md",
+          "sha256": "63f7f970fcfe64e9bd366799a3baf8eca717e716f18cc747bc49043ab5b69e28"
+        }
+      },
+      "renderedArtifact": {
+        "path": "quality/artifacts/enemy-mode.html",
+        "sha256": "686c19d843db16aac9f4cde6e46b07ae57e61d18598cdb50293abb86638c9238"
+      },
+      "technicalArtifact": {
+        "path": "quality/artifacts/enemy-mode-technical.json",
+        "sha256": "75141d7ccf8d22295c8ead8b5dce0b181cc60febf99005bd5d7936ec4951fdd9"
+      }
+    },
+    {
+      "path": "/evolution-chain/",
+      "status": "ready",
+      "intent": "Look up stage order and ideal body equivalence",
+      "uniqueValue": "Full ten-stage sequence with worked 512-dust and 8-core examples and chain boundary.",
+      "indexable": true,
+      "claimIds": [
+        "chain",
+        "merge",
+        "formula",
+        "hidden",
+        "unknown",
+        "art"
+      ],
+      "claimCoverage": "complete",
+      "crossPageConsistency": "passed",
+      "review": {
+        "status": "supported",
+        "reviewer": "Codex agent / HTML5 repairs",
+        "reviewedAt": "2026-10-08T16:11:24.458777+00:00",
+        "artifact": {
+          "path": "quality/content-review.md",
+          "sha256": "63f7f970fcfe64e9bd366799a3baf8eca717e716f18cc747bc49043ab5b69e28"
+        }
+      },
+      "renderedArtifact": {
+        "path": "quality/artifacts/evolution-chain.html",
+        "sha256": "acba2e5bfd51c6405f8ef2716f9ed805932393d0a39f81b2ea193449f88affaa"
+      },
+      "technicalArtifact": {
+        "path": "quality/artifacts/evolution-chain-technical.json",
+        "sha256": "7d8ea677d441b9059006bb3a4c4e49676b67f7ab5a92cbb1ff1151b1da7c2366"
+      }
+    },
+    {
+      "path": "/guides/",
+      "status": "ready",
+      "intent": "Understand corrections to older route advice",
+      "uniqueValue": "Non-indexed correction notice for unsupported precise timings/trajectories.",
+      "indexable": false,
+      "claimIds": [
+        "site-scope"
+      ],
+      "claimCoverage": "complete",
+      "crossPageConsistency": "passed",
+      "review": {
+        "status": "supported",
+        "reviewer": "Codex agent / HTML5 repairs",
+        "reviewedAt": "2026-10-08T16:11:24.458777+00:00",
+        "artifact": {
+          "path": "quality/content-review.md",
+          "sha256": "63f7f970fcfe64e9bd366799a3baf8eca717e716f18cc747bc49043ab5b69e28"
+        }
+      },
+      "renderedArtifact": {
+        "path": "quality/artifacts/guides.html",
+        "sha256": "b44a3ff3032b179bbcbb38eb36055fd4ebb3be2f3372a9e319bde3054824be18"
+      },
+      "technicalArtifact": {
+        "path": "quality/artifacts/guides-technical.json",
+        "sha256": "14f4efedb23391275b5c202e6429684287e2616fe4cc02599a1b0a7388c506b6"
+      }
+    },
+    {
+      "path": "/hidden-disks/",
+      "status": "ready",
+      "intent": "Understand invitation progression",
+      "uniqueValue": "Stage-clear→item→invitation loop with specific missing costs/names clearly identified.",
+      "indexable": true,
+      "claimIds": [
+        "hidden",
+        "items",
+        "unknown",
+        "art"
+      ],
+      "claimCoverage": "complete",
+      "crossPageConsistency": "passed",
+      "review": {
+        "status": "supported",
+        "reviewer": "Codex agent / HTML5 repairs",
+        "reviewedAt": "2026-10-08T16:11:24.458777+00:00",
+        "artifact": {
+          "path": "quality/content-review.md",
+          "sha256": "63f7f970fcfe64e9bd366799a3baf8eca717e716f18cc747bc49043ab5b69e28"
+        }
+      },
+      "renderedArtifact": {
+        "path": "quality/artifacts/hidden-disks.html",
+        "sha256": "5364d05ee8102ec1831660c1a7c97e4558fdb4285a9ade581eb27b6243160ea5"
+      },
+      "technicalArtifact": {
+        "path": "quality/artifacts/hidden-disks-technical.json",
+        "sha256": "596c9ba217bcd443c406693d5d735221562437776c7e99eadb47105df55d389f"
+      }
+    },
+    {
+      "path": "/items-guide/",
+      "status": "ready",
+      "intent": "Choose a rescue effect for the current problem",
+      "uniqueValue": "Three documented effects with labeled editorial use cases, no fabricated names or prices.",
+      "indexable": true,
+      "claimIds": [
+        "items",
+        "fuse",
+        "hidden",
+        "advice",
+        "unknown",
+        "art"
+      ],
+      "claimCoverage": "complete",
+      "crossPageConsistency": "passed",
+      "review": {
+        "status": "supported",
+        "reviewer": "Codex agent / HTML5 repairs",
+        "reviewedAt": "2026-10-08T16:11:24.458777+00:00",
+        "artifact": {
+          "path": "quality/content-review.md",
+          "sha256": "63f7f970fcfe64e9bd366799a3baf8eca717e716f18cc747bc49043ab5b69e28"
+        }
+      },
+      "renderedArtifact": {
+        "path": "quality/artifacts/items-guide.html",
+        "sha256": "4401ff59546b86bb8069fc1a37dc7bc0f9147be226c25eafe82016d888a23eb9"
+      },
+      "technicalArtifact": {
+        "path": "quality/artifacts/items-guide-technical.json",
+        "sha256": "d7b1023cc5af2a50fc6e6a52c0f279ec34cabd703d46f9b8a99e5e31d7192d72"
+      }
+    },
+    {
+      "path": "/merge-planner/",
+      "status": "ready",
+      "intent": "Calculate an ideal binary-merge target",
+      "uniqueValue": "Actual interactive calculation, three reproducible cases, valid integer boundary and copy fallback.",
+      "indexable": true,
+      "claimIds": [
+        "chain",
+        "merge",
+        "formula",
+        "advice",
+        "site-scope",
+        "art"
+      ],
+      "claimCoverage": "complete",
+      "crossPageConsistency": "passed",
+      "review": {
+        "status": "supported",
+        "reviewer": "Codex agent / HTML5 repairs",
+        "reviewedAt": "2026-10-08T16:11:24.458777+00:00",
+        "artifact": {
+          "path": "quality/content-review.md",
+          "sha256": "63f7f970fcfe64e9bd366799a3baf8eca717e716f18cc747bc49043ab5b69e28"
+        }
+      },
+      "renderedArtifact": {
+        "path": "quality/artifacts/merge-planner.html",
+        "sha256": "747d3011b95dd1bba2b1c7dd797f43e925c4e1e6e92eedc8db5a912f65c2d1b3"
+      },
+      "technicalArtifact": {
+        "path": "quality/artifacts/merge-planner-technical.json",
+        "sha256": "45bfa0b5ffc988177bbb40adf6a8d2c907c13b2c1a8e6e9982110776ffa7bd50"
+      },
+      "tool": {
+        "type": "user-estimator",
+        "formulaClaimId": "formula",
+        "limitations": "Ideal normal-chain pair merges with no losses; no direct spawning of higher tiers, mixed higher-tier inventory, fuse destruction, enemy losses, score/time/drop forecast or hidden-disk recipes. Board-pressure choice changes advice only.",
+        "validation": "Three actual browser cases compare all four metric outputs; five invalid inputs, reset and clipboard success/failure tested. Model arithmetic only, not physics performance."
+      }
+    },
+    {
+      "path": "/play/",
+      "status": "ready",
+      "intent": "Reach the official current browser release",
+      "uniqueValue": "Official developer destination plus published drag/release and fuse controls.",
+      "indexable": true,
+      "claimIds": [
+        "identity",
+        "merge",
+        "fuse",
+        "enemy",
+        "site-scope",
+        "art"
+      ],
+      "claimCoverage": "complete",
+      "crossPageConsistency": "passed",
+      "review": {
+        "status": "supported",
+        "reviewer": "Codex agent / HTML5 repairs",
+        "reviewedAt": "2026-10-08T16:11:24.458777+00:00",
+        "artifact": {
+          "path": "quality/content-review.md",
+          "sha256": "63f7f970fcfe64e9bd366799a3baf8eca717e716f18cc747bc49043ab5b69e28"
+        }
+      },
+      "renderedArtifact": {
+        "path": "quality/artifacts/play.html",
+        "sha256": "f9df4c5f8e34e1e813ffd921745a7aeaf408d90ab276feed54b0f751e65011f5"
+      },
+      "technicalArtifact": {
+        "path": "quality/artifacts/play-technical.json",
+        "sha256": "2b9948b167c9c7ebd7518a1f9767666aabac3110a6ac68a8731d227385746944"
+      }
+    },
+    {
+      "path": "/privacy-policy/",
+      "status": "ready",
+      "intent": "Understand local tool and outbound-link behavior",
+      "uniqueValue": "Actual no-account, local-computation and no-current-game-embed behavior.",
+      "indexable": false,
+      "claimIds": [
+        "site-scope"
+      ],
+      "claimCoverage": "complete",
+      "crossPageConsistency": "passed",
+      "review": {
+        "status": "supported",
+        "reviewer": "Codex agent / HTML5 repairs",
+        "reviewedAt": "2026-10-08T16:11:24.458777+00:00",
+        "artifact": {
+          "path": "quality/content-review.md",
+          "sha256": "63f7f970fcfe64e9bd366799a3baf8eca717e716f18cc747bc49043ab5b69e28"
+        }
+      },
+      "renderedArtifact": {
+        "path": "quality/artifacts/privacy-policy.html",
+        "sha256": "abbfe8470eb51cb15e2b22d0dbcc75395b843f1e5da345fe0f90f1e325883a29"
+      },
+      "technicalArtifact": {
+        "path": "quality/artifacts/privacy-policy-technical.json",
+        "sha256": "e2202d8f844828b9683232472d412ecd0854cc36b0f33977d9082b8ed677c77c"
+      }
+    },
+    {
+      "path": "/terms/",
+      "status": "ready",
+      "intent": "Understand reference limits",
+      "uniqueValue": "Independent status and explicit no guarantee across board states/versions.",
+      "indexable": false,
+      "claimIds": [
+        "identity",
+        "site-scope",
+        "art"
+      ],
+      "claimCoverage": "complete",
+      "crossPageConsistency": "passed",
+      "review": {
+        "status": "supported",
+        "reviewer": "Codex agent / HTML5 repairs",
+        "reviewedAt": "2026-10-08T16:11:24.458777+00:00",
+        "artifact": {
+          "path": "quality/content-review.md",
+          "sha256": "63f7f970fcfe64e9bd366799a3baf8eca717e716f18cc747bc49043ab5b69e28"
+        }
+      },
+      "renderedArtifact": {
+        "path": "quality/artifacts/terms.html",
+        "sha256": "9b6105f54e14b82f246ac7dea04a4a8308c8323437a2fc35ecee76e2b805e69c"
+      },
+      "technicalArtifact": {
+        "path": "quality/artifacts/terms-technical.json",
+        "sha256": "a94eacbf32e63084e715045d2b497d2df3beacbbe3b7154dcba45b470ea60eca"
+      }
+    },
+    {
+      "path": "/updates/",
+      "status": "ready",
+      "intent": "Inspect source/date and remaining unknowns",
+      "uniqueValue": "True documentation check date, current official identity and devlog title.",
+      "indexable": true,
+      "claimIds": [
+        "identity",
+        "source-review",
+        "devlog",
+        "unknown",
+        "site-scope"
+      ],
+      "claimCoverage": "complete",
+      "crossPageConsistency": "passed",
+      "review": {
+        "status": "supported",
+        "reviewer": "Codex agent / HTML5 repairs",
+        "reviewedAt": "2026-10-08T16:11:24.458777+00:00",
+        "artifact": {
+          "path": "quality/content-review.md",
+          "sha256": "63f7f970fcfe64e9bd366799a3baf8eca717e716f18cc747bc49043ab5b69e28"
+        }
+      },
+      "renderedArtifact": {
+        "path": "quality/artifacts/updates.html",
+        "sha256": "cb3198a9b15434dc71fc47c5e615df1357f23e73f7198eab9e3a9c4f5162ad9c"
+      },
+      "technicalArtifact": {
+        "path": "quality/artifacts/updates-technical.json",
+        "sha256": "ca261e68c6f0446534c3465a63ecf59483355fa450416fc3157d1b18c0c9496e"
+      }
+    }
+  ],
+  "routeInventoryArtifact": {
+    "path": "quality/artifacts/routes.json",
+    "sha256": "8f0142a11174691ff47636edfbf6ee28cb8c1ba99b1f70fd57a43a9aa48e5db3"
+  },
+  "sitemapPaths": [
+    "/",
+    "/about/",
+    "/beginner-guide/",
+    "/enemy-mode/",
+    "/evolution-chain/",
+    "/hidden-disks/",
+    "/items-guide/",
+    "/merge-planner/",
+    "/play/",
+    "/updates/"
+  ],
+  "sitemapArtifact": {
+    "path": "quality/artifacts/sitemap.xml",
+    "sha256": "0dab2ebc897947ada38825298629429dc8f433a5b8d9b76fafa1d0ddabc72d78"
+  },
+  "buildStatus": "passed",
+  "buildArtifact": {
+    "path": "quality/artifacts/build.log",
+    "sha256": "6125ba284c1a58b7a0e5b8fd3c6ac717dd0debb98bf592963b04b7357bba778f"
+  },
+  "skillRunArtifact": {
+    "path": "quality/skill-run.md",
+    "sha256": "e9d6ad055babf0409180872c350337a7601fb635a780dcfb705ef53a8d4a49d0"
+  },
+  "unresolved": []
+}

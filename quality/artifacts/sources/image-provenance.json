@@ -1,0 +1,48 @@
+{
+  "source": "official itch.io screenshot gallery and cover",
+  "ownership": "Developer retains copyright; no open license asserted. Used as existing attributed illustrations of the reviewed game.",
+  "checks": [
+    {
+      "url": "https://img.itch.zone/aW1hZ2UvNDkyMzU4NS8yOTQzNTQ0NS5wbmc=/794x1000/DuKVmc.png",
+      "sha256": "f34036a242722cd9d6be081c1e73591dabc275b488ee483ded354085fed19ff9",
+      "localMatch": null,
+      "fetchedAt": "2026-10-08T15:58:35.617683+00:00"
+    },
+    {
+      "url": "https://img.itch.zone/aW1hZ2UvNDkyMzU4NS8yOTQzNTQ0NS5wbmc=/original/QNqKZz.png",
+      "sha256": "f4d11cd3ed534397d2e2680d485040de5cb16bfc4337de69d399572428ab3bbe",
+      "localMatch": "public\\gameplay-merge.png",
+      "fetchedAt": "2026-10-08T15:58:37.366282+00:00"
+    },
+    {
+      "url": "https://img.itch.zone/aW1hZ2UvNDkyMzU4NS8yOTQzNTQ0Ni5wbmc=/794x1000/LNVlM4.png",
+      "sha256": "f6dd4f30c97d97dad9bcbfeb6ed5a90b3ffdddec02087b15c6cb11816d7833c5",
+      "localMatch": null,
+      "fetchedAt": "2026-10-08T15:58:39.467705+00:00"
+    },
+    {
+      "url": "https://img.itch.zone/aW1hZ2UvNDkyMzU4NS8yOTQzNTQ0Ni5wbmc=/original/Rl3LUF.png",
+      "sha256": "388b3bb3779b16a82bd8113f4772d2424a3dfa736e7134ca364898c39f028c4f",
+      "localMatch": "public\\gameplay-board.png",
+      "fetchedAt": "2026-10-08T15:58:40.975358+00:00"
+    },
+    {
+      "url": "https://img.itch.zone/aW1hZ2UvNDkyMzU4NS8yOTQzNTQ0Ny5wbmc=/794x1000/Blr2Wi.png",
+      "sha256": "03bb56adf906259f010f3390309c41334d73c6eae1256e74c59db5faef327183",
+      "localMatch": null,
+      "fetchedAt": "2026-10-08T15:58:42.968133+00:00"
+    },
+    {
+      "url": "https://img.itch.zone/aW1hZ2UvNDkyMzU4NS8yOTQzNTQ0Ny5wbmc=/original/lFYfdD.png",
+      "sha256": "fba8b76e55199b473f590825803ad01938e67a9671cc0c94717bfe50ba458a21",
+      "localMatch": "public\\gameplay-hidden-disk.png",
+      "fetchedAt": "2026-10-08T15:58:44.539294+00:00"
+    },
+    {
+      "url": "https://img.itch.zone/aW1nLzI5NDMyOTg2LnBuZw==/original/78eGb4.png",
+      "sha256": "69ac5fc88b5472ef30962496d3d111086b2111bd814b452924d70dc780bdd4d0",
+      "localMatch": "public\\primordial-sea-cover.png",
+      "fetchedAt": "2026-10-08T15:58:45.730613+00:00"
+    }
+  ]
+}
