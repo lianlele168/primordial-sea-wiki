@@ -1,22 +1,20 @@
-v22.23.3
-10.9.9
 
 > primordial-sea-wiki@0.1.0 build:site
 > next build
 
 ▲ Next.js 16.3.2 (Turbopack)
-✓ Running next.config.mjs took 11ms
+✓ Running next.config.mjs took 13ms
 
   Creating an optimized production build ...
-✓ Compiled successfully in 5.7s
+✓ Compiled successfully in 6.4s
   Running TypeScript ...
-  Finished TypeScript in 2.3s ...
+  Finished TypeScript in 2.5s ...
   Collecting page data using 10 workers ...
   Generating static pages using 10 workers (0/18) ...
   Generating static pages using 10 workers (4/18) 
   Generating static pages using 10 workers (8/18) 
   Generating static pages using 10 workers (13/18) 
-✓ Generating static pages using 10 workers (18/18) in 491ms
+✓ Generating static pages using 10 workers (18/18) in 519ms
   Finalizing page optimization ...
 
 Route (app)

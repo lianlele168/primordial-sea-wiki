@@ -1,8 +1,8 @@
 {
   "path": "/merge-planner/",
-  "codeFingerprint": "27db24bc4d4edf503a80de030b3420fd85db9cc0500c891f83b61c1490791718",
-  "checkedAt": "2026-10-08T16:29:55.359Z",
-  "testedUrl": "http://127.0.0.1:61007/merge-planner/",
+  "codeFingerprint": "d9ec4ba67191dc9286fddae18e5f50f8bb39445a3ad483c4f55462893a09238f",
+  "checkedAt": "2026-10-08T17:00:53.352Z",
+  "testedUrl": "http://127.0.0.1:63896/merge-planner/",
   "httpStatus": 200,
   "canonical": "https://primordialsea.robloxwikihub.com/merge-planner/",
   "robotsAllowed": true,
@@ -40,7 +40,7 @@
       },
       "screenshot": {
         "path": "quality/artifacts/merge-planner-768.png",
-        "sha256": "783b17c4c4c1ba543500886d01017cfd79bf990032c015e345d2dbeaa2824c99"
+        "sha256": "cec38364333709a27d8f4b0a148944f6b90df49e1553c42824bfcc673d3e33d7"
       }
     },
     {
@@ -71,9 +71,9 @@
     }
   ],
   "interaction": "passed",
-  "contentReview": "Prior factual review retained: source files and all main HTML unchanged; no fresh external fact verification claimed.",
-  "note": "Fresh Linux Node22/npm10 build, fresh Chrome capture and repeated interactions. Details in quality/dependency-repair/review.json.",
+  "contentReview": "Prior factual review retained: page source and main HTML unchanged; gate-only implementation repair.",
+  "note": "Fresh clean Git archive + documented pending gate patch built on Linux22/npm10; current Chrome capture and interactions repeated. See quality/clean-git-gate/review.json.",
   "interactionEvidence": "quality/artifacts/interaction-results.json: shared search/menu; planner outputs, invalid-input, reset and copy checks for home/planner. Static content needs no artificial loading state.",
-  "visualReviewer": "Codex agent / HTML5 repairs — pixel comparison and changed-capture inspection",
-  "visualReviewedAt": "2026-10-08T16:36:00.857962+00:00"
+  "visualReviewer": "Codex agent / HTML5 repairs — pixel comparison and changed header inspection",
+  "visualReviewedAt": "2026-10-08T17:04:44.127172+00:00"
 }

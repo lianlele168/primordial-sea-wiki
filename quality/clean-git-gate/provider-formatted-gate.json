@@ -1,0 +1,20 @@
+{
+  "name": "primordial-sea-wiki",
+  "gateVersion": 2,
+  "passed": true,
+  "issues": [],
+  "warnings": [
+    "Review source authenticity, claim support, calibration correctness and inventory completeness manually. Self-authored records are not independent proof."
+  ],
+  "checks": {
+    "fingerprint": {
+      "sha256": "d9ec4ba67191dc9286fddae18e5f50f8bb39445a3ad483c4f55462893a09238f",
+      "files": 36
+    },
+    "pages": 14,
+    "claims": 15,
+    "sources": 5,
+    "artifacts": 38
+  },
+  "limitation": "Checks evidence completeness and recorded results; cannot certify fact truth, actual execution or Google indexing."
+}

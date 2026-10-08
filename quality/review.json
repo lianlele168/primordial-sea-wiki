@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "codeFingerprint": "27db24bc4d4edf503a80de030b3420fd85db9cc0500c891f83b61c1490791718",
+  "codeFingerprint": "d9ec4ba67191dc9286fddae18e5f50f8bb39445a3ad483c4f55462893a09238f",
   "site": {
     "baseUrl": "https://primordialsea.robloxwikihub.com",
     "officialUrl": "https://float-u-space.itch.io/primordial-sea",
@@ -52,10 +52,10 @@
       "id": "interactions",
       "kind": "observation",
       "url": "http://127.0.0.1:61071/",
-      "checkedAt": "2026-10-08T16:30:39.702Z",
+      "checkedAt": "2026-10-08T17:02:36.413Z",
       "artifact": {
         "path": "quality/artifacts/interaction-results.json",
-        "sha256": "16145631a40dd89498e51d6f05794f92ad68fd301f5ed58967d95a97fe79108c"
+        "sha256": "0eee4c5a1467721f23b615ed84ab4a5c3e9a0ca4c8de0c9813392b8dc6c8668f"
       }
     },
     {
@@ -380,7 +380,7 @@
       ],
       "calibrationArtifact": {
         "path": "quality/artifacts/interaction-results.json",
-        "sha256": "16145631a40dd89498e51d6f05794f92ad68fd301f5ed58967d95a97fe79108c"
+        "sha256": "0eee4c5a1467721f23b615ed84ab4a5c3e9a0ca4c8de0c9813392b8dc6c8668f"
       }
     }
   ],
@@ -418,11 +418,11 @@
       },
       "renderedArtifact": {
         "path": "quality/artifacts/home.html",
-        "sha256": "c8411ff1e445a352227db5e01a819ec06efddb48ec5246185cbb7ee61ad9bd04"
+        "sha256": "e2dbcc7ae9dfceaf274f58006ea85bd7ebdb03e87314336f82283e0102c7137c"
       },
       "technicalArtifact": {
         "path": "quality/artifacts/home-technical.json",
-        "sha256": "6db54ef59444a6c2580f86b428fc25543e09ae73522dc93f3845e747da077cb5"
+        "sha256": "42e44246f032a7c6dadc8264336c25edea8408e8ecaeb87e1bf7e99a9bf11e69"
       },
       "tool": {
         "type": "user-estimator",
@@ -457,11 +457,11 @@
       },
       "renderedArtifact": {
         "path": "quality/artifacts/about.html",
-        "sha256": "3afa039bb28227bce586b264ef15948647952a154ed9f72dbd7a943f880611c5"
+        "sha256": "7c3180a1636227bb542bdc7130b1bd4b37e1c08a26774e583aba0924ee51c002"
       },
       "technicalArtifact": {
         "path": "quality/artifacts/about-technical.json",
-        "sha256": "4cfc525c0035ec77ae7fc2161cb7e19381c18a014e7cf5b7cc23b1622b8971a3"
+        "sha256": "b8bb8a90bc6ce422a68c50e86015ba463ca1021fad8c19eebcbb524da1af4a9e"
       }
     },
     {
@@ -493,11 +493,11 @@
       },
       "renderedArtifact": {
         "path": "quality/artifacts/beginner-guide.html",
-        "sha256": "d848cf9945517c45733ac9e14070cf4177998d4d3ab1a8c758e1b946db3bf3ed"
+        "sha256": "a1500a6e3214e834197c0318950cf3f3c00e01f95acee11426bda9b1244ee5f0"
       },
       "technicalArtifact": {
         "path": "quality/artifacts/beginner-guide-technical.json",
-        "sha256": "2a17fb1419d79167807892c16b0a2f8b9109afed137a6cba9c4f1b53067a8e47"
+        "sha256": "929f77689d656cfe3e2283b80e67285caf7d3fd82ca13d9e636ed95f175af1d4"
       }
     },
     {
@@ -522,11 +522,11 @@
       },
       "renderedArtifact": {
         "path": "quality/artifacts/calculator.html",
-        "sha256": "1eac58427bbf5214c220061e999a0d5b31bd4b0c876abc8e4266c513e7704696"
+        "sha256": "795eff3316d8c4962c448e3037b15da5674af7023ade492bac6bea0a2a21f79f"
       },
       "technicalArtifact": {
         "path": "quality/artifacts/calculator-technical.json",
-        "sha256": "7f34f61ec563e7f255b1bc4025fe0fe9728f8b62ac25b9d11f93b317844a020e"
+        "sha256": "a32f78a3d38d77a7a0d21b2b16a834d8950da16928b1b83e809381c9f0ee49c9"
       }
     },
     {
@@ -555,11 +555,11 @@
       },
       "renderedArtifact": {
         "path": "quality/artifacts/enemy-mode.html",
-        "sha256": "63e4cef6eb5458f7487ca19830b6698fe36aa1a00d5c5a4aaab73c18970b176b"
+        "sha256": "37f0793f0a95f5aec4bee129cf6c00f0977b0f68b79db1a5577928dfa2998d24"
       },
       "technicalArtifact": {
         "path": "quality/artifacts/enemy-mode-technical.json",
-        "sha256": "d897d5bdc568c8ff5d7ce225bfcfdd6e47ea88ba3c8046a7b336b22017690bf1"
+        "sha256": "55a9cde1a3ed4a306bd2e113bda1ea665b6d216b99b202eb846919963fc002ad"
       }
     },
     {
@@ -589,11 +589,11 @@
       },
       "renderedArtifact": {
         "path": "quality/artifacts/evolution-chain.html",
-        "sha256": "98b420a6ab2edf95043d7865d457940a2706655bd092786a4ec1c30e5dbf8ea2"
+        "sha256": "b8d896baf84fe460aacaf4451aa774d5cf9e053f430ec87570c4e3561c7a202a"
       },
       "technicalArtifact": {
         "path": "quality/artifacts/evolution-chain-technical.json",
-        "sha256": "1959a48959c48f9725da871e4dda05e54343d65f915b2a5fe85887333878b932"
+        "sha256": "624d5459c66d04c72053b12b108b395142e418ddb2915918aab5fbb92c93d79e"
       }
     },
     {
@@ -618,11 +618,11 @@
       },
       "renderedArtifact": {
         "path": "quality/artifacts/guides.html",
-        "sha256": "07bdc30ce737d79f062e75f3818b761be72b354d9d6af6f2f2c4d2b328890a05"
+        "sha256": "60ded0e3433da97ea937fd0c047c9e75c51c0a9fbf353135b447bdba0e925e74"
       },
       "technicalArtifact": {
         "path": "quality/artifacts/guides-technical.json",
-        "sha256": "522b6d38e093a139a0362794d6bb154d663dcf8b6b979f63d933cf21bf765ba5"
+        "sha256": "8d360f1db03efa34d266cb75327330e53691b3fdaeffa785460f720fcf50d15f"
       }
     },
     {
@@ -650,11 +650,11 @@
       },
       "renderedArtifact": {
         "path": "quality/artifacts/hidden-disks.html",
-        "sha256": "81a9c6fdb5837243380f17801c10fa71d54a9ffa2f63fc1a35d3d5371520d659"
+        "sha256": "0bd714e54d6b807ebf6bf8d78ff20d06601771e229a3608c32b7e99b4eba60dd"
       },
       "technicalArtifact": {
         "path": "quality/artifacts/hidden-disks-technical.json",
-        "sha256": "cb3f6c6da02350ef3e83acc7fa4faf39cfd38438e0980ff2509b549666a4176e"
+        "sha256": "8162f0b57e89735003dfb3a763e22b4830073df550948709e8404f25b6dee8a2"
       }
     },
     {
@@ -684,11 +684,11 @@
       },
       "renderedArtifact": {
         "path": "quality/artifacts/items-guide.html",
-        "sha256": "17fa79685183c160a41812708f67268b6ed083751cd92da5bdbdd5ba83ed930d"
+        "sha256": "509b4c2213de3ee10fc21a1d13af88ade509062b643f9802093d5b2ea0e948de"
       },
       "technicalArtifact": {
         "path": "quality/artifacts/items-guide-technical.json",
-        "sha256": "986cea06706cbe0b85ecb407343e07dac730d5ba61d651b99df788c2e5752feb"
+        "sha256": "9dce7574e84807ac83c4d111bb7204192aeb4ae411ff2481507e4d68366b638f"
       }
     },
     {
@@ -718,11 +718,11 @@
       },
       "renderedArtifact": {
         "path": "quality/artifacts/merge-planner.html",
-        "sha256": "986ce40e06514c827f6080e03f01c26ee1553437b9afef966cf412e6ab5f1d4e"
+        "sha256": "5e82f5e6c7dbc978890f92a83bc111b4e74759fb98c5663957814d4e2cbc48af"
       },
       "technicalArtifact": {
         "path": "quality/artifacts/merge-planner-technical.json",
-        "sha256": "a3be805d84e44c18091ef61d36d627a7fe50efd4425de9b242da4b112cb7b100"
+        "sha256": "50675c0bdc587091862882526b18bd6a457e6da11ea5e4a55193a8b4264dea48"
       },
       "tool": {
         "type": "user-estimator",
@@ -758,11 +758,11 @@
       },
       "renderedArtifact": {
         "path": "quality/artifacts/play.html",
-        "sha256": "7eb77087c74ca36a18a3800a2013acb5ffe1c104e3769885bf60b1d3bfff53fb"
+        "sha256": "274257afcc78f17f1e35c931e32eda14977e12fa33da82ac669c82f239ce31cf"
       },
       "technicalArtifact": {
         "path": "quality/artifacts/play-technical.json",
-        "sha256": "0b8a9820a0f77573a7e3d6590a2602d6d08e05b346dacc43fcab96a245853ab9"
+        "sha256": "43baeaf041aaa13a4b8a351d8d13c544e8110f93eba367a7a224e7723e928fca"
       }
     },
     {
@@ -787,11 +787,11 @@
       },
       "renderedArtifact": {
         "path": "quality/artifacts/privacy-policy.html",
-        "sha256": "ae47cd63e356485a08afaed8e7a4a3028dca432f92a5547541f70bd2e76a46b7"
+        "sha256": "92de694af59092bc201e9b60d4b2674b5e4b39f1a54e254e80645dd6fc2707b2"
       },
       "technicalArtifact": {
         "path": "quality/artifacts/privacy-policy-technical.json",
-        "sha256": "bdf8a004c5a87d40ac0c78ee37341934f7b9053c68e2a58486d10f1de4da7629"
+        "sha256": "ffa9996db941ff54b35383bde608b81f26d014c9d660666e7db5b15cfef8564e"
       }
     },
     {
@@ -818,11 +818,11 @@
       },
       "renderedArtifact": {
         "path": "quality/artifacts/terms.html",
-        "sha256": "8da00cc127ae3ff6a905528e315a67d1c276ca6e3faa2797c10888f387103617"
+        "sha256": "b7e205d5d41e49a8e9e4167a27d761a9ce50f3c4c496aaffd5686fb99a638cc4"
       },
       "technicalArtifact": {
         "path": "quality/artifacts/terms-technical.json",
-        "sha256": "c57df5b1abbfc08c366f473f569f389be5bca3082a25e567eea1bf6c47d36431"
+        "sha256": "88bcd2771f53fe909f67e507b77afd2f4a465899404ad9feeaa5966e2aa7d8f0"
       }
     },
     {
@@ -851,11 +851,11 @@
       },
       "renderedArtifact": {
         "path": "quality/artifacts/updates.html",
-        "sha256": "49a0677bead6507a7b3051d1d414455612d21386092123f3c9066be1fcfebb8d"
+        "sha256": "5e7f7bbf769659e092d26262123f5ebb51d0490b4b62937a5487575a36fa95c3"
       },
       "technicalArtifact": {
         "path": "quality/artifacts/updates-technical.json",
-        "sha256": "1764a214665e7129d77338c8e1712d08ce7c7de738e29f7f7c78d047478ccf0f"
+        "sha256": "d3f7584c150040b92595e1f1175f2942edbb3144a899e9ae1f1108eba4eedf27"
       }
     }
   ],
@@ -882,11 +882,11 @@
   "buildStatus": "passed",
   "buildArtifact": {
     "path": "quality/artifacts/build.log",
-    "sha256": "3a698dad26a245005a18c3f3ac6b3f49448dcaaa2149d1b4ce8b57d634b2baf7"
+    "sha256": "cc4c78ff1f493945bb022424ef104e9fb0d7ab3cfa4db5a02c49fb3238b3e895"
   },
   "skillRunArtifact": {
     "path": "quality/skill-run.md",
-    "sha256": "493950b1fa5cd5160b05b417803dea35c7525a09c8309c23c8d274c5e1ab7fe1"
+    "sha256": "e138641356ccd760994cfa6e4343dc2f78577da0d365d8d8cd28d439f014bb73"
   },
   "unresolved": []
 }

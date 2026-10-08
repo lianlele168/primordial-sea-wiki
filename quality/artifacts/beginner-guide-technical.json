@@ -1,8 +1,8 @@
 {
   "path": "/beginner-guide/",
-  "codeFingerprint": "27db24bc4d4edf503a80de030b3420fd85db9cc0500c891f83b61c1490791718",
-  "checkedAt": "2026-10-08T16:29:46.588Z",
-  "testedUrl": "http://127.0.0.1:61007/beginner-guide/",
+  "codeFingerprint": "d9ec4ba67191dc9286fddae18e5f50f8bb39445a3ad483c4f55462893a09238f",
+  "checkedAt": "2026-10-08T17:00:43.180Z",
+  "testedUrl": "http://127.0.0.1:63896/beginner-guide/",
   "httpStatus": 200,
   "canonical": "https://primordialsea.robloxwikihub.com/beginner-guide/",
   "robotsAllowed": true,
@@ -71,9 +71,9 @@
     }
   ],
   "interaction": "passed",
-  "contentReview": "Prior factual review retained: source files and all main HTML unchanged; no fresh external fact verification claimed.",
-  "note": "Fresh Linux Node22/npm10 build, fresh Chrome capture and repeated interactions. Details in quality/dependency-repair/review.json.",
+  "contentReview": "Prior factual review retained: page source and main HTML unchanged; gate-only implementation repair.",
+  "note": "Fresh clean Git archive + documented pending gate patch built on Linux22/npm10; current Chrome capture and interactions repeated. See quality/clean-git-gate/review.json.",
   "interactionEvidence": "quality/artifacts/interaction-results.json: shared search/menu; planner outputs, invalid-input, reset and copy checks for home/planner. Static content needs no artificial loading state.",
-  "visualReviewer": "Codex agent / HTML5 repairs — pixel comparison and changed-capture inspection",
-  "visualReviewedAt": "2026-10-08T16:36:00.857962+00:00"
+  "visualReviewer": "Codex agent / HTML5 repairs — pixel comparison and changed header inspection",
+  "visualReviewedAt": "2026-10-08T17:04:44.127172+00:00"
 }
