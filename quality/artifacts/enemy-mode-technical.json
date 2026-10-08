@@ -1,8 +1,8 @@
 {
   "path": "/enemy-mode/",
-  "codeFingerprint": "9512edab1efbf1b2e09ff5553c3113f1f4eb418a179a8814a50f8a56f5f00188",
-  "checkedAt": "2026-10-08T16:05:48.689Z",
-  "testedUrl": "http://127.0.0.1:61071/enemy-mode/",
+  "codeFingerprint": "27db24bc4d4edf503a80de030b3420fd85db9cc0500c891f83b61c1490791718",
+  "checkedAt": "2026-10-08T16:29:49.014Z",
+  "testedUrl": "http://127.0.0.1:61007/enemy-mode/",
   "httpStatus": 200,
   "canonical": "https://primordialsea.robloxwikihub.com/enemy-mode/",
   "robotsAllowed": true,
@@ -40,7 +40,7 @@
       },
       "screenshot": {
         "path": "quality/artifacts/enemy-mode-768.png",
-        "sha256": "a5d3d996772e27fdf5e87dbf2025d43f0e8db5bac502eaf24677c5ddf0948420"
+        "sha256": "d6799986bcf431c39cd2ef5b3c19aa61aba11ebf5ef85f3fc933d67274b6edbb"
       }
     },
     {
@@ -66,12 +66,14 @@
       },
       "screenshot": {
         "path": "quality/artifacts/enemy-mode-1440.png",
-        "sha256": "fd2be170226ecdf13a38afd3b22b0f49735a2748329ab35075c3b00b46450c5a"
+        "sha256": "20e5525889a089a9812627cfba53a6becfcf7cbabad8b46ff33fa919b66b8e20"
       }
     }
   ],
   "interaction": "passed",
-  "contentReview": "supported",
-  "note": "Actual local preview. Four-width metrics plus visual review of home/planner/common article design; external gameplay not claimed.",
-  "interactionEvidence": "quality/artifacts/interaction-results.json: shared search/menu; planner outputs, invalid-input, reset and copy checks for home/planner. Static content needs no artificial loading state."
+  "contentReview": "Prior factual review retained: source files and all main HTML unchanged; no fresh external fact verification claimed.",
+  "note": "Fresh Linux Node22/npm10 build, fresh Chrome capture and repeated interactions. Details in quality/dependency-repair/review.json.",
+  "interactionEvidence": "quality/artifacts/interaction-results.json: shared search/menu; planner outputs, invalid-input, reset and copy checks for home/planner. Static content needs no artificial loading state.",
+  "visualReviewer": "Codex agent / HTML5 repairs — pixel comparison and changed-capture inspection",
+  "visualReviewedAt": "2026-10-08T16:36:00.857962+00:00"
 }

@@ -1,0 +1,596 @@
+{
+  "checkedAt": "2026-10-08T16:36:00.857962+00:00",
+  "reviewer": "Codex agent / HTML5 repairs",
+  "scope": "Dependency installation and deployment consistency only; factual claims and dates are retained from the prior actual source review, not re-certified here.",
+  "priorCommit": "ba458d38a7ad1d3e19ac6390eb53484133ca5346",
+  "beforeFingerprint": "9512edab1efbf1b2e09ff5553c3113f1f4eb418a179a8814a50f8a56f5f00188",
+  "codeFingerprint": "27db24bc4d4edf503a80de030b3420fd85db9cc0500c891f83b61c1490791718",
+  "runtime": {
+    "node": "22.23.3",
+    "npm": "10.9.9",
+    "os": "Ubuntu 24.04 / WSL2 x86_64"
+  },
+  "installation": "Actual npm ci --no-audit --no-fund in fresh Linux directory; scripts enabled; native SWC and unrs resolver modules loaded",
+  "lockfileChanges": {
+    "added": [
+      "node_modules/@emnapi/core",
+      "node_modules/@emnapi/runtime"
+    ],
+    "removed": [],
+    "existingPackageVersionChanges": [],
+    "note": "npm10 normalizes peer flags; no framework/dependency version upgrade"
+  },
+  "deploymentConfiguration": {
+    "engines.node": "22.x",
+    "installCommand": "npm ci --no-audit --no-fund",
+    "buildCommand": "npm run build"
+  },
+  "sourceChanges": [],
+  "interactionArtifact": "quality/artifacts/interaction-results.json",
+  "interactionCheckedAt": "2026-10-08T16:30:39.702Z",
+  "interactionCount": 9,
+  "calibrationCount": 3,
+  "pages": [
+    {
+      "path": "/",
+      "mainHtmlUnchanged": true,
+      "mainSha256": "06dca7696fe5d8bbc2560c6a7303997e8e4749f2bc9ed9025ce5f69f36656207",
+      "screenshots": [
+        {
+          "width": 390,
+          "beforeSha256": "cb6929c00cdca2beedcaa05c069a8e2b646b2892e636d5dc78cf3e84a2ccc6d6",
+          "afterSha256": "cb6929c00cdca2beedcaa05c069a8e2b646b2892e636d5dc78cf3e84a2ccc6d6",
+          "changedPixels": 0,
+          "maxChannelDifference": 0,
+          "review": "Exact pixels or <=1-channel rasterization difference from previously inspected screenshot; representative new screens also viewed"
+        },
+        {
+          "width": 768,
+          "beforeSha256": "e326e9335acc67b0d600b7c0691140f9bf8ac7e71a3f85b6a2735d9d91f17aff",
+          "afterSha256": "59642edcc0d1b4b08eb8aaaab5fd2e030b3076ebb4b4186a2d5249f063d70ae5",
+          "changedPixels": 1363,
+          "maxChannelDifference": 1,
+          "review": "Exact pixels or <=1-channel rasterization difference from previously inspected screenshot; representative new screens also viewed"
+        },
+        {
+          "width": 1024,
+          "beforeSha256": "c0db40ac60e5608966fa73750b5a1b640c392cb0a4ab1b3478b52cc70f738e39",
+          "afterSha256": "c0db40ac60e5608966fa73750b5a1b640c392cb0a4ab1b3478b52cc70f738e39",
+          "changedPixels": 0,
+          "maxChannelDifference": 0,
+          "review": "Exact pixels or <=1-channel rasterization difference from previously inspected screenshot; representative new screens also viewed"
+        },
+        {
+          "width": 1440,
+          "beforeSha256": "e4edff81ce1bd1b96f7216c6db3aed49dcb7c8631aadd9e593ed74b19ce5e0ac",
+          "afterSha256": "e4edff81ce1bd1b96f7216c6db3aed49dcb7c8631aadd9e593ed74b19ce5e0ac",
+          "changedPixels": 0,
+          "maxChannelDifference": 0,
+          "review": "Exact pixels or <=1-channel rasterization difference from previously inspected screenshot; representative new screens also viewed"
+        }
+      ]
+    },
+    {
+      "path": "/about/",
+      "mainHtmlUnchanged": true,
+      "mainSha256": "a78902427a688c3a84bcd5e28bf069c420b260a48123615e2fc7fa705b64cefa",
+      "screenshots": [
+        {
+          "width": 390,
+          "beforeSha256": "74ffd56d4db2e64381e9610bce062fb17c258f5e6ebf54e88ca583856800b0dc",
+          "afterSha256": "74ffd56d4db2e64381e9610bce062fb17c258f5e6ebf54e88ca583856800b0dc",
+          "changedPixels": 0,
+          "maxChannelDifference": 0,
+          "review": "Exact pixels or <=1-channel rasterization difference from previously inspected screenshot; representative new screens also viewed"
+        },
+        {
+          "width": 768,
+          "beforeSha256": "35da5a74cdbdc4877b12898015babc8c1ac3aeb49a28ba0a15698d7e464ed73c",
+          "afterSha256": "35da5a74cdbdc4877b12898015babc8c1ac3aeb49a28ba0a15698d7e464ed73c",
+          "changedPixels": 0,
+          "maxChannelDifference": 0,
+          "review": "Exact pixels or <=1-channel rasterization difference from previously inspected screenshot; representative new screens also viewed"
+        },
+        {
+          "width": 1024,
+          "beforeSha256": "e8408243e8b063620c6747ba33840ddde2bc05e518356a3f5219e5155857c1b5",
+          "afterSha256": "e8408243e8b063620c6747ba33840ddde2bc05e518356a3f5219e5155857c1b5",
+          "changedPixels": 0,
+          "maxChannelDifference": 0,
+          "review": "Exact pixels or <=1-channel rasterization difference from previously inspected screenshot; representative new screens also viewed"
+        },
+        {
+          "width": 1440,
+          "beforeSha256": "4f232c30803b55645480630d84b8e259e4380145d0b91cecd9fe9d4a3276dfd5",
+          "afterSha256": "4f232c30803b55645480630d84b8e259e4380145d0b91cecd9fe9d4a3276dfd5",
+          "changedPixels": 0,
+          "maxChannelDifference": 0,
+          "review": "Exact pixels or <=1-channel rasterization difference from previously inspected screenshot; representative new screens also viewed"
+        }
+      ]
+    },
+    {
+      "path": "/beginner-guide/",
+      "mainHtmlUnchanged": true,
+      "mainSha256": "c37a32fddbbe91c4de87fb32e505fea688a193b32023fe902d7aae381f675030",
+      "screenshots": [
+        {
+          "width": 390,
+          "beforeSha256": "94672b600eeed7228e1f46bb61b868be1c51ff63aca217ac764a2a1caab96523",
+          "afterSha256": "94672b600eeed7228e1f46bb61b868be1c51ff63aca217ac764a2a1caab96523",
+          "changedPixels": 0,
+          "maxChannelDifference": 0,
+          "review": "Exact pixels or <=1-channel rasterization difference from previously inspected screenshot; representative new screens also viewed"
+        },
+        {
+          "width": 768,
+          "beforeSha256": "a5288e67a9661e47389992fdf29fb957dc718612445632925535d437c9c9f729",
+          "afterSha256": "559fa522e76f52018f226e49dac8310894605636d4c4874995eaae232ab3157d",
+          "changedPixels": 17,
+          "maxChannelDifference": 1,
+          "review": "Exact pixels or <=1-channel rasterization difference from previously inspected screenshot; representative new screens also viewed"
+        },
+        {
+          "width": 1024,
+          "beforeSha256": "f762516841519749e92561fe2e6b89e7c12593f786ed968b23b59b7d274b2d89",
+          "afterSha256": "9aabba87bc4c83403c4349bf272521256de2be2917b18273168898e20051ab71",
+          "changedPixels": 15,
+          "maxChannelDifference": 1,
+          "review": "Exact pixels or <=1-channel rasterization difference from previously inspected screenshot; representative new screens also viewed"
+        },
+        {
+          "width": 1440,
+          "beforeSha256": "f366619f68c86e336db71fe38e2dd110c86bac22b113f24cc772bc272c5d5609",
+          "afterSha256": "f366619f68c86e336db71fe38e2dd110c86bac22b113f24cc772bc272c5d5609",
+          "changedPixels": 0,
+          "maxChannelDifference": 0,
+          "review": "Exact pixels or <=1-channel rasterization difference from previously inspected screenshot; representative new screens also viewed"
+        }
+      ]
+    },
+    {
+      "path": "/calculator/",
+      "mainHtmlUnchanged": true,
+      "mainSha256": "14f9384a655a58d1bae92e540732e6ef62c2ed9d8de0324c19a5c712e815eae5",
+      "screenshots": [
+        {
+          "width": 390,
+          "beforeSha256": "ad450e988a4b401eb7c9ba61633a341c0efc8cab41e3f71ab3eb63d97972bff2",
+          "afterSha256": "ad450e988a4b401eb7c9ba61633a341c0efc8cab41e3f71ab3eb63d97972bff2",
+          "changedPixels": 0,
+          "maxChannelDifference": 0,
+          "review": "Exact pixels or <=1-channel rasterization difference from previously inspected screenshot; representative new screens also viewed"
+        },
+        {
+          "width": 768,
+          "beforeSha256": "2ebdda89469df49f80778eac3968dfb4f1dc66494737462487a60087de497b33",
+          "afterSha256": "2ebdda89469df49f80778eac3968dfb4f1dc66494737462487a60087de497b33",
+          "changedPixels": 0,
+          "maxChannelDifference": 0,
+          "review": "Exact pixels or <=1-channel rasterization difference from previously inspected screenshot; representative new screens also viewed"
+        },
+        {
+          "width": 1024,
+          "beforeSha256": "4a9f994dd7aefe54acd7f6baa7c02437a79c74429431d2c6c6546a902105e7f2",
+          "afterSha256": "4a9f994dd7aefe54acd7f6baa7c02437a79c74429431d2c6c6546a902105e7f2",
+          "changedPixels": 0,
+          "maxChannelDifference": 0,
+          "review": "Exact pixels or <=1-channel rasterization difference from previously inspected screenshot; representative new screens also viewed"
+        },
+        {
+          "width": 1440,
+          "beforeSha256": "07d04a112637453a2e6da7e238dc7a9f222510bcdcd186f8f8aec79ca5596f18",
+          "afterSha256": "07d04a112637453a2e6da7e238dc7a9f222510bcdcd186f8f8aec79ca5596f18",
+          "changedPixels": 0,
+          "maxChannelDifference": 0,
+          "review": "Exact pixels or <=1-channel rasterization difference from previously inspected screenshot; representative new screens also viewed"
+        }
+      ]
+    },
+    {
+      "path": "/enemy-mode/",
+      "mainHtmlUnchanged": true,
+      "mainSha256": "8808c80772f41a2ba2c526317311d5dfcffefbe4f0510bd50d2f9d917a8512e5",
+      "screenshots": [
+        {
+          "width": 390,
+          "beforeSha256": "b66c241ecaff820b24f972da086bacafe4d5282b360027e8314c54e8bd679d53",
+          "afterSha256": "b66c241ecaff820b24f972da086bacafe4d5282b360027e8314c54e8bd679d53",
+          "changedPixels": 0,
+          "maxChannelDifference": 0,
+          "review": "Exact pixels or <=1-channel rasterization difference from previously inspected screenshot; representative new screens also viewed"
+        },
+        {
+          "width": 768,
+          "beforeSha256": "a5d3d996772e27fdf5e87dbf2025d43f0e8db5bac502eaf24677c5ddf0948420",
+          "afterSha256": "d6799986bcf431c39cd2ef5b3c19aa61aba11ebf5ef85f3fc933d67274b6edbb",
+          "changedPixels": 17,
+          "maxChannelDifference": 1,
+          "review": "Exact pixels or <=1-channel rasterization difference from previously inspected screenshot; representative new screens also viewed"
+        },
+        {
+          "width": 1024,
+          "beforeSha256": "7b0aeea803f0f6fe35d90caf95ac2d83591ea1443c747986c890758067c88e8e",
+          "afterSha256": "7b0aeea803f0f6fe35d90caf95ac2d83591ea1443c747986c890758067c88e8e",
+          "changedPixels": 0,
+          "maxChannelDifference": 0,
+          "review": "Exact pixels or <=1-channel rasterization difference from previously inspected screenshot; representative new screens also viewed"
+        },
+        {
+          "width": 1440,
+          "beforeSha256": "fd2be170226ecdf13a38afd3b22b0f49735a2748329ab35075c3b00b46450c5a",
+          "afterSha256": "20e5525889a089a9812627cfba53a6becfcf7cbabad8b46ff33fa919b66b8e20",
+          "changedPixels": 20,
+          "maxChannelDifference": 1,
+          "review": "Exact pixels or <=1-channel rasterization difference from previously inspected screenshot; representative new screens also viewed"
+        }
+      ]
+    },
+    {
+      "path": "/evolution-chain/",
+      "mainHtmlUnchanged": true,
+      "mainSha256": "5e46325aa5549bb6eeb14a0d509c04c5a91430c174383d424de8baf1bf775d2c",
+      "screenshots": [
+        {
+          "width": 390,
+          "beforeSha256": "e9fc5a929d96b1b9f0d66ab907a1d9dd3a7cad705e47df049cdffd9ff220f4bd",
+          "afterSha256": "e9fc5a929d96b1b9f0d66ab907a1d9dd3a7cad705e47df049cdffd9ff220f4bd",
+          "changedPixels": 0,
+          "maxChannelDifference": 0,
+          "review": "Exact pixels or <=1-channel rasterization difference from previously inspected screenshot; representative new screens also viewed"
+        },
+        {
+          "width": 768,
+          "beforeSha256": "2d79b63722f77277a6f8fccfad1e589d5da625893ada1fe1c7e8885909cfcebf",
+          "afterSha256": "2d79b63722f77277a6f8fccfad1e589d5da625893ada1fe1c7e8885909cfcebf",
+          "changedPixels": 0,
+          "maxChannelDifference": 0,
+          "review": "Exact pixels or <=1-channel rasterization difference from previously inspected screenshot; representative new screens also viewed"
+        },
+        {
+          "width": 1024,
+          "beforeSha256": "73d50e80a37263d0f55815acd4738280a16512ef94d7edefbcb7aab73e8baa66",
+          "afterSha256": "73d50e80a37263d0f55815acd4738280a16512ef94d7edefbcb7aab73e8baa66",
+          "changedPixels": 0,
+          "maxChannelDifference": 0,
+          "review": "Exact pixels or <=1-channel rasterization difference from previously inspected screenshot; representative new screens also viewed"
+        },
+        {
+          "width": 1440,
+          "beforeSha256": "f98e6fe5283bd19b59431832d2d19836a4a3d6d13e29804e4806edb2dff948b5",
+          "afterSha256": "f98e6fe5283bd19b59431832d2d19836a4a3d6d13e29804e4806edb2dff948b5",
+          "changedPixels": 0,
+          "maxChannelDifference": 0,
+          "review": "Exact pixels or <=1-channel rasterization difference from previously inspected screenshot; representative new screens also viewed"
+        }
+      ]
+    },
+    {
+      "path": "/guides/",
+      "mainHtmlUnchanged": true,
+      "mainSha256": "9ef10e72d9fc42cdefafa620c6b673de932ae587598932017aeef3591337afaa",
+      "screenshots": [
+        {
+          "width": 390,
+          "beforeSha256": "febdad7cb85de41ccecb2a1bf7e5711b4950d436110a2fb9ac5dd7e2f29625c1",
+          "afterSha256": "febdad7cb85de41ccecb2a1bf7e5711b4950d436110a2fb9ac5dd7e2f29625c1",
+          "changedPixels": 0,
+          "maxChannelDifference": 0,
+          "review": "Exact pixels or <=1-channel rasterization difference from previously inspected screenshot; representative new screens also viewed"
+        },
+        {
+          "width": 768,
+          "beforeSha256": "e09711355783b1cd70e5e8dcc3918e02a4bf5b96b263e90b3362d762764003c7",
+          "afterSha256": "e09711355783b1cd70e5e8dcc3918e02a4bf5b96b263e90b3362d762764003c7",
+          "changedPixels": 0,
+          "maxChannelDifference": 0,
+          "review": "Exact pixels or <=1-channel rasterization difference from previously inspected screenshot; representative new screens also viewed"
+        },
+        {
+          "width": 1024,
+          "beforeSha256": "7397cf5c7195a1ab6eabf8ceb63a21652c97b9d9d8fefedae55f0207d177cf18",
+          "afterSha256": "7397cf5c7195a1ab6eabf8ceb63a21652c97b9d9d8fefedae55f0207d177cf18",
+          "changedPixels": 0,
+          "maxChannelDifference": 0,
+          "review": "Exact pixels or <=1-channel rasterization difference from previously inspected screenshot; representative new screens also viewed"
+        },
+        {
+          "width": 1440,
+          "beforeSha256": "400c0f89f8f32e978819f8dfdde562af246453a439c5efc8a6d75da4161b6cd5",
+          "afterSha256": "400c0f89f8f32e978819f8dfdde562af246453a439c5efc8a6d75da4161b6cd5",
+          "changedPixels": 0,
+          "maxChannelDifference": 0,
+          "review": "Exact pixels or <=1-channel rasterization difference from previously inspected screenshot; representative new screens also viewed"
+        }
+      ]
+    },
+    {
+      "path": "/hidden-disks/",
+      "mainHtmlUnchanged": true,
+      "mainSha256": "1c3610d8a5b413f1a073cca361a861f536c43c90d4176140340716e95c525179",
+      "screenshots": [
+        {
+          "width": 390,
+          "beforeSha256": "df3653f0792e07fbd15a779c24e26e3aee2cec8777ecd1a488b76ffe7980a5da",
+          "afterSha256": "df3653f0792e07fbd15a779c24e26e3aee2cec8777ecd1a488b76ffe7980a5da",
+          "changedPixels": 0,
+          "maxChannelDifference": 0,
+          "review": "Exact pixels or <=1-channel rasterization difference from previously inspected screenshot; representative new screens also viewed"
+        },
+        {
+          "width": 768,
+          "beforeSha256": "9fabad8c2a4e60b64bf1ec52fcb77b172b46fdd5bf4e7d0cd672574615482d50",
+          "afterSha256": "9fabad8c2a4e60b64bf1ec52fcb77b172b46fdd5bf4e7d0cd672574615482d50",
+          "changedPixels": 0,
+          "maxChannelDifference": 0,
+          "review": "Exact pixels or <=1-channel rasterization difference from previously inspected screenshot; representative new screens also viewed"
+        },
+        {
+          "width": 1024,
+          "beforeSha256": "41febe652c9c4d8913dd22810d1adfc045f9fbc91fa0906499065a2b9a3daa20",
+          "afterSha256": "41febe652c9c4d8913dd22810d1adfc045f9fbc91fa0906499065a2b9a3daa20",
+          "changedPixels": 0,
+          "maxChannelDifference": 0,
+          "review": "Exact pixels or <=1-channel rasterization difference from previously inspected screenshot; representative new screens also viewed"
+        },
+        {
+          "width": 1440,
+          "beforeSha256": "c6f6d77b4c6bbca37da8f5917125cbb75f27e6ab36c0bf547d6e01b5b65cf2e3",
+          "afterSha256": "c6f6d77b4c6bbca37da8f5917125cbb75f27e6ab36c0bf547d6e01b5b65cf2e3",
+          "changedPixels": 0,
+          "maxChannelDifference": 0,
+          "review": "Exact pixels or <=1-channel rasterization difference from previously inspected screenshot; representative new screens also viewed"
+        }
+      ]
+    },
+    {
+      "path": "/items-guide/",
+      "mainHtmlUnchanged": true,
+      "mainSha256": "e6b7ccdb3ce90225b496e909bddc68d0e6e4714ef2b25ee35e2029dccfaac384",
+      "screenshots": [
+        {
+          "width": 390,
+          "beforeSha256": "15962d0bb8cd80245171caaaf76df2aa276ecf50d409e21825f163d5eeb9244a",
+          "afterSha256": "15962d0bb8cd80245171caaaf76df2aa276ecf50d409e21825f163d5eeb9244a",
+          "changedPixels": 0,
+          "maxChannelDifference": 0,
+          "review": "Exact pixels or <=1-channel rasterization difference from previously inspected screenshot; representative new screens also viewed"
+        },
+        {
+          "width": 768,
+          "beforeSha256": "a02a38d64863a874051b979062f36d7dd5f4d27f57e83caed58ad65ced8651d5",
+          "afterSha256": "a02a38d64863a874051b979062f36d7dd5f4d27f57e83caed58ad65ced8651d5",
+          "changedPixels": 0,
+          "maxChannelDifference": 0,
+          "review": "Exact pixels or <=1-channel rasterization difference from previously inspected screenshot; representative new screens also viewed"
+        },
+        {
+          "width": 1024,
+          "beforeSha256": "7d0d13f4e800426ae54df26159e8683187fc426d842f3826da8fa32508c2688a",
+          "afterSha256": "7d0d13f4e800426ae54df26159e8683187fc426d842f3826da8fa32508c2688a",
+          "changedPixels": 0,
+          "maxChannelDifference": 0,
+          "review": "Exact pixels or <=1-channel rasterization difference from previously inspected screenshot; representative new screens also viewed"
+        },
+        {
+          "width": 1440,
+          "beforeSha256": "9ee28a8d8fbc79f47ce4c96e5c235dd0e8d630fb7231b298fc3badff8f22543b",
+          "afterSha256": "9ee28a8d8fbc79f47ce4c96e5c235dd0e8d630fb7231b298fc3badff8f22543b",
+          "changedPixels": 0,
+          "maxChannelDifference": 0,
+          "review": "Exact pixels or <=1-channel rasterization difference from previously inspected screenshot; representative new screens also viewed"
+        }
+      ]
+    },
+    {
+      "path": "/merge-planner/",
+      "mainHtmlUnchanged": true,
+      "mainSha256": "12b289e0e722db01e7e16d4fd3a7c6d2d7ef35b8d128b74751465d0067aaa70d",
+      "screenshots": [
+        {
+          "width": 390,
+          "beforeSha256": "ad430d25df5a96a6b0b16132ae27c7b3478eb77cd48ea886a83c8601705f6458",
+          "afterSha256": "ad430d25df5a96a6b0b16132ae27c7b3478eb77cd48ea886a83c8601705f6458",
+          "changedPixels": 0,
+          "maxChannelDifference": 0,
+          "review": "Exact pixels or <=1-channel rasterization difference from previously inspected screenshot; representative new screens also viewed"
+        },
+        {
+          "width": 768,
+          "beforeSha256": "783b17c4c4c1ba543500886d01017cfd79bf990032c015e345d2dbeaa2824c99",
+          "afterSha256": "783b17c4c4c1ba543500886d01017cfd79bf990032c015e345d2dbeaa2824c99",
+          "changedPixels": 0,
+          "maxChannelDifference": 0,
+          "review": "Exact pixels or <=1-channel rasterization difference from previously inspected screenshot; representative new screens also viewed"
+        },
+        {
+          "width": 1024,
+          "beforeSha256": "6af84a2c9b85472bccde1150c46ef7021042db70ee6e7fa35c00381fff7050a8",
+          "afterSha256": "6af84a2c9b85472bccde1150c46ef7021042db70ee6e7fa35c00381fff7050a8",
+          "changedPixels": 0,
+          "maxChannelDifference": 0,
+          "review": "Exact pixels or <=1-channel rasterization difference from previously inspected screenshot; representative new screens also viewed"
+        },
+        {
+          "width": 1440,
+          "beforeSha256": "06ab5293c9f2e0a5e5740eb3687089c433740077714a865fb2c08b86344a1e20",
+          "afterSha256": "06ab5293c9f2e0a5e5740eb3687089c433740077714a865fb2c08b86344a1e20",
+          "changedPixels": 0,
+          "maxChannelDifference": 0,
+          "review": "Exact pixels or <=1-channel rasterization difference from previously inspected screenshot; representative new screens also viewed"
+        }
+      ]
+    },
+    {
+      "path": "/play/",
+      "mainHtmlUnchanged": true,
+      "mainSha256": "f3ec359ace8428fcebdb3a22a027f6747e33aa3fea63457827589c4da2a81c86",
+      "screenshots": [
+        {
+          "width": 390,
+          "beforeSha256": "a4983271ca7b905a0d92fb5ed55449dd58c8abdce1f00f7069d31a6bc56aa0cc",
+          "afterSha256": "a4983271ca7b905a0d92fb5ed55449dd58c8abdce1f00f7069d31a6bc56aa0cc",
+          "changedPixels": 0,
+          "maxChannelDifference": 0,
+          "review": "Exact pixels or <=1-channel rasterization difference from previously inspected screenshot; representative new screens also viewed"
+        },
+        {
+          "width": 768,
+          "beforeSha256": "8b5ad4205672e1eb1e2871f73a4b3f3e17d850b37c803949a393abeba14cd896",
+          "afterSha256": "414ca5ff2ab0f4a755265c667f0151670dec86b853b3c9d038a1b3db63b5d2f8",
+          "changedPixels": 239210,
+          "maxChannelDifference": 250,
+          "review": "Actual scroll-through and recapture visually inspected with bottom viewport evidence"
+        },
+        {
+          "width": 1024,
+          "beforeSha256": "0f28166bce66da3727159d7402ffcd8878fee98c40bc286cdccf31507d42323e",
+          "afterSha256": "815cbc2a58cbb4fd1e53e65978597554339178c25e51d1e34e5b4455287cd856",
+          "changedPixels": 13,
+          "maxChannelDifference": 1,
+          "review": "Exact pixels or <=1-channel rasterization difference from previously inspected screenshot; representative new screens also viewed"
+        },
+        {
+          "width": 1440,
+          "beforeSha256": "92275d93b9b42c90fb8115402be742fecbd0285b66e087d1a23538452fb37308",
+          "afterSha256": "1e379ee73b42621bcf649cbe316cfe9833bccccafd3967e588b11a528ed14ed5",
+          "changedPixels": 36,
+          "maxChannelDifference": 1,
+          "review": "Exact pixels or <=1-channel rasterization difference from previously inspected screenshot; representative new screens also viewed"
+        }
+      ]
+    },
+    {
+      "path": "/privacy-policy/",
+      "mainHtmlUnchanged": true,
+      "mainSha256": "d08d77c80d96305c693b72eee8b637aa58bef87f07a81800ae74022c394c3ccd",
+      "screenshots": [
+        {
+          "width": 390,
+          "beforeSha256": "b70333b7f20405564decbdd9dbd3861e1298f11c5fcd403543468bbb9040ea7d",
+          "afterSha256": "b70333b7f20405564decbdd9dbd3861e1298f11c5fcd403543468bbb9040ea7d",
+          "changedPixels": 0,
+          "maxChannelDifference": 0,
+          "review": "Exact pixels or <=1-channel rasterization difference from previously inspected screenshot; representative new screens also viewed"
+        },
+        {
+          "width": 768,
+          "beforeSha256": "31a35db9ad704da0dd5168b3cea643920446117a30bb2f88066dd23591a229bb",
+          "afterSha256": "31a35db9ad704da0dd5168b3cea643920446117a30bb2f88066dd23591a229bb",
+          "changedPixels": 0,
+          "maxChannelDifference": 0,
+          "review": "Exact pixels or <=1-channel rasterization difference from previously inspected screenshot; representative new screens also viewed"
+        },
+        {
+          "width": 1024,
+          "beforeSha256": "72d1fa22c47dd4482ac412978ae97759f438dc4fa71a376a0b61b592c51c9464",
+          "afterSha256": "72d1fa22c47dd4482ac412978ae97759f438dc4fa71a376a0b61b592c51c9464",
+          "changedPixels": 0,
+          "maxChannelDifference": 0,
+          "review": "Exact pixels or <=1-channel rasterization difference from previously inspected screenshot; representative new screens also viewed"
+        },
+        {
+          "width": 1440,
+          "beforeSha256": "3a9cb27d9380adb0ba133ea53e04f77d1c4a66dd9c4bbc39025a0a684a5c9fab",
+          "afterSha256": "3a9cb27d9380adb0ba133ea53e04f77d1c4a66dd9c4bbc39025a0a684a5c9fab",
+          "changedPixels": 0,
+          "maxChannelDifference": 0,
+          "review": "Exact pixels or <=1-channel rasterization difference from previously inspected screenshot; representative new screens also viewed"
+        }
+      ]
+    },
+    {
+      "path": "/terms/",
+      "mainHtmlUnchanged": true,
+      "mainSha256": "3a83050ed7d7b5736bdc08350520a89fcb38a8a048d485da1de4da5f8743783e",
+      "screenshots": [
+        {
+          "width": 390,
+          "beforeSha256": "e4437166c454b5d4b1f3d4a4694c93f5fa1d62c186e70260d3da41afec927eb9",
+          "afterSha256": "e4437166c454b5d4b1f3d4a4694c93f5fa1d62c186e70260d3da41afec927eb9",
+          "changedPixels": 0,
+          "maxChannelDifference": 0,
+          "review": "Exact pixels or <=1-channel rasterization difference from previously inspected screenshot; representative new screens also viewed"
+        },
+        {
+          "width": 768,
+          "beforeSha256": "439e943c1b4f5e0e5785d4b5456125f7ec18440ff9caa245f45fb3d5e9d6b488",
+          "afterSha256": "439e943c1b4f5e0e5785d4b5456125f7ec18440ff9caa245f45fb3d5e9d6b488",
+          "changedPixels": 0,
+          "maxChannelDifference": 0,
+          "review": "Exact pixels or <=1-channel rasterization difference from previously inspected screenshot; representative new screens also viewed"
+        },
+        {
+          "width": 1024,
+          "beforeSha256": "08b5fcf66f36f8dac2f39a0b40c30686c01cf17a7ff1962cf885661e4f674556",
+          "afterSha256": "34dfefdba32b670f640327a12792e0770059669399deb4b383a3eddbb27f9c27",
+          "changedPixels": 2,
+          "maxChannelDifference": 1,
+          "review": "Exact pixels or <=1-channel rasterization difference from previously inspected screenshot; representative new screens also viewed"
+        },
+        {
+          "width": 1440,
+          "beforeSha256": "59fa42c436091f4f0ba9d899b408acd951a0a07cb71474d98c74025c3355d0f6",
+          "afterSha256": "59fa42c436091f4f0ba9d899b408acd951a0a07cb71474d98c74025c3355d0f6",
+          "changedPixels": 0,
+          "maxChannelDifference": 0,
+          "review": "Exact pixels or <=1-channel rasterization difference from previously inspected screenshot; representative new screens also viewed"
+        }
+      ]
+    },
+    {
+      "path": "/updates/",
+      "mainHtmlUnchanged": true,
+      "mainSha256": "4e2ef66fad5f04d1d266bdfc2e4bceef4a9d3dea68f56b4a0d1e245de6de657c",
+      "screenshots": [
+        {
+          "width": 390,
+          "beforeSha256": "b7b6f27bdcdb7f0a7756d5f20dbaf6d11983e13dd0307d1a096230cbda595ff9",
+          "afterSha256": "b7b6f27bdcdb7f0a7756d5f20dbaf6d11983e13dd0307d1a096230cbda595ff9",
+          "changedPixels": 0,
+          "maxChannelDifference": 0,
+          "review": "Exact pixels or <=1-channel rasterization difference from previously inspected screenshot; representative new screens also viewed"
+        },
+        {
+          "width": 768,
+          "beforeSha256": "0e5a4470b0adc960d8d09aafd92e28e76ae8f17808cbe54d001356c44a8173d9",
+          "afterSha256": "0e5a4470b0adc960d8d09aafd92e28e76ae8f17808cbe54d001356c44a8173d9",
+          "changedPixels": 0,
+          "maxChannelDifference": 0,
+          "review": "Actual scroll-through and recapture visually inspected with bottom viewport evidence"
+        },
+        {
+          "width": 1024,
+          "beforeSha256": "fdeda04b42c76aa16cf6a55e4b4885a508e49a546685ff7dedda0092aa3bc10d",
+          "afterSha256": "fdeda04b42c76aa16cf6a55e4b4885a508e49a546685ff7dedda0092aa3bc10d",
+          "changedPixels": 0,
+          "maxChannelDifference": 0,
+          "review": "Exact pixels or <=1-channel rasterization difference from previously inspected screenshot; representative new screens also viewed"
+        },
+        {
+          "width": 1440,
+          "beforeSha256": "3c3e78b8864b0ddb6a43a1c33741b1263cd5b62bf34e05f7ec5bf4fa4889b681",
+          "afterSha256": "3c3e78b8864b0ddb6a43a1c33741b1263cd5b62bf34e05f7ec5bf4fa4889b681",
+          "changedPixels": 0,
+          "maxChannelDifference": 0,
+          "review": "Exact pixels or <=1-channel rasterization difference from previously inspected screenshot; representative new screens also viewed"
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "No Google crawl or indexing result asserted.",
+    "Source facts retain their original review time and capture references.",
+    "Publishing is performed separately by the root agent."
+  ],
+  "guardedBuild": {
+    "command": "npm run build",
+    "runtime": "Linux Node22.23.3/npm10.9.9",
+    "exitCode": 0,
+    "artifact": {
+      "path": "quality/dependency-repair/linux-guarded-build.log",
+      "sha256": "7c925ce907eaba22370956921534e7f4c66dfb9681283efc25f9275938ee4f0b"
+    }
+  },
+  "installationRetry": "First attempt failed ECONNRESET downloading dependencies; a new clean-directory npm ci retry succeeded. Failure log retained."
+}

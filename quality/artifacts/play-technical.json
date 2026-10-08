@@ -1,8 +1,8 @@
 {
   "path": "/play/",
-  "codeFingerprint": "9512edab1efbf1b2e09ff5553c3113f1f4eb418a179a8814a50f8a56f5f00188",
-  "checkedAt": "2026-10-08T16:05:56.755Z",
-  "testedUrl": "http://127.0.0.1:61071/play/",
+  "codeFingerprint": "27db24bc4d4edf503a80de030b3420fd85db9cc0500c891f83b61c1490791718",
+  "checkedAt": "2026-10-08T16:29:56.705Z",
+  "testedUrl": "http://127.0.0.1:61007/play/",
   "httpStatus": 200,
   "canonical": "https://primordialsea.robloxwikihub.com/play/",
   "robotsAllowed": true,
@@ -40,7 +40,7 @@
       },
       "screenshot": {
         "path": "quality/artifacts/play-768.png",
-        "sha256": "8b5ad4205672e1eb1e2871f73a4b3f3e17d850b37c803949a393abeba14cd896"
+        "sha256": "414ca5ff2ab0f4a755265c667f0151670dec86b853b3c9d038a1b3db63b5d2f8"
       }
     },
     {
@@ -53,7 +53,7 @@
       },
       "screenshot": {
         "path": "quality/artifacts/play-1024.png",
-        "sha256": "0f28166bce66da3727159d7402ffcd8878fee98c40bc286cdccf31507d42323e"
+        "sha256": "815cbc2a58cbb4fd1e53e65978597554339178c25e51d1e34e5b4455287cd856"
       }
     },
     {
@@ -66,12 +66,14 @@
       },
       "screenshot": {
         "path": "quality/artifacts/play-1440.png",
-        "sha256": "92275d93b9b42c90fb8115402be742fecbd0285b66e087d1a23538452fb37308"
+        "sha256": "1e379ee73b42621bcf649cbe316cfe9833bccccafd3967e588b11a528ed14ed5"
       }
     }
   ],
   "interaction": "passed",
-  "contentReview": "supported",
-  "note": "Actual local preview. Four-width metrics plus visual review of home/planner/common article design; external gameplay not claimed.",
-  "interactionEvidence": "quality/artifacts/interaction-results.json: shared search/menu; planner outputs, invalid-input, reset and copy checks for home/planner. Static content needs no artificial loading state."
+  "contentReview": "Prior factual review retained: source files and all main HTML unchanged; no fresh external fact verification claimed.",
+  "note": "Fresh Linux Node22/npm10 build, fresh Chrome capture and repeated interactions. Details in quality/dependency-repair/review.json.",
+  "interactionEvidence": "quality/artifacts/interaction-results.json: shared search/menu; planner outputs, invalid-input, reset and copy checks for home/planner. Static content needs no artificial loading state.",
+  "visualReviewer": "Codex agent / HTML5 repairs — pixel comparison and changed-capture inspection",
+  "visualReviewedAt": "2026-10-08T16:36:00.857962+00:00"
 }

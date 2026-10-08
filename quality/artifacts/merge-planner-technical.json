@@ -1,8 +1,8 @@
 {
   "path": "/merge-planner/",
-  "codeFingerprint": "9512edab1efbf1b2e09ff5553c3113f1f4eb418a179a8814a50f8a56f5f00188",
-  "checkedAt": "2026-10-08T16:05:55.353Z",
-  "testedUrl": "http://127.0.0.1:61071/merge-planner/",
+  "codeFingerprint": "27db24bc4d4edf503a80de030b3420fd85db9cc0500c891f83b61c1490791718",
+  "checkedAt": "2026-10-08T16:29:55.359Z",
+  "testedUrl": "http://127.0.0.1:61007/merge-planner/",
   "httpStatus": 200,
   "canonical": "https://primordialsea.robloxwikihub.com/merge-planner/",
   "robotsAllowed": true,
@@ -71,7 +71,9 @@
     }
   ],
   "interaction": "passed",
-  "contentReview": "supported",
-  "note": "Actual local preview. Four-width metrics plus visual review of home/planner/common article design; external gameplay not claimed.",
-  "interactionEvidence": "quality/artifacts/interaction-results.json: shared search/menu; planner outputs, invalid-input, reset and copy checks for home/planner. Static content needs no artificial loading state."
+  "contentReview": "Prior factual review retained: source files and all main HTML unchanged; no fresh external fact verification claimed.",
+  "note": "Fresh Linux Node22/npm10 build, fresh Chrome capture and repeated interactions. Details in quality/dependency-repair/review.json.",
+  "interactionEvidence": "quality/artifacts/interaction-results.json: shared search/menu; planner outputs, invalid-input, reset and copy checks for home/planner. Static content needs no artificial loading state.",
+  "visualReviewer": "Codex agent / HTML5 repairs — pixel comparison and changed-capture inspection",
+  "visualReviewedAt": "2026-10-08T16:36:00.857962+00:00"
 }

@@ -1,0 +1,21 @@
+{
+  "checkedAt": "2026-10-08T16:34:21.291Z",
+  "observations": [
+    {
+      "slug": "play",
+      "width": 768,
+      "height": 2555,
+      "errors": [],
+      "method": "Real page scrolled through, two animation frames per scroll, actual bottom viewport and full-page recapture",
+      "sha256": "414ca5ff2ab0f4a755265c667f0151670dec86b853b3c9d038a1b3db63b5d2f8"
+    },
+    {
+      "slug": "updates",
+      "width": 768,
+      "height": 2290,
+      "errors": [],
+      "method": "Real page scrolled through, two animation frames per scroll, actual bottom viewport and full-page recapture",
+      "sha256": "0e5a4470b0adc960d8d09aafd92e28e76ae8f17808cbe54d001356c44a8173d9"
+    }
+  ]
+}
